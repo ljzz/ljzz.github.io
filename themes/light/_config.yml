@@ -1,0 +1,37 @@
+menu: #站点右上角导航栏，暂时默认，后面介绍修改
+  首页: /
+  归档: /archives
+  关于: /about
+
+widgets:  #站点右边栏，暂时默认，后面介绍修改和添加
+- search
+- intro #博主简介
+- category
+- tagcloud  #标签云
+- weibo    #新浪微博秀
+- blogroll    #友情链接
+
+
+excerpt_link: 阅读全文 #替换为中文
+
+plugins: 
+- hexo-generator-feed
+- hexo-migrator-wordpress
+
+twitter: #右边栏要显示twitter展示的话，需要在此设置
+  username: 
+  show_replies: false
+  tweet_count: 5
+
+addthis: #SNS分享，身在天朝，当然用“百度分享”，暂时默认，后面会介绍
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true #图片效果，默认
+
+google_analytics: #要使用google_analytics进行统计的话，这里需要配置ID，暂时默认，后面介绍
+rss: /atom.xml #生成RSS，需要配置路径，暂时默认，后面介绍
