@@ -1,240 +1,321 @@
-
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
-  
-  <title>Notepad++ V6.6.9 - 特色编辑器、支持语法高亮 | 遂州创信</title>
-  <meta name="author" content="遂州创信">
-  
-  <meta name="description" content="学习总结 思考感悟 知识管理">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Notepad++ V6.6.9 - 特色编辑器、支持语法高亮"/>
-  <meta property="og:site_name" content="遂州创信"/>
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
 
-  
-    <meta property="og:image" content="undefined"/>
-  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="遂州创信" />
 
-  <link href="/favicon.ico" rel="icon" type="image/x-ico">
-  <link rel="alternate" href="/atom.xml" title="遂州创信" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ffe3814b5f53cc394a493cbeb2368f2af' type='text/javascript'%3E%3C/script%3E"));
+
+
+<meta name="description" content="Notepad++是一款免费的源代码编辑器，并且可以替代系统自带的记事本的功能，同时也支持各类流行的计算机编程语言。编辑器可以运行在微软的windows系统环境下，它的使用是受GPL许可证保护的，支持的语言：C、C++、Java、C#、XML、HTML、PHP、Javascript。
+Notepad++ 是一款非常有特色的编辑器，是开源软件，可以免费使用。 功能有：①、内置支持多达 27 种语法高">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notepad++ V6.6.9 - 特色编辑器、支持语法高亮">
+<meta property="og:url" content="http://szcx.coding.me/2014/09/15/notepad/index.html">
+<meta property="og:site_name" content="遂州创信">
+<meta property="og:description" content="Notepad++是一款免费的源代码编辑器，并且可以替代系统自带的记事本的功能，同时也支持各类流行的计算机编程语言。编辑器可以运行在微软的windows系统环境下，它的使用是受GPL许可证保护的，支持的语言：C、C++、Java、C#、XML、HTML、PHP、Javascript。
+Notepad++ 是一款非常有特色的编辑器，是开源软件，可以免费使用。 功能有：①、内置支持多达 27 种语法高">
+<meta property="og:image" content="http://szcxgg.qiniudn.com/2014-09-16_174300.png">
+<meta property="og:updated_time" content="2014-10-30T09:40:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Notepad++ V6.6.9 - 特色编辑器、支持语法高亮">
+<meta name="twitter:description" content="Notepad++是一款免费的源代码编辑器，并且可以替代系统自带的记事本的功能，同时也支持各类流行的计算机编程语言。编辑器可以运行在微软的windows系统环境下，它的使用是受GPL许可证保护的，支持的语言：C、C++、Java、C#、XML、HTML、PHP、Javascript。
+Notepad++ 是一款非常有特色的编辑器，是开源软件，可以免费使用。 功能有：①、内置支持多达 27 种语法高">
+<meta name="twitter:image" content="http://szcxgg.qiniudn.com/2014-09-16_174300.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="遂州创信" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Notepad++ V6.6.9 - 特色编辑器、支持语法高亮 | 遂州创信</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: false,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
 </script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
 
 
 
 </head>
-
-
 <body>
-  <header id="header" class="inner">
-<div class="alignleft">
-  <h1><a href="/">遂州创信</a></h1>
-  <h2><a href="/">蓝江老涌的博客</a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">首页</a></li>
-    
-      <li><a href="/archives">归档</a></li>
-    
-      <li><a href="/about">关于</a></li>
-    
-	<li> <a href="/atom.xml">RSS</a> </li>
-<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
-	function c() {
-		var e = document.createElement("link");
-		e.setAttribute("type", "text/css");
-		e.setAttribute("rel", "stylesheet");
-		e.setAttribute("href", f);
-		e.setAttribute("class", l);
-		document.body.appendChild(e)
-	}
- 
-	function h() {
-		var e = document.getElementsByClassName(l);
-		for (var t = 0; t < e.length; t++) {
-			document.body.removeChild(e[t])
-		}
-	}
- 
-	function p() {
-		var e = document.createElement("div");
-		e.setAttribute("class", a);
-		document.body.appendChild(e);
-		setTimeout(function() {
-			document.body.removeChild(e)
-		}, 100)
-	}
- 
-	function d(e) {
-		return {
-			height : e.offsetHeight,
-			width : e.offsetWidth
-		}
-	}
- 
-	function v(i) {
-		var s = d(i);
-		return s.height > e && s.height < n && s.width > t && s.width < r
-	}
- 
-	function m(e) {
-		var t = e;
-		var n = 0;
-		while (!!t) {
-			n += t.offsetTop;
-			t = t.offsetParent
-		}
-		return n
-	}
- 
-	function g() {
-		var e = document.documentElement;
-		if (!!window.innerWidth) {
-			return window.innerHeight
-		} else if (e && !isNaN(e.clientHeight)) {
-			return e.clientHeight
-		}
-		return 0
-	}
- 
-	function y() {
-		if (window.pageYOffset) {
-			return window.pageYOffset
-		}
-		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
-	}
- 
-	function E(e) {
-		var t = m(e);
-		return t >= w && t <= b + w
-	}
- 
-	function S() {
-		var e = document.createElement("audio");
-		e.setAttribute("class", l);
-		e.src = i;
-		e.loop = false;
-		e.addEventListener("canplay", function() {
-			setTimeout(function() {
-				x(k)
-			}, 500);
-			setTimeout(function() {
-				N();
-				p();
-				for (var e = 0; e < O.length; e++) {
-					T(O[e])
-				}
-			}, 15500)
-		}, true);
-		e.addEventListener("ended", function() {
-			N();
-			h()
-		}, true);
-		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
-		document.body.appendChild(e);
-		e.play()
-	}
- 
-	function x(e) {
-		e.className += " " + s + " " + o
-	}
- 
-	function T(e) {
-		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
-	}
- 
-	function N() {
-		var e = document.getElementsByClassName(s);
-		var t = new RegExp("\\b" + s + "\\b");
-		for (var n = 0; n < e.length; ) {
-			e[n].className = e[n].className.replace(t, "")
-		}
-	}
- 
-	var e = 30;
-	var t = 30;
-	var n = 350;
-	var r = 350;
-	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
-	var s = "mw-harlem_shake_me";
-	var o = "im_first";
-	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
-	var a = "mw-strobe_light";
-	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
-	var l = "mw_added_css";
-	var b = g();
-	var w = y();
-	var C = document.getElementsByTagName("*");
-	var k = null;
-	for (var L = 0; L < C.length; L++) {
-		var A = C[L];
-		if (v(A)) {
-			if (E(A)) {
-				k = A;
-				break
-			}
-		}
-	}
-	if (A === null) {
-		console.warn("Could not find a node of the right size. Please try a different page.");
-		return
-	}
-	c();
-	S();
-	var O = [];
-	for (var L = 0; L < C.length; L++) {
-		var A = C[L];
-		if (v(A)) {
-			O.push(A)
-		}
-	}
-})()    '>High一下</a> </li>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">遂州创信</a></h1>
+        </hgroup>
 
-  </ul>
-  <div class="clearfix"></div>
+        
+        <p class="header-subtitle">蓝江老涌的博客</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" href="https://github.com/ljzz/ljzz.github.io" title="GitHub"></a>
+                            
+                                <a class="fa 新浪微博" href="http://weibo.com/2143921577" title="新浪微博"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2012/">2012</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESD/">ESD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ISO/">ISO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OCR/">OCR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PE/">PE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/QQ/">QQ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TC/">TC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pdf/">pdf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win10/">win10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win7/">win7</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win8/">win8</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/下载工具/">下载工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代理/">代理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作业/">作业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/便携绿色/">便携绿色</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/办公工具/">办公工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/卸载/">卸载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/压缩/">压缩</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图像/">图像</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图像工具/">图像工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片/">图片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/媒体工具/">媒体工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学车/">学车</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/孩子/">孩子</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安装/">安装</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/幽默/">幽默</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/截图/">截图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/手机/">手机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/拍照/">拍照</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/拦江/">拦江</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/搜索/">搜索</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/播放器/">播放器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教师/">教师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/激活/">激活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活琐事/">生活琐事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/电影/">电影</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笑话/">笑话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笑话联翩/">笑话联翩</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/系统/">系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/系统工具/">系统工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网文资讯/">网文资讯</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络工具/">网络工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/聊天/">聊天</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/资讯/">资讯</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/阅读/">阅读</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/驾校/">驾校</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://szcx.pe.hu/">遂州创信</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://kirito.cn">kiritoの窝</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://szcx.coding.me">coding上</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://szcx.oschina.io">oschina上</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://ljzz.github.io">github上</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">实现梦想的过程，需要你抬头看远方，也需要你注意脚下的坑。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">遂州创信</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">遂州创信</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">蓝江老涌的博客</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/ljzz/ljzz.github.io" title="GitHub"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/2143921577" title="新浪微博"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-<div class="clearfix"></div></header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+      <div class="body-wrap"><article id="post-notepad" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="gallery">
-  <div class="photoset">
+    <div class="article-meta">
+      <a href="/2014/09/15/notepad/" class="article-date">
+      <time datetime="2014-09-15T01:30:28.000Z" itemprop="datePublished">2014-09-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
     
-      <img src="">
+      <input type="hidden" class="isFancy" />
     
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
+    
+      <header class="article-header">
+        
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-09-15T01:30:28.000Z"><a href="/2014/09/15/notepad/">2014-09-15</a></time>
-      
-      
-  
-    <h1 class="title">Notepad++ V6.6.9 - 特色编辑器、支持语法高亮</h1>
+    <h1 class="article-title" itemprop="name">
+      Notepad++ V6.6.9 - 特色编辑器、支持语法高亮
+    </h1>
   
 
-    </header>
-    <div class="entry">
+      </header>
       
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/办公工具/">办公工具</a>
+    </div>
+
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <p>Notepad++是一款免费的源代码编辑器，并且可以替代系统自带的记事本的功能，同时也支持各类流行的计算机编程语言。编辑器可以运行在微软的windows系统环境下，它的使用是受GPL许可证保护的，支持的语言：C、C++、Java、C#、XML、HTML、PHP、Javascript。</p>
 <p>Notepad++ 是一款非常有特色的编辑器，是开源软件，可以免费使用。 功能有：<br>①、内置支持多达 27 种语法高亮度显示(囊括各种常见的源代码、脚本，值得一提的是，完美支持 .nfo 文件查看)，也支持自定义语言；<br>②、可自动检测文件类型，根据关键字显示节点，节点可自由折叠/打开，代码显示得非常有层次感！这是此软件最具特色的体现之一；<br>③、可打开双窗口，在分窗口中又可打开多个子窗口，允许快捷切换全屏显示模式(F11)，支持鼠标滚轮改变文档显示比例，等等；<br>④、提供数个特色东东，如 邻行互换位置、宏功能，等等…现在网上有很多文件编辑器，这个却是不可多得的一款，不论是日常使用还是手写编程代码，都能让你体会到它独有的优势和方便。<br>支持的语言: C, C++ , Java , C#, XML, HTML, PHP, Javascript , ！<br>基于强大的编辑组件Scintilla，Notepad++也是使用C++代码开发而成，并且使用了win32的api接口和STL标准模板库，因此确保软件有更高效的执行效率和更小的程序体积。在不失用户体验度的同时，也可以尽可能允许用户自定义多项的程序设置。</p>
 <p><img src="http://szcxgg.qiniudn.com/2014-09-16_174300.png" alt="1"><br>Notepad++ 6.6.9更新日志：</p>
@@ -252,161 +333,239 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 
       
     </div>
-    <footer>
-      
-        
+    
+  </div>
   
-  <div class="categories">
-    <a href="/categories/办公工具/">办公工具</a>
-  </div>
+    
 
+
+    <nav id="article-nav">
         
-<!-- Baidu Button BEGIN -->
-<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
-<a class="bds_qzone"></a>
-<a class="bds_tsina"></a>
-<a class="bds_tqq"></a>
-<a class="bds_renren"></a>
-<a class="bds_t163"></a>
-<span class="bds_more"></span>
-<a class="shareCount"></a>
-</div>
-<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-</script>
-<!-- Baidu Button END -->      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2014/09/15/jidinghe/">
+                    易视宝，机顶盒看直播已解决
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2014/09/12/jiaoshi/">
+                    教师节来了，祝天下的老师快乐！祝自己快乐！
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
-<nav id="pagination" >
     
-    <a href="/2014/09/15/jidinghe/" class="alignleft prev" >Vorherige Seite</a>
+<div class="share">
     
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Notepad++ V6.6.9 - 特色编辑器、支持语法高亮　| 遂州创信　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     
-    <a href="/2014/09/12/jiaoshi/" class="alignright next" >Nächste Seite</a>
+
     
-    <div class="clearfix"></div>
-</nav>
-
-<!-- 多说评论框 start -->
- <div class="ds-thread" data-thread-key="/2014/09/15/notepad/" data-title="Notepad++ V6.6.9 - 特色编辑器、支持语法高亮" data-url="http://szcx.coding.me/2014/09/15/notepad/"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"szcx"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end -->
-<section id="comment">
-</section>
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//baidu.com/baidu" method="get" accept-charset="utf-8">
-    <input type="search" name="word" results="0" placeholder="Suche">
-    <input type="hidden" name="si" value="szcx.coding.me">
-    <input name=tn type=hidden value="bds">
-	<input name=cl type=hidden value="3">
-	<input name=ct type=hidden value="2097152">
-	<input name=s type=hidden value="on">
-  </form>
-</div>
-
-  <div class="widget tag">
-<h3 class="title">博主简介</h3>
-<ul class="entry">
-<li><img width="150" img src="http://szcxgg.qiniudn.com/2014-10-30_135510.png" alt="" /></li>
-<li>本体：蓝涌</li>
-<li>二次元：遂州创信 | 蓝江老涌</li>
-<li>现状：帝都蜀地斗城一园丁</li>
-<li>想要交友的朋友请<a href="http://szcx.pe.hu/about/">联系我</a>！</li>
-<li>QQ号： 87389166</li>
-</ul>
 </div>
 
 
 
-  
-<div class="widget tag">
-  <h3 class="title">Kategorien</h3>
-  <ul class="entry">
-  
-    <li><a href="/categories/办公工具/">办公工具</a><small>7</small></li>
-  
-    <li><a href="/categories/图像工具/">图像工具</a><small>7</small></li>
-  
-    <li><a href="/categories/媒体工具/">媒体工具</a><small>4</small></li>
-  
-    <li><a href="/categories/生活琐事/">生活琐事</a><small>28</small></li>
-  
-    <li><a href="/categories/系统工具/">系统工具</a><small>12</small></li>
-  
-    <li><a href="/categories/网络工具/">网络工具</a><small>27</small></li>
-  
-  </ul>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2014/09/15/notepad/" data-title="Notepad++ V6.6.9 - 特色编辑器、支持语法高亮" data-url="http://szcx.coding.me/2014/09/15/notepad/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"szcx"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+            // Add comment count
+            $(function(){ 
+                var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=szcx&threads=2014/09/15/notepad/&callback=?";
+                $.getJSON(jsonUrl, function(result){
+                    $.each(result.response, function(i, field){
+                        var value = field.comments;
+                        if (value > 0) {
+                            $(".count-comment").text(value);
+                            return;
+                        }
+                    })
+                })
+            })
+        
+    </script>
+    
+    <aside class="comment-bar">
+        <a href="javascript:void(0);">
+            <i class="fa fa-commenting-o animated infinite pulse"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <span class="count-comment"></span>
+        </a>
+    </aside>
+    <script>
+        var $commentBar = $("#comments aside.comment-bar");
+        var load$hide = function(){
+            $commentBar.find("a > i").toggle();
+            loadComment();
+            $commentBar.fadeOut(800);
+        }
+        $commentBar.click(function(){
+            load$hide();
+        })
+        $commentBar.children("a").hover(function(){
+            load$hide();
+        })
+        if (window.location.hash === "#comments") {
+            load$hide();
+        }
+    </script>
+
 </div>
+    
 
 
-  
-<div class="widget tagcloud">
-  <h3 class="title">Tag-Cloud</h3>
-  <div class="entry">
-    <a href="/tags/2012/" style="font-size: 10px;">2012</a> <a href="/tags/ESD/" style="font-size: 11.43px;">ESD</a> <a href="/tags/Hexo/" style="font-size: 15.71px;">Hexo</a> <a href="/tags/ISO/" style="font-size: 10px;">ISO</a> <a href="/tags/OCR/" style="font-size: 10px;">OCR</a> <a href="/tags/PE/" style="font-size: 11.43px;">PE</a> <a href="/tags/QQ/" style="font-size: 10.71px;">QQ</a> <a href="/tags/TC/" style="font-size: 10px;">TC</a> <a href="/tags/pdf/" style="font-size: 10px;">pdf</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/win7/" style="font-size: 11.43px;">win7</a> <a href="/tags/win8/" style="font-size: 10.71px;">win8</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/下载工具/" style="font-size: 11.43px;">下载工具</a> <a href="/tags/代理/" style="font-size: 10px;">代理</a> <a href="/tags/作业/" style="font-size: 10.71px;">作业</a> <a href="/tags/便携绿色/" style="font-size: 18.57px;">便携绿色</a> <a href="/tags/办公工具/" style="font-size: 12.86px;">办公工具</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/卸载/" style="font-size: 10px;">卸载</a> <a href="/tags/压缩/" style="font-size: 10px;">压缩</a> <a href="/tags/图像/" style="font-size: 15px;">图像</a> <a href="/tags/图像工具/" style="font-size: 14.29px;">图像工具</a> <a href="/tags/图片/" style="font-size: 17.86px;">图片</a> <a href="/tags/媒体工具/" style="font-size: 12.86px;">媒体工具</a> <a href="/tags/学习/" style="font-size: 20px;">学习</a> <a href="/tags/学车/" style="font-size: 12.14px;">学车</a> <a href="/tags/孩子/" style="font-size: 12.86px;">孩子</a> <a href="/tags/安装/" style="font-size: 12.14px;">安装</a> <a href="/tags/幽默/" style="font-size: 12.14px;">幽默</a> <a href="/tags/截图/" style="font-size: 14.29px;">截图</a> <a href="/tags/手机/" style="font-size: 12.14px;">手机</a> <a href="/tags/拍照/" style="font-size: 16.43px;">拍照</a> <a href="/tags/拦江/" style="font-size: 10.71px;">拦江</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/播放器/" style="font-size: 11.43px;">播放器</a> <a href="/tags/操作系统/" style="font-size: 13.57px;">操作系统</a> <a href="/tags/教师/" style="font-size: 10px;">教师</a> <a href="/tags/浏览器/" style="font-size: 11.43px;">浏览器</a> <a href="/tags/激活/" style="font-size: 10px;">激活</a> <a href="/tags/生活琐事/" style="font-size: 19.29px;">生活琐事</a> <a href="/tags/电影/" style="font-size: 10px;">电影</a> <a href="/tags/笑话/" style="font-size: 12.14px;">笑话</a> <a href="/tags/笑话联翩/" style="font-size: 12.86px;">笑话联翩</a> <a href="/tags/系统/" style="font-size: 12.86px;">系统</a> <a href="/tags/系统工具/" style="font-size: 17.14px;">系统工具</a> <a href="/tags/网文资讯/" style="font-size: 12.86px;">网文资讯</a> <a href="/tags/网络工具/" style="font-size: 19.29px;">网络工具</a> <a href="/tags/聊天/" style="font-size: 11.43px;">聊天</a> <a href="/tags/资讯/" style="font-size: 12.86px;">资讯</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/驾校/" style="font-size: 12.14px;">驾校</a>
-  </div>
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2014/09/15/jidinghe/" title="上一篇: 易视宝，机顶盒看直播已解决">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2014/09/12/jiaoshi/" title="下一篇: 教师节来了，祝天下的老师快乐！祝自己快乐！">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/10/20/另部署/">另类方法三部署</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/14/Markdown-0/">Markdown简单用法介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/12/管理多个SSH KEY /">多台电脑共用SSH Public/Private Key</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/11/部署空间/">Hexo选用部署的三个空间介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/08/华为V8/">华为V8拍相片效果真的好</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/固态硬盘/">win10系统下开启固态硬盘TRIM功能来提升SSD运行效率和延长SSD寿命</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/29/重回Hexo/">重回Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/坚持锻炼身体/">坚持锻炼身体</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/11/23/乐队演出/">乐队演出</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/11/20/酷狗音乐7.6.53/">酷狗音乐7.6.53 VIP破解版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/11/20/qq6.6/">QQ6.6正式版(13163) 纯净版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/11/19/马克飞象/">马克飞象</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/11/19/可悲的教师/">可悲的教师行业</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/30/观书画展/">观书画展</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/30/NOKIA525/">NOKIA525</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/28/我的Hexo站点终于成型了/">我的Hexo站点终于成型了！</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/28/node/">自制node.js + npm绿色版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/28/Hexo-主题修改教程/">Hexo 主题Light修改教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/27/多说/">设置多说评论</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/27/ssh/">免费的 SSH 客户端 - Xshell 4 Build 0138 中文绿色便携版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/23/xiaoshuo/">真人朗读小说朗读器</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/23/baiduyun/">百度云管家5.0.0 纯净版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/22/WinNTSetup/">系统安装器 WinNTSetup v3.7.0 汉化绿色版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/09/hexo/">慢慢学习用Hexo做博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/06/OpenerDNS/">超级DNS：OpenerDNS：42.120.21.30</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/03/windows-10/">Windows 10 技术预览版简体中文版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/30/fancybox/">fancybox</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/26/shubiao/">今天收到5键鼠标。找了一个改侧键软件。</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/26/dianying/">电影《沉睡魔咒》</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/25/microsoft-office-2007-sp3-3in1/">Microsoft Office 2007 SP3 3in1 绿色版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/25/wifi/">WIFI万能钥匙_WiFi Master_V2.9.39_去广告清爽版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/24/jiu/">醉酒后吃什么对身体好？</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/23/szcx-pw/">今天购买了新域名：szcx.pw以及琥珀主机</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/22/weixing/">今天看了一下卫星地图。能找到老家的房子。还有学校的图。</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/22/UltraISO/">映像编辑制作 UltraISO PE v9.6.2.3059 绿色便携版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/22/donghua/">如今的国产动画片怎么了？国产动画要让我失望到何时？</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/20/怀念父亲/">怀念父亲</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/17/xianxue/">无偿献血</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/16/Uninstall Tool/">软件卸载器 Uninstall Tool v3.4.0.5354 绿色便携版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/16/PDF-XChange/">共享PDF阅读器 PDF-XChange Viewer v2.5.309.0 绿色便携版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/16/Google Chrome/">谷歌浏览器 Google Chrome v37.0.2062.120 便携增强版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/16/欣言作文/">欣言作文</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/15/jidinghe/">易视宝，机顶盒看直播已解决</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/15/notepad/">Notepad++ V6.6.9 - 特色编辑器、支持语法高亮</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/12/jiaoshi/">教师节来了，祝天下的老师快乐！祝自己快乐！</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/11/kesan/">驾校科三训练视频</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/06/体重/">我的体重！</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/05/七牛/">再试七牛</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/04/idm/">Internet Download Manager V6.21 build10绿色版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/03/windows2003/">Windows2003 IIS6完美实现WordPress伪静态的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/09/02/wordpress/">WordPress固定链接设置的几种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/28/博客搬家/">博客搬家</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/28/win7/">【 分享 GHOST 版“烦烦烦”精简企业版Win7，集成一键修复系统问题工具 】</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/24/suining/">遂宁手机随拍小景</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/22/wordpress2/">WordPress 给长文章内容分页</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/22/youmo2/">逗B二货,怎么笑你都不为过</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/21/youmo/">幽默乱侃,想到那侃到那</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/20/PotPlayer/">影音播放器 PotPlayer v1.6.49479 美化便携版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/20/picasa6/">Picasa V3.9.0 Build 138.151 - Google免费图片管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/20/wps-office-2013/">WPS Office 2013 V9.1.0.4793便携绿色版 - 全新设计界面优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/20/pos/">集体照的POSE这么摆</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/19/everything/">Everything 1.3.4.686 便携版 - 最快最好用的文件搜索工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/18/age/">自己使用的age代理与SwitchySharp配置文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/18/faststone-capture/">FastStone Capture 7.9 汉化绿色便携版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/17/qq6.2/">腾讯QQ6.2（qq2014）V12179 去广告绿色精简版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/17/Everything2/">设置“Everything”而让它调用外部文件管理器</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/17/2014国重/">2014国家级重点示范城镇（四川省名单）</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/17/pe/">无垠PE1404版组合包，DOS+NV03PE+03PE网络版+X64W8PE网络版，兼容100% </a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/16/GOOGlE/">试一下GOOGlE的网络相册</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/14/shouji/">迷你智能手机进入中国市场</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/14/youmo3/">真是一群聪明的傻孩子！</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/14/youmo5/">闲话男女的幽默趣语</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/14/youmo4/">搞笑的QQ聊天对话：牛人是这样泡妞的</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/12/74/">通用离线激活 KMSpico v9.3.1 绿色典藏版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/11/weifeng8/">微风-世界杯温八-64冠军杯</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/11/weifeng7/">端午节棕子win7x64 sp1 ie11 绿色主题系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/11/2012/">Serv.DC.2012.R2.17085.cn_legam.esd</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/FastStone Capture/">截图工具-FastStone Capture 7.8 绿色汉化版</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/Image Optimizer/">图像压缩工具Image Optimizer</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/jiaxiao/">在驾校学不到的安全行车驾驶技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/学车记录/">学车记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/孩子的学习成绩与习惯有关/">孩子的学习成绩与习惯有关</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/haizi/">《孩子，你为什么必须刻苦学习》-------一个父亲对孩子的表白</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/10/孩子写作业慢的原因及对策/">孩子写作业慢的原因及对策</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/12/02/postName/">postName</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/05/29/markdown/">markdown</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2013-2016 遂州创信
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
 
-  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2143921577&verifier=d71599c0&dpc=1"></iframe>
 
-  <div class="widget tag">
-<h3 class="title">友情链接</h3>
-<ul class="entry">
-<li><a href="http://szcx.pe.hu/" title="蓝江老涌的博客">遂州创信</a></li>
-<li><a href="http://lxy361.tk/" title="Hexo博客">Hexo博客</a></li>
-<li><a href="http://lxy361.qiniudn.com/"title="七牛空间">七牛空间博客</a></li>
-<li><a href="http://kirito.cn/" title="kiritoの窝">kiritoの窝</a></li>
-</ul>
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2016 遂州创信
-  
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
 </script>
 
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
 </body>
 </html>
-
-
-<a href="https://github.com/szcx" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
