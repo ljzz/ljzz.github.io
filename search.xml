@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[另类方法三部署]]></title>
+      <url>http://szcx.coding.me/2016/10/20/%E5%8F%A6%E9%83%A8%E7%BD%B2/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.zipperary.com/2013/05/26/ssh-errors-with-github/" target="_blank" rel="external">教程地址</a>，感谢<a href="http://www.zipperary.com" target="_blank" rel="external">zipperary博主</a></p>
+<p>方法如下：<br><a id="more"></a>    </p>
+<h3 id="首先添加环境变量HOME，变量值设置为-USERPROFILE"><a href="#首先添加环境变量HOME，变量值设置为-USERPROFILE" class="headerlink" title="首先添加环境变量HOME，变量值设置为%USERPROFILE%"></a>首先添加环境变量<code>HOME</code>，变量值设置为<code>%USERPROFILE%</code></h3><h3 id="在用户文件夹如C-Users-Administrator下新建一个名为-netrc的文件。"><a href="#在用户文件夹如C-Users-Administrator下新建一个名为-netrc的文件。" class="headerlink" title="在用户文件夹如C:\Users\Administrator下新建一个名为_netrc的文件。"></a>在用户文件夹如<code>C:\Users\Administrator</code>下新建一个名为<code>_netrc</code>的文件。</h3><h3 id="编辑该文件-netrc如下设置："><a href="#编辑该文件-netrc如下设置：" class="headerlink" title="编辑该文件_netrc如下设置："></a>编辑该文件<code>_netrc</code>如下设置：</h3><pre><code>machine github.com #布署网站名
+login ljzz #用户名
+password XXXXXXXXXX #密码
+
+machine git.coding.net
+login szcx
+password XXXXXXXXXX
+
+machine git.oschina.net
+login szcx
+password XXXXXXXXXX
+</code></pre><h3 id="保存。"><a href="#保存。" class="headerlink" title="保存。"></a>保存。</h3><p>从此可以开心的一键部署到三个站点里边了。呵呵！</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Markdown简单用法介绍]]></title>
+      <url>http://szcx.coding.me/2016/10/14/Markdown-0/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/logo.png" alt=""></p>
+<p>本网网站LOGO设计<br><a id="more"></a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><ul>
+<li>插入图片代码：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![](http://szcxgg.qiniudn.com/2014-09-26_193856.jpg)</div></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="http://szcxgg.qiniudn.com/2014-09-26_193856.jpg" alt=""></p>
+<!--more-->
+<ul>
+<li>图片与链接</li>
+</ul>
+<p>插入链接与插入图片的语法很像，区别在一个 !号</p>
+<p>图片为：<code>![]()</code></p>
+<p>链接为：<code>[]()</code></p>
+<h3 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h3><p>以『虾米音乐』为例，歌曲页面有个『转帖』选项，将html代码或javascript代码复制到文中即可。</p>
+<p>代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;embed src=<span class="string">"http://www.xiami.com/widget/0_3515679/singlePlayer.swf"</span> <span class="built_in">type</span>=<span class="string">"application/x-shockwave-flash"</span> width=<span class="string">"257"</span> height=<span class="string">"33"</span> wmode=<span class="string">"transparent"</span>&gt;&lt;/embed&gt;</div></pre></td></tr></table></figure>
+<p>效果：</p>
+<embed src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
+
+<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><p>嵌入视频的方法和音乐类似，视频网站每个视频页面都会有一个『分享』或『转帖』按钮，点击可以查看代码。</p>
+<p>我校校歌的代码:</p>
+<pre><code>&lt;iframe height=300 width=510 src=&quot;http://player.youku.com/embed/XNDk4MTEyMjY4&quot; frameborder=0 allowfullscreen&gt;&lt;/iframe&gt;
+</code></pre><p>我校校歌的效果：</p>
+<iframe height="300" width="510" src="http://player.youku.com/embed/XNDk4MTEyMjY4" frameborder="0" allowfullscreen></iframe>
+
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>引用的方法如下：</p>
+<p>引用的方法。只需要在文本前加入<code>&gt;</code>这种尖括号（大于号）即可。</p>
+<blockquote>
+<p>这儿是正文了，这是引用效果</p>
+</blockquote>
+<h3 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><p>Markdown 的粗体和斜体也非常简单，用两个 <code>**</code>包含一段文本就是粗体的语法，用一个<code>*</code>包含一段文本就是斜体的语法。</p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线的语法只需要三个 * 号，例如：</p>
+<hr>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表的显示只需要在文字前加上 - 或 * 即可变为无序列表，有序列表则直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。</p>
+<p>效果：</p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<ol>
+<li>第一</li>
+<li>第二</li>
+<li>第三</li>
+</ol>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 <code>#</code>号即可。</p>
+<p><code># 一级标题</code></p>
+<p><code>## 二级标题</code></p>
+<p><code>### 三级标题</code></p>
+<p>以此类推，总共六级标题，建议在井号后加一个空格，这是最标准的 Markdown 语法。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[多台电脑共用SSH Public/Private Key]]></title>
+      <url>http://szcx.coding.me/2016/10/12/%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AASSH%20KEY%20/</url>
+      <content type="html"><![CDATA[<p>换成了家里的一台机器，需要配置环境。要去多个服务器上挨个换新的SSH Public Key是傻瓜做法，不要这么干。最方便的方法是让两个电脑共用一个SSH Public Key。</p>
+<a id="more"></a>
+<ol>
+<li>首先我们给旧的MBP起名叫OLD, 新的叫NEW，方面后面区分</li>
+</ol>
+<ol>
+<li><p>拷贝OLD上的 id_rsa 和 id_rsa.pub 到云端/U盘/邮箱/…中备份。这两个文件位于用户目录下的隐藏文件夹 ~/.ssh/ 中。</p>
+</li>
+<li><p>在NEW的终端(Terminal)上执行</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen –t rsa –C <span class="string">"youremail@gmail.com"</span></div></pre></td></tr></table></figure>
+<p>这样会在NEW的 ~/.ssh/ 中生成新的 id_rsa 和 id_rsa.pub</p>
+<ol>
+<li><p>用备份好的OLD中的 id_rsa 和 id_rsa.pub 文件，覆盖NEW上对应的文件</p>
+</li>
+<li><p>确保NEW上的两个文件的权限是正确的，id_rsa是600，id_rsa.pub是644，比如：</p>
+</li>
+</ol>
+<pre><code>-rw------- 1 fancy fancy 1675 2013-03-19 12:55 id_rsa
+-rw-r--r-- 1 fancy fancy 406 2013-03-19 12:55 id_rsa.pub
+</code></pre><p>OK, 完事。</p>
+<hr>
+<p><a href="http://blog.csdn.net/wwmusic/article/details/51027458" target="_blank" rel="external">一台电脑如何管理多个SSH KEY</a></p>
+<h3 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"youremail@yourcompany.com"</span></div></pre></td></tr></table></figure>
+<p>若一路回车（密码可以不写），这样只会在~/.ssh/ 目录下生成 id_rsa 和 id_rsa.pub 两个文件。为了区分，我们在第一个回车（还没有回车）后边设置路径：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/root/.ssh/id_rsa):~/.ssh/文件名</div></pre></td></tr></table></figure>
+<h3 id="设置ssh-key的代理"><a href="#设置ssh-key的代理" class="headerlink" title="设置ssh key的代理"></a>设置ssh key的代理</h3><p>1、 首先查看代理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add <span class="_">-l</span></div></pre></td></tr></table></figure>
+<p>若提示 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Could not open a connection to your authentication agent.</div></pre></td></tr></table></figure>
+<p>则系统代理里没有任何key，执行如下操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">exec</span> ssh-agent bash</div></pre></td></tr></table></figure>
+<p>若系统已经有ssh-key 代理 ,可以删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add -D</div></pre></td></tr></table></figure>
+<p>2、 添加私钥</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ssh-add ~/.ssh/id_rsa_gerrit  </div><div class="line">ssh-add ~/.ssh/id_rsa_github</div></pre></td></tr></table></figure>
+<p>3、添加公钥</p>
+<p>在对应的gerrit和github的ssh管理页面，添加对应的公钥（.pub 文件内容），保存到代码管理服务器。</p>
+<p>4、添加和编辑配置文件config</p>
+<p>在 ~/.ssh 目录下新建一个config文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 该文件用于配置私钥对应的服务器</span></div><div class="line"><span class="comment"># 配置github.com</span></div><div class="line">Host github.com</div><div class="line">HostName github.com</div><div class="line">IdentityFile ~/.ssh/id_rsa_github</div><div class="line">PreferredAuthentications publickey</div><div class="line">User ljzz</div><div class="line"></div><div class="line"><span class="comment"># 配置git.coding.net </span></div><div class="line">Host git.coding.net</div><div class="line">HostName git.coding.net</div><div class="line">IdentityFile ~/.ssh/id_rsa_id_rsa</div><div class="line">PreferredAuthentications publickey</div><div class="line">User szcx</div><div class="line"></div><div class="line"><span class="comment"># 配置git.oschina.net</span></div><div class="line">Host git.oschina.net</div><div class="line">HostName git.oschina.net</div><div class="line">IdentityFile ~/.ssh/id_rsa_oschina</div><div class="line">PreferredAuthentications publickey</div><div class="line">User szcx</div></pre></td></tr></table></figure>
+<p> 当然也可以利用nano命令来创建和编辑</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano ~/.ssh/config</div></pre></td></tr></table></figure>
+<p>如此，ssh就会根据登陆的不同域，来读取对应的私钥文件</p>
+<p>5、测试</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
+<p>若出现</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi XXX! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></div></pre></td></tr></table></figure>
+<p>则表示成功。</p>
+<p>若出现</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">permission denied (publickey)</div></pre></td></tr></table></figure>
+<p>请检查github的ssh管理里添加的公钥是否正确。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hexo选用部署的三个空间介绍]]></title>
+      <url>http://szcx.coding.me/2016/10/11/%E9%83%A8%E7%BD%B2%E7%A9%BA%E9%97%B4/</url>
+      <content type="html"><![CDATA[<h4 id="三个地址布署网站的地址-coding-pages分支是coding-master分支是github与码云。"><a href="#三个地址布署网站的地址-coding-pages分支是coding-master分支是github与码云。" class="headerlink" title="三个地址布署网站的地址 coding-pages分支是coding,master分支是github与码云。"></a>三个地址布署网站的地址 coding-pages分支是coding,master分支是github与码云。</h4><hr>
+<h3 id="这是我的个人博客-分别布署在github与coding上边-还有一个是码云。"><a href="#这是我的个人博客-分别布署在github与coding上边-还有一个是码云。" class="headerlink" title="这是我的个人博客;分别布署在github与coding上边,还有一个是码云。"></a>这是我的个人博客;分别布署在<a href="https://github.com/ljzz/ljzz.github.io.git" target="_blank" rel="external">github</a>与<a href="https://coding.net/" target="_blank" rel="external">coding</a>上边,还有一个是<a href="https://git.oschina.net/" target="_blank" rel="external">码云</a>。</h3><a id="more"></a>
+<h4 id="地址分别是："><a href="#地址分别是：" class="headerlink" title="地址分别是："></a>地址分别是：</h4><p>在github上 HTTP 方式访问仓库: <a href="https://github.com/ljzz/ljzz.github.io.git" target="_blank" rel="external">https://github.com/ljzz/ljzz.github.io.git</a></p>
+<p>在github上 SSH 方式访问仓库:<code>git@github.com:ljzz/ljzz.github.io.git</code></p>
+<p>在coding上HTTP方式访问仓库: <a href="https://git.coding.net/szcx/szcx.git" target="_blank" rel="external">https://git.coding.net/szcx/szcx.git</a></p>
+<p>在coding上SSH 方式访问仓库 :<code>git@git.coding.net:szcx/szcx.git</code></p>
+<p>在码云上：<a href="https://git.oschina.net/szcx/szcx.git" target="_blank" rel="external">https://git.oschina.net/szcx/szcx.git</a></p>
+<p>在码云上：git@git.oschina.net:szcx/szcx.git</p>
+<h4 id="pages服务生成的网址在github上：-https-ljzz-github-io"><a href="#pages服务生成的网址在github上：-https-ljzz-github-io" class="headerlink" title="pages服务生成的网址在github上：　https://ljzz.github.io"></a>pages服务生成的网址在github上：　<a href="https://ljzz.github.io" target="_blank" rel="external">https://ljzz.github.io</a></h4><h4 id="pages服务生成的网址在coding上：-http-szcx-coding-me-szcx"><a href="#pages服务生成的网址在coding上：-http-szcx-coding-me-szcx" class="headerlink" title="pages服务生成的网址在coding上：　http://szcx.coding.me/szcx"></a>pages服务生成的网址在coding上：　<a href="http://szcx.coding.me/szcx">http://szcx.coding.me/szcx</a></h4><h4 id="在码云上：-http-szcx-oschina-io"><a href="#在码云上：-http-szcx-oschina-io" class="headerlink" title="在码云上： http://szcx.oschina.io"></a>在码云上： <a href="http://szcx.oschina.io" target="_blank" rel="external">http://szcx.oschina.io</a></h4><h3 id="同时部署到三个空间。"><a href="#同时部署到三个空间。" class="headerlink" title="同时部署到三个空间。"></a>同时部署到三个空间。</h3><p>1、修改根目录下的<code>_config.yml</code>文件，在最后边这样写。<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">repo: </div><div class="line">  github: https://github.com/ljzz/ljzz.github.io.git,master</div><div class="line">  coding: https://git.coding.net/szcx/szcx.git,coding-pages</div><div class="line">  oschina: https://git.oschina.net/szcx/szcx.git,master</div></pre></td></tr></table></figure></p>
+<p>2、在本地source文件夹中添加一个文件，在git中执行如下代码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> <span class="built_in">source</span>/</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch Staticfile  <span class="comment">#名字必须是Staticfile</span></div></pre></td></tr></table></figure>
+<p>3、布署<br>执行<code>hexo g</code>和<code>hexo d</code>这两条命令。此时博客就已经部署至两个平台了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[华为V8拍相片效果真的好]]></title>
+      <url>http://szcx.coding.me/2016/10/08/%E5%8D%8E%E4%B8%BAV8/</url>
+      <content type="html"><![CDATA[<p>前月买了手机华为荣耀V8,试了一下它的拍相片效果，还真的可以。</p>
+<a id="more"></a>
+<p>截图几张。</p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161006_163048.jpg" alt="红果子"></p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161006_170847.jpg" alt="文艺养的花"></p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161004_105505.jpg" alt="野菊花"></p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161004_181428.jpg" alt="滨河路风光"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[win10系统下开启固态硬盘TRIM功能来提升SSD运行效率和延长SSD寿命]]></title>
+      <url>http://szcx.coding.me/2016/10/01/%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98/</url>
+      <content type="html"><![CDATA[<p>在开始之前，先给大家介绍下什么是固态硬盘的TRIM功能，在传统的机械硬盘中，已删除文件的逻辑位置会被标记，使得以后存储数据时能够直接在这些无用数据的逻辑位置上覆盖，但是固态硬盘没有这种机制，主控并不知道这些数据已经无用，直到有新的数据要求写入该块，这样一来，无用数据在垃圾回收（GC）过程中被当作有用数据对待，就大大降低了硬盘效率和使用寿命，而TRIM功能的出现就是弥补这一缺陷的，固态硬盘使用了TRIM功能后，能避免SSD在垃圾回收（GC）时将无用数据当成有用数据来搬运，从而起到延长SSD寿命的作用，下面小编就带领大家进入今天的教程吧！</p>
+<a id="more"></a>
+<h3 id="首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能"><a href="#首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能" class="headerlink" title="首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能"></a>首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能</h3><p>以win10系统为例，我们右键点击”开始菜单”，选择”命令提示符（管理员）”，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fsutil behavior query disabledeletenotify</div></pre></td></tr></table></figure>
+<h4 id="如果DisableDeleteNotify-0，则说明系统已开启TRIM功能，如果DisableDeleteNotify-1，则说明没开启。"><a href="#如果DisableDeleteNotify-0，则说明系统已开启TRIM功能，如果DisableDeleteNotify-1，则说明没开启。" class="headerlink" title="如果DisableDeleteNotify = 0，则说明系统已开启TRIM功能，如果DisableDeleteNotify = 1，则说明没开启。"></a>如果<code>DisableDeleteNotify = 0</code>，则说明系统已开启TRIM功能，如果<code>DisableDeleteNotify = 1</code>，则说明没开启。</h4><p>如果没有开启，我们则继续在命令提示符里输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fsutil behavior <span class="built_in">set</span> disabledeletenotify 0</div></pre></td></tr></table></figure></p>
+<h4 id="如果DisableDeleteNotify-0，则说明我们已经成功开启了TRIM功能。"><a href="#如果DisableDeleteNotify-0，则说明我们已经成功开启了TRIM功能。" class="headerlink" title="如果DisableDeleteNotify = 0，则说明我们已经成功开启了TRIM功能。"></a>如果<code>DisableDeleteNotify = 0</code>，则说明我们已经成功开启了TRIM功能。</h4><p><a href="http://www.52pojie.cn/forum.php?mod=viewthread&amp;tid=541560&amp;page=1&amp;authorid=505617" target="_blank" rel="external">转自52破解论坛</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[重回Hexo]]></title>
+      <url>http://szcx.coding.me/2016/09/29/%E9%87%8D%E5%9B%9EHexo/</url>
+      <content type="html"><![CDATA[<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>  首先感谢<a href="http://kirito.cn" target="_blank" rel="external">kirito</a>，在他的鼓励下，我重新回到了HEXO，荒废了几年的博客重新启动。</p>
+<h2 id="主题使用"><a href="#主题使用" class="headerlink" title="主题使用"></a>主题使用</h2><p>  几年不用了，上次的主题light加载很慢，于是换成了yilia，简洁大气！并且能在手机上很流畅的打开网站。<br>同时感谢<a href="http://www.voidking.com/2015/05/31/deve-hexo-theme-optimize/" target="_blank" rel="external">VoidKing</a>的主题修改教程。</p>
+<a id="more"></a>
+<p>这次是新建立了一个<a href="https://github.com/" target="_blank" rel="external">github</a>的账号,仓库的名字是<a href="https://github.com/ljzz/ljzz.github.io" target="_blank" rel="external">ljzz</a>，</p>
+<h2 id="Markdown编辑器"><a href="#Markdown编辑器" class="headerlink" title="Markdown编辑器"></a>Markdown编辑器</h2><p>下载了一个 <a href="http://markdownpad.com/" target="_blank" rel="external">MarkdownPad2</a> 做为编辑器，它具备所有Markdown的基本语法外支持一些特别的扩展，比如表格等。可以帮助你快速的将文本转换为美观的HTML/XHTML的网页格式代码！软件操作简单容易，上手很快。可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
+<p>MarkdownPad 2软件功能特点：</p>
+<p>1.为你提供了语法高亮和方便的快捷键功能，给您最好的Markdown编写体验。</p>
+<p>2.无需猜测您的 语法 是否正确；每当您敲击键盘，实时预览功能都会立刻准确呈现出文档的显示效果。</p>
+<p>3.100%可自定义的字体、配色、布局和样式，让您可以将MarkdownPad配置的得心应手。</p>
+<p>4.MarkdownPad支持多种解析引擎。</p>
+<p>5.有了标签式多文档界面、PDF 导出、内置的图片上传工具、会话管理、拼写检查、自动保存、语法高亮以及内置的 CSS 管理器，您可以随心所欲地使用 MarkdownPad。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[坚持锻炼身体]]></title>
+      <url>http://szcx.coding.me/2016/09/28/%E5%9D%9A%E6%8C%81%E9%94%BB%E7%82%BC%E8%BA%AB%E4%BD%93/</url>
+      <content type="html"><![CDATA[<p> 现在的大多数人都不愿意锻炼身体，有些就是能坐着绝不站着，能躺着决不坐着，特别是年轻人，所以现在的人身体越来越不好了，特别容易得这种那种的疾病，其实很多疾病都是因为不锻炼的原因。现在告诉大家锻炼的好处。<br>步骤/方法：<br>1、首先告诉大家每天坚持锻炼可以提高免疫力。提高免疫力之后就不会容易得感冒、发烧这类的疾病，有些人感冒发烧都要挂好几天的水，耽误学习、耽误工作。免疫力提高之后也不会很容易就呗别人的感冒传染。<br>2、其次告诉大家坚持锻炼会提升个人魅力的。好多女生比较喜欢有肌肉，很健康的男人，这样也比较有安全感，所以想要提升你的魅力就开始每天坚持锻炼吧。<br>3、最后告诉大家坚持锻炼也是会仍任长寿的。现在的老年人好多都会早晨晚上都出去锻炼，做一些简单的操，活动活动筋骨，这样的人身体都会比较好。而且就算身体没那么健康的人多锻炼也会让自己变得更加健康的。<br>注意事项：<br>   刚开始锻炼的时候不要太过于激烈的运动，要慢慢的加强，要不一开始就剧烈运动的话容易浑身肌肉疼，而且会疼好多天，但是只要坚持下来一个多星期之后就会感觉浑身都很舒服，并且充满力量。</p>
+<a id="more"></a>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[乐队演出]]></title>
+      <url>http://szcx.coding.me/2014/11/23/%E4%B9%90%E9%98%9F%E6%BC%94%E5%87%BA/</url>
+      <content type="html"><![CDATA[<p>11月22日出外去演出.</p>
+<p>本文化传媒致力于在文化传播领域向客户提供高品质的演艺庆典，演艺资讯服务，加强演艺庆典服务与公关礼仪咨询互动，为广大客户提供最前沿，最专业的时尚传媒。成立以来为政府部门、国内外大型企事业集团成功策划实施了各类演艺庆典、宴会以及演出等活动，得到客户的一致好评。专业的策划人员为您提供专业创意设计及策划，最后再提供完美详细的方案。</p>
+<a id="more"></a>
+<p>截图几张。</p>
+<p><img src="http://szcxgg.qiniudn.com/乐队1.jpg" alt="活动现场"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队2.jpg" alt="活动现场2"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队3.jpg" alt="活动现场3"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队4.jpg" alt="车上游行1"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队5.jpg" alt="车上游行2"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[酷狗音乐7.6.53 VIP破解版]]></title>
+      <url>http://szcx.coding.me/2014/11/20/%E9%85%B7%E7%8B%97%E9%9F%B3%E4%B9%907.6.53/</url>
+      <content type="html"><![CDATA[<h2 id="官方更新"><a href="#官方更新" class="headerlink" title="官方更新"></a>官方更新</h2><hr>
+<ul>
+<li><p>遥控器与桌面写真播放控件合并</p>
+</li>
+<li><p>播放列表菜单中增加清空列表</p>
+</li>
+<li><p>电台歌曲支持发送到手机</p>
+</li>
+<li><p>桌面写真歌词可移动区域扩大</p>
+</li>
+</ul>
+<a id="more"></a>
+<h3 id="本版特点"><a href="#本版特点" class="headerlink" title="本版特点"></a>本版特点</h3><hr>
+<p>破解VIP无损高品质音乐试听和下载特权(非VIP用户免登陆或登陆都可试听和下载)<br>专属VIP身份标识(登陆都为VIP黄金会员)<br>下载自动VIP加速<br>去下载界面提示(未登录)温馨提示：酷狗VIP尊享加速下载特权！立即开通<br>去下载界面提示(已登录)您是酷狗免费用户会员，尊享VIP加速下载特权。详情<br>去右键多余项（智能推荐、分享到、发送移送设备、工具、歌词举报）<br>去菜单多余项（显示今日推荐、在线升级、反馈意见)<br>去播放MV缓冲、暂停广告<br>去搜索歌曲页底部广告、温馨提示<br>去今日推荐弹窗、右下角广告弹窗<br>去关闭DLNA投放时弹出创建桌面快捷方式提示框<br>禁后台下载生成广告程序、应用推广包<br>去游戏、福袋，直播标签<br>应用只保留传歌到手机、本地管理、定时设置、格式转换、铃声制作、网速测试、DLNA投放</p>
+<p><a href="http://pan.baidu.com/s/1sj2nKr7" target="_blank" rel="external">下载地址</a></p>
+<p><a href="http://www.tmoke.com/1301.html" target="_blank" rel="external">转自尘埃软件网</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[QQ6.6正式版(13163) 纯净版]]></title>
+      <url>http://szcx.coding.me/2014/11/20/qq6.6/</url>
+      <content type="html"><![CDATA[<p>QQ是中国电脑用户必备聊天工具，一个做工精良的软件，功能那么细致具体，腾讯QQ6.6正式版已经发布。新版本“我的收藏”支持分类查看，新增音视频通话等状态标识，收藏网页助手支持收藏的内容可编辑等众多新功能。</p>
+<a id="more"></a>
+<h3 id="腾讯QQ-6-6特性如下："><a href="#腾讯QQ-6-6特性如下：" class="headerlink" title="腾讯QQ 6.6特性如下："></a>腾讯QQ 6.6特性如下：</h3><p>去QSLogic.dll、EXE/Dll、插件完整效验<br>保留二维码(可选去除)<br>强制每次登陆后始终显示右下角登陆提示<br>屏蔽登陆界面Bnaner<br>精简自动更新功能..永久不会自动升级<br>去多余推广和链接<br>去安卓设备连接提示<br>去会话标签好友助手、应用消息、群推荐、功能推荐、+号<br>破解好友离隐抖与群多图<br>破解部分会员特权<br>去资料卡特别关心、备注按钮<br>禁止生成无用文件、Logs文件夹屏蔽扫描硬盘<br>禁止后台下载安全数据<br>去主面板应用宝<br>去基本设置:软件更新<br>去基本设置-&gt;主面板:安卓设备连接提醒、界面管理器按钮以及文字<br>去基本设置-&gt;主面板:不显示广告(会员设置项）、总是显示好友聊天窗口侧边栏(有QQ秀保留)<br>去安全设置-&gt;QQ锁:更换热键、自动锁定设置按钮<br>去主菜单所有服务、QQ会员、工具(消息管理器、文件管理器)、安全中心(安全沟通、举报恶意行为、QQ安全帮助)、帮助(QQ官方微博)、软件更新<br>去好友右键菜单会员快捷功能、好友功能选项的向他推荐好友<br>解除解锁后宽高最小限制、自动缩放名称不显省略号<br>其他自体会。。。</p>
+<p><a href="http://pan.baidu.com/s/1i39VEoH" target="_blank" rel="external">下载地址</a></p>
+<p><a href="http://www.tmoke.com/645.html" target="_blank" rel="external">转自尘埃软件网</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[马克飞象]]></title>
+      <url>http://szcx.coding.me/2014/11/19/%E9%A9%AC%E5%85%8B%E9%A3%9E%E8%B1%A1/</url>
+      <content type="html"><![CDATA[<h1 id="欢迎使用马克飞象"><a href="#欢迎使用马克飞象" class="headerlink" title="欢迎使用马克飞象"></a>欢迎使用马克飞象</h1><p>@(示例笔记本)[马克飞象|帮助|Markdown]</p>
+<p><strong>马克飞象</strong>是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：</p>
+<ul>
+<li><strong>功能丰富</strong> ：支持高亮代码块、插入 <em>LaTex</em> 公式，工作学习好帮手</li>
+<li><strong>得心应手</strong> ：支持插入图片，无论是本地上传/图片URL/拖放图片/直接截图粘贴，随心所欲</li>
+<li><strong>深度整合</strong> ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理</li>
+</ul>
+<a id="more"></a>
+<blockquote>
+<p>号外号外，离线客户端来啦！<a href="https://chrome.google.com/webstore/detail/%E9%A9%AC%E5%85%8B%E9%A3%9E%E8%B1%A1/kidnkfckhbdkfgbicccmdggmpgogehop/" target="_blank" rel="external">点击下载</a></p>
+</blockquote>
+<hr>
+<h3 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h3><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">维基百科</a></p>
+</blockquote>
+<p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，下面列举了几个高级功能，更多语法请按<code>Ctrl + /</code>查看帮助。 </p>
+<h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></div><div class="line">    <span class="string">'''A docstring'''</span></div><div class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></div><div class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></div><div class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></div><div class="line"><span class="meta">... </span>prompt'''</div></pre></td></tr></table></figure>
+<h4 id="LaTex-公式"><a href="#LaTex-公式" class="headerlink" title="LaTex 公式"></a>LaTex 公式</h4><p>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">1600 USD</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">12 USD</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">1 USD</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<h3 id="印象笔记相关"><a href="#印象笔记相关" class="headerlink" title="印象笔记相关"></a>印象笔记相关</h3><h4 id="笔记本和标签"><a href="#笔记本和标签" class="headerlink" title="笔记本和标签"></a>笔记本和标签</h4><p><strong>马克飞象</strong>增加了<code>@(笔记本)[标签A|标签B]</code>语法, 以选择笔记本和添加标签。 <strong>绑定账号后</strong>， 输入<code>(</code>自动会出现笔记本列表，请从中选择。自己纯手工输入无效。</p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p><strong>马克飞象</strong>会自动使用文档内出现的第一个标题作为笔记标题。例如本文，就是第一行的 <code>欢迎使用马克飞象</code>。</p>
+<h4 id="快捷编辑"><a href="#快捷编辑" class="headerlink" title="快捷编辑"></a>快捷编辑</h4><p>保存在印象笔记中的笔记，右上角会有一个红色的编辑按钮，点击后会回到<strong>马克飞象</strong>中打开并编辑该笔记。</p>
+<blockquote>
+<p><strong>注意：</strong>目前用户在印象笔记中单方面做的任何修改，马克飞象是无法自动感知和更新的。所以请务必回到马克飞象编辑。</p>
+</blockquote>
+<h4 id="数据同步"><a href="#数据同步" class="headerlink" title="数据同步"></a>数据同步</h4><p><strong>马克飞象</strong>通过<strong>将Markdown原文以隐藏内容保存在笔记中</strong>的精妙设计，实现了对Markdown的存储和再次编辑。既解决了其他产品只是单向导出HTML的单薄，又规避了服务端存储Markdown带来的隐私安全问题。这样，服务端仅作为对印象笔记 API调用和数据转换之用。</p>
+<blockquote>
+<p><strong>隐私声明：用户所有的笔记数据，均保存在印象笔记中。马克飞象不存储用户的任何笔记数据。</strong></p>
+</blockquote>
+<h4 id="离线存储"><a href="#离线存储" class="headerlink" title="离线存储"></a>离线存储</h4><p><strong>马克飞象</strong>使用浏览器离线存储将内容实时保存在本地，不必担心网络断掉或浏览器崩溃。为了节省空间和避免冲突，已同步至印象笔记并且不再修改的笔记将删除部分本地缓存，不过依然可以随时通过<code>文档管理</code>打开。</p>
+<blockquote>
+<p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但印象笔记作为专业云存储，更值得信赖。以防万一，<strong>请务必经常及时同步到印象笔记</strong>。</p>
+</blockquote>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>帮助    <code>Ctrl + /</code></p>
+<p>同步文档    <code>Ctrl + S</code></p>
+<p>创建文档    <code>Ctrl + Alt + N</code></p>
+<p>最大化编辑器    <code>Ctrl + Enter</code></p>
+<p>文档管理    <code>Ctrl + O</code></p>
+<p>系统菜单    <code>Ctrl + M</code></p>
+<p>整行移动    <code>Alt + 上/下箭头</code></p>
+<p>删除整行    <code>Ctrl + D</code></p>
+<p>加粗    <code>Ctrl + B</code></p>
+<p>插入图片    <code>Ctrl + G</code></p>
+<p>插入链接    <code>Ctrl + L</code></p>
+<p>提升标题    <code>Ctrl + H</code></p>
+<h3 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h3><p><strong>马克飞象</strong>目前已正式发布，为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
+<h3 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h3><ul>
+<li>微博：<a href="http://weibo.com/u/2788354117" target="_blank" rel="external">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank" rel="external">@GGock</a></li>
+<li>邮箱：<a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#x68;&#117;&#x73;&#116;&#x67;&#111;&#99;&#x6b;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#109;">&#x68;&#117;&#x73;&#116;&#x67;&#111;&#99;&#x6b;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#109;</a></li>
+</ul>
+<hr>
+<p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[可悲的教师行业]]></title>
+      <url>http://szcx.coding.me/2014/11/19/%E5%8F%AF%E6%82%B2%E7%9A%84%E6%95%99%E5%B8%88/</url>
+      <content type="html"><![CDATA[<p>现在当<strong>老师</strong>上面要受校长的气，要受家长的气，现在难道还要受学生的气？还要不要人活了？有人唧唧歪歪的说不应该打人。<code>“去你妈的”</code>，如果别人这样骂你你会干嘛？还给他讲道理，SHIT，这样的人渣学生听的道理还少吗？中国传统的教育方法是绝对有效的，应该树立老师的权威。现在学生都不把老师当人看了，还给他讲道理。我们<strong>尊师重教的传统美德</strong>都到哪里去了？现在的教育，唉，素质教育，养成教育，赏识教育，快乐教育，。。。狗屁，都是从国外引进的半生不熟的理论，那能符合我们的国情吗？实事求是的作风到哪里去了！这些狗屁理论把现在中国的教育搞得乌烟瘴气，无所适从。教出来的学生一个比一个垃圾，连起码的尊重他人都不懂，他就是考上博士也是个垃圾！</p>
+<a id="more"></a>
+<p><strong>说到这里，肯定会有人要来骂老师怎么怎么样。无论这个老师是优秀还是平庸，我觉得他都不会把你往坏了教。</strong>现在的老师仿佛还要去讨好学生似的。我就是看不惯。</p>
+<p>教师不可以体罚学生，这样的道理，似乎无需有识之士喋喋不休的提醒。因为他既不符合现代的教育思想，也不符合法律的条文。现代的教育讲究的是师生平等，相互学习。古代的那种天、地、君、亲、师的师道尊严教育，早已经烟消云散于历史了。但是不知道是矫枉过正，抑或是物极必反，当师道尊严被扫地出门后，学生打教师的现象却有些甚嚣尘上。</p>
+<p>纵观近今年的舆论，凡是和教师有关的一般为两种：一是领导部门在教师节对教师表示慰问，表示重视教育，教师节过去了，承诺也不了了之；一是狠抓学校乱收费的风气，惩处部分对学生体罚的老师。对此大做文章，使得对教师不满的人进攻学校。大凡学校稍有举动，小则一个电话教育局挂号，大则司法部门直接处理。而每每无论怎样，都是学校败诉，本来就不创收的单位赔款、道歉，颜面无存。而此风气，大有愈演愈烈的趋势。因此，无中生有无理取闹的现象越来越严重。凡是学生在校期间出现的问题都有学校的责任，勉强说的过去。学生假期之间出的事情也与学校有关么？学生和家里人闹矛盾离家出走学校何来的责任？学生在外交通事故难道是学校引起的？怎么每每都有人找上门来不依不饶呢？什么时候学校成了孩子的监护人了？</p>
+<p>《未成年人保护法》明文规定了学生的权力，学生有受教育的权力，有不受人身伤害的权力，这无可非议。学生自然可以到学校上课，本来也不该受到别人的伤害。可是，谁来保护教师的权力？教师正常的课堂秩序不被打扰的权力哪里去找？</p>
+<p>姑且不论个别家长来学校无理取闹、恣意寻事，就算个别学生无理取闹、不做作业、不学习、不服从管理、说话、打架、甚至顶撞老师，故意违反课堂秩序，老师也没有权力请他出去，因为他有受教育的权力。呵呵。更有甚者，公开辱骂老师，甚至动手的也有啊。谁说师道尊严不该提倡了？一个老师如果没有一定的尊严，怎么教育管理学生？就算没有师道尊严了，教师的人格就可以受到侮辱么？试问不是教师的人受到这样的侮辱会有什么反应呢？而就因为是教师，就应该忍受这些么？就因为他是未成年人，就不该对其加以教育么？谁来保障教师的权力？</p>
+<table><br>    <tr><br>        <td> 姑且不论个别家长来学校无理取闹、恣意寻事，就算个别学生无理取闹、不做作业、不学习、不服从管理、说话、打架、甚至顶撞老师，故意违反课堂秩序，老师也没有权力请他出去，因为他有受教育的权力。呵呵。更有甚者，公开辱骂老师，甚至动手的也有啊。谁说师道尊严不该提倡了？一个老师如果没有一定的尊严，怎么教育管理学生？就算没有师道尊严了，教师的人格就可以受到侮辱么？试问不是教师的人受到这样的侮辱会有什么反应呢？而就因为是教师，就应该忍受这些么？就因为他是未成年人，就不该对其加以教育么？谁来保障教师的权力？</td><br>    </tr><br></table>
+
+<p>说得好呀：</p>
+
+<pre><code>恩,社会现状是这样的!。
+</code></pre>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[观书画展]]></title>
+      <url>http://szcx.coding.me/2014/10/30/%E8%A7%82%E4%B9%A6%E7%94%BB%E5%B1%95/</url>
+      <content type="html"><![CDATA[<p>10.24日到遂宁师范学校参加<code>《中国百幅书画进校园巡展活动》</code>拍照几张留念！</p>
+<a id="more"></a>
+<p><img src="http://szcxgg.qiniudn.com/2014-10-31_135815.jpg" alt="进展览馆之前的相片"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135750.jpg" alt="展厅之内"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_120216.jpg" alt="拦江片区参会人员"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_112420.jpg" alt="老涌正在用手机拍摄书画作品"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_112459.jpg" alt="老涌正在用手机拍摄书画作品"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135650.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135710.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135731.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135830.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135904.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135936.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[NOKIA525]]></title>
+      <url>http://szcx.coding.me/2014/10/30/NOKIA525/</url>
+      <content type="html"><![CDATA[<p>下边的是<code>NOKIA525</code>手机随拍小品几张:</p>
+<a id="more"></a>
+<p><img src="http://szcxgg.qiniudn.com/2014-10-31_115501.jpg" alt="花草"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_115436.jpg" alt="野草莓"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_115336.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_115055.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114958.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114944.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114722.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114653.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114628.jpg" alt="感觉这幅不错"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114615.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114519.jpg" alt="蒲公英"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[我的Hexo站点终于成型了！]]></title>
+      <url>http://szcx.coding.me/2014/10/28/%E6%88%91%E7%9A%84Hexo%E7%AB%99%E7%82%B9%E7%BB%88%E4%BA%8E%E6%88%90%E5%9E%8B%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>我的</p>
+<p>终于成型了！</p>
+<p>是架设在github上的，确实不错，慢慢学习 ，好多学习Hexo的文章发布在上边</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[自制node.js + npm绿色版]]></title>
+      <url>http://szcx.coding.me/2014/10/28/node/</url>
+      <content type="html"><![CDATA[<h3 id="感谢不如"><a href="#感谢不如" class="headerlink" title="感谢不如"></a>感谢<a href="http://ibruce.info/2013/12/05/green-node-and-npm/" target="_blank" rel="external">不如</a></h3><h4 id="获取node-exe"><a href="#获取node-exe" class="headerlink" title="获取node.exe"></a>获取node.exe</h4><ul>
+<li>下载<a href="http://nodejs.org/download/" target="_blank" rel="external">Windows Binary</a>版本，不要下载Windows Installer版本，直接放到<code>H:\nodejs\</code></li>
+<li>获取npm（Node Package Manage，下载<a href="http://nodejs.org/dist/npm/" target="_blank" rel="external">最新zip版本</a>，不要下载tgz版本，下载后解压到<code>H:\nodejs\</code></li>
+<li><strong>添加环境变量</strong><br><code>NODE_HOME=H:\nodejs</code><br><code>NODE_PATH=%NODE_HOME%\node_modules</code><br><code>path增加%NODE_HOME%\</code></li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><strong>最终得到文件目录结构<code>H:\nodejs\</code></strong>：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">├── node.exe</div><div class="line">├── npm.cmd</div><div class="line">└── node_modules</div><div class="line">    └── npm</div></pre></td></tr></table></figure>
+<p>测试一下，出现版本号，说明配置成功：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node --version</div><div class="line">npm --version</div></pre></td></tr></table></figure></p>
+<p><em>至此，绿色版制作完毕</em>，您已经可以正常使用<code>node/npm</code>，也可以迁移到其他机器使用。</p>
+<p>下面使用npm命令安装第三方模块，使用方法可以查看：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm -h</div><div class="line">npm install -h</div><div class="line">npm <span class="built_in">help</span> install</div></pre></td></tr></table></figure></p>
+<p>默认安装仓库是  <code>https://registry.npmjs.org</code>   查找包可以到这里<code>http://search.npmjs.org</code>   一切都很像<code>maven</code>。有两种安装模式可选，<br>参考<a href="http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation" target="_blank" rel="external">npm 1.0 Global vs Local installation</a>：</p>
+<h3 id="locally"><a href="#locally" class="headerlink" title="locally"></a>locally</h3><p>默认是locally模式，安装到当前命令的执行目录。在其他位置执行xxx会报“xxx不是内部或外部命令，也不是可运行的程序”。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install xxx</div></pre></td></tr></table></figure></p>
+<h3 id="globally"><a href="#globally" class="headerlink" title="globally"></a>globally</h3><p>-g参数代表全局方式，使用全局模式会安装到<code>H:\nodejs\node_modules\</code>中的<code>xxx</code>下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install xxx -g</div></pre></td></tr></table></figure></p>
+<p>你可以重新设置prefix位置，方法有二：</p>
+<p>重新设置prefix的位置：npm config set prefix “H:\hexo”<br>或直接修改 『当前用户』.npmrc 文件，添加prefix = H:\hexo</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hexo 主题Light修改教程]]></title>
+      <url>http://szcx.coding.me/2014/10/28/Hexo-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>首先感谢<a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">zipperary的教程</a>，我这儿把我修改了的部分发上来做一个备份用。<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">官方主题下载地点</a></p>
+<h3 id="添加“多说”评论与“页面导航”"><a href="#添加“多说”评论与“页面导航”" class="headerlink" title="添加“多说”评论与“页面导航”"></a>添加“多说”评论与“页面导航”</h3><ol>
+<li><p>在<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a> 进行注册，我用的是我的QQ号，获取通用代码。</p>
+</li>
+<li><p>将通用代码粘贴到 <code>themes\light\layout\_partial\comment.ejs</code> 里边，<br>其中<code>var duoshuoQuery = {short_name:&quot;szcx&quot;}</code>里的<code>szcx</code>是我的账号。</p>
+</li>
+</ol>
+<a id="more"></a>
+<p>如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (page.comments)&#123; %&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;nav id=<span class="string">"pagination"</span> &gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (page.prev) &#123; %&gt;</div><div class="line">    &lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- page.prev.path %&gt;"</span> class=<span class="string">"alignleft prev"</span> &gt;&lt;%= __(<span class="string">'prev'</span>) %&gt;&lt;/a&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (page.next) &#123; %&gt;</div><div class="line">    &lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- page.next.path %&gt;"</span> class=<span class="string">"alignright next"</span> &gt;&lt;%= __(<span class="string">'next'</span>) %&gt;&lt;/a&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">    &lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</div><div class="line">&lt;/nav&gt;</div><div class="line"></div><div class="line">&lt;!-- 多说评论框 start --&gt;</div><div class="line"> &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%- config.root %&gt;&lt;%- item.path%&gt;"</span> data-title=<span class="string">"&lt;%- item.title %&gt;"</span> data-url=<span class="string">"&lt;%- item.permalink %&gt;"</span>&gt;&lt;/div&gt;</div><div class="line">&lt;!-- 多说评论框 end --&gt;</div><div class="line">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">var duoshuoQuery = &#123;short_name:<span class="string">"szcx"</span>&#125;;</div><div class="line">  (<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">    var ds = document.createElement(<span class="string">'script'</span>);</div><div class="line">    ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">    ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">    ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">    (document.getElementsByTagName(<span class="string">'head'</span>)[0] </div><div class="line">     || document.getElementsByTagName(<span class="string">'body'</span>)[0]).appendChild(ds);</div><div class="line">  &#125;)();</div><div class="line">  &lt;/script&gt;</div><div class="line">&lt;!-- 多说公共JS代码 end --&gt;</div><div class="line">&lt;section id=<span class="string">"comment"</span>&gt;</div><div class="line">&lt;/section&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<h3 id="添加小图标"><a href="#添加小图标" class="headerlink" title="添加小图标"></a>添加小图标</h3><p>在<code>themes/light/layout/_partial/head.ejs</code>里将<code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.png&quot; rel=&quot;icon&quot;&gt;</code><br>替换为<code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-ico&quot;&gt;</code>将favicon.ico图标文件放在source目录下。</p>
+<h3 id="添加分类、标签云widget"><a href="#添加分类、标签云widget" class="headerlink" title="添加分类、标签云widget"></a>添加分类、标签云widget</h3><p>很简单，在<code>themes/light/_config.yml</code>中，添加如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">widgets:</div><div class="line">- category</div><div class="line">- tagcloud</div></pre></td></tr></table></figure>
+<h3 id="添加友情链接widget"><a href="#添加友情链接widget" class="headerlink" title="添加友情链接widget"></a>添加友情链接widget</h3><p>在<code>themes/light/layout/_widget中新建名为blogroll.ejs</code>的文件，编辑内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"widget tag"</span>&gt;</div><div class="line">&lt;h3 class=<span class="string">"title"</span>&gt;友情链接&lt;/h3&gt;</div><div class="line">&lt;ul class=<span class="string">"entry"</span>&gt;</div><div class="line">&lt;li&gt;&lt;a href=<span class="string">"http://szcx.pw/"</span> title=<span class="string">"蓝江老涌的博客"</span>&gt;遂州创信&lt;/a&gt;&lt;/li&gt;</div><div class="line">&lt;li&gt;&lt;a href=<span class="string">"http://lxy361.tk/"</span> title=<span class="string">"Hexo博客"</span>&gt;Hexo博客&lt;/a&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="添加新浪微博widget-微博秀"><a href="#添加新浪微博widget-微博秀" class="headerlink" title="添加新浪微博widget(微博秀)"></a>添加新浪微博widget(微博秀)</h3><ol>
+<li>去<a href="http://app.weibo.com/tool/weiboshow" target="_blank" rel="external">新浪微博开放平台</a>设置和生成微博秀代码。我用的139邮箱注册新浪。</li>
+<li>在<code>themes/light/layout/_widget</code>中新建名为<code>weibo.ejs</code>的文件，将刚才的代码直接保存到这里。</li>
+<li>在<code>themes/light/_config.yml</code>中，添加如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">widgets:  <span class="comment">#站点右边栏，暂时默认，后面介绍修改和添加</span></div><div class="line">- search</div><div class="line">- category</div><div class="line">- tagcloud  <span class="comment">#标签云</span></div><div class="line">- intro</div><div class="line">- weibo    <span class="comment">#新浪微博秀</span></div><div class="line">- blogroll    <span class="comment">#友情链接</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="主页文章显示摘要"><a href="#主页文章显示摘要" class="headerlink" title="主页文章显示摘要"></a>主页文章显示摘要</h3><p>编辑md文件的时候，在要作为摘要的文字后面添加<code>&lt;!--more--&gt;</code>即可。</p>
+<h3 id="修改背景图片、文字颜色等"><a href="#修改背景图片、文字颜色等" class="headerlink" title="修改背景图片、文字颜色等"></a>修改背景图片、文字颜色等</h3><ul>
+<li>找到<code>hexo\themes\light\source\css\_base\layout.styl</code>，在<code>body</code>下面增加一条<code>background-image url(&#39;/imgs/noise.png&#39;)</code></li>
+<li>至于背景图片<code>\themes\light\source\imgs\bozhu.png</code>，用自己喜欢的即可。</li>
+<li>然后在<code>hexo\themes\light\source\css\_base\variable.styl</code>中修改<code>color</code>区块中的属性，就可以改变网站不同元素的颜色了。</li>
+</ul>
+<h3 id="重头戏来了，我修改的themes-light-config-yml文件"><a href="#重头戏来了，我修改的themes-light-config-yml文件" class="headerlink" title="重头戏来了，我修改的themes\light\_config.yml文件"></a>重头戏来了，我修改的<code>themes\light\_config.yml</code>文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"> menu: #站点右上角导航栏，暂时默认。</div><div class="line">  首页: /</div><div class="line">  归档: /archives</div><div class="line">  关于: /about</div><div class="line"></div><div class="line">widgets:  #站点右边栏</div><div class="line">- search</div><div class="line">- category</div><div class="line">- tagcloud  #标签云</div><div class="line">- intro</div><div class="line">- weibo    #新浪微博秀</div><div class="line">- blogroll    #友情链接</div><div class="line"></div><div class="line">excerpt_link: 阅读全文 #替换为中文</div><div class="line"></div><div class="line">plugins: </div><div class="line">  - hexo-generator-feed</div><div class="line"></div><div class="line">twitter: #右边栏要显示twitter展示的话，需要在此设置</div><div class="line">username: </div><div class="line">show_replies: false</div><div class="line">tweet_count: 5</div><div class="line"></div><div class="line">addthis: #SNS分享，身在天朝，当然用“百度分享”，暂时默认</div><div class="line">  enable: true</div><div class="line">  pubid:</div><div class="line">  facebook: true</div><div class="line">  twitter: true</div><div class="line"> google: true</div><div class="line">  pinterest: true</div><div class="line"></div><div class="line"> fancybox: true #图片效果，默认</div><div class="line">  google_analytics: #要使用google_analytics进行统计的话，这里需要配置ID</div><div class="line">  rss: /atom.xml #生成RSS，需要配置路径</div></pre></td></tr></table></figure>
+<h3 id="根目录下的-config-yml文件设置"><a href="#根目录下的-config-yml文件设置" class="headerlink" title="根目录下的_config.yml文件设置"></a>根目录下的<code>_config.yml</code>文件设置</h3><pre><code># Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 遂州创信
+subtitle: 蓝江老涌的博客
+description: 学习总结 思考感悟 知识管理 # 网站描述
+author: 蓝江老涌
+email: szcxgg@gmail.com
+language: zh-CN
+
+# URL
+## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
+##url: http://szcx.github.io  #这个绑定域名:http://lxy361.tk
+url: http://szcx.gitcafe.com  #这个绑定域名:http://snljzz.tk
+root: /
+permalink: :year/:month/:day/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+
+# Writing 文章布局、写作格式的定义，不修改
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
+
+# Category &amp; Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
+# Server
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+server_ip: localhost
+logger: false
+logger_format: dev
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-D
+time_format: H:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 6 #每页6篇文章
+pagination_dir: page
+
+# Disqus #社会化评论disqus，我使用多说，在主题中配置
+disqus_shortname:
+
+# Extensions
+## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
+## Themes: https://github.com/hexojs/hexo/wiki/Themes
+theme: light
+exclude_generator:
+
+#  Deployment 站点部署到github要配置，上一节中已经讲过
+## Docs: http://zespia.tw/hexo/docs/deploy.html
+   deploy:
+ type: github
+ repository: git@gitcafe.com:szcx/szcx.git
+ branch: gitcafe-pages
+
+#deploy:
+# type: github
+# repository: git@github.com:szcx/szcx.github.io.git
+#branch: master
+</code></pre><h3 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h3><h4 id="hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下："><a href="#hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下：" class="headerlink" title="hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下："></a>hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下：</h4><ul>
+<li>安装RSS插件到本地：npm install hexo-generator-feed</li>
+<li><p>开启RSS功能：编辑hexo/_config.yml，添加如下代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">plugins:</div><div class="line">- hexo-generator-feed</div></pre></td></tr></table></figure>
+</li>
+<li><p>在站点添加链接：<br>在<code>themes/light/_config.yml</code>中，编辑 <code>rss: /atom.xml</code><br>在<code>themes/light/layout/_partial/header.ejs</code>中，<code>&lt;ul&gt;&lt;/ul&gt;</code>之间，添加一样代码<br><code>&lt;li&gt; &lt;a href=&quot;/atom.xml&quot;&gt;RSS&lt;/a&gt; &lt;/li&gt;</code></p>
+</li>
+</ul>
+<h3 id="文章中插入图片"><a href="#文章中插入图片" class="headerlink" title="文章中插入图片"></a>文章中插入图片</h3><ul>
+<li>使用markdown写文章，插入图片的格式为<code>![图片名称](链接地址)</code>，这里要说的是链接地址怎么写。对于hexo，有两种方式：</li>
+<li>使用本地路径：在<code>hexo/source</code>目录下新建一个<code>img</code>文件夹，将图片放入该文件夹下，插入图片时链接即为<code>/img/图片名称</code>。</li>
+<li>使用<a href="https://portal.qiniu.com/" target="_blank" rel="external">七牛</a>，有图片的链接地址。格式为<code>![图片名称](链接地址)</code>我用的是139邮箱注册的七牛。</li>
+</ul>
+<h3 id="加入左上角「fork-me-on-github」"><a href="#加入左上角「fork-me-on-github」" class="headerlink" title="加入左上角「fork me on github」"></a>加入左上角「fork me on github」</h3><p><a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">这里</a>有 github 给出的教程，把代码插入到任意一个全局的模板文件中就行，比如<code>layout.ejs</code>的末尾。<br>我的<code>themes\light\layout\layout.ejs</code>文件如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;%</div><div class="line"><span class="keyword">if</span>(page.layout !== <span class="string">'false'</span>)&#123;</div><div class="line">%&gt;</div><div class="line"></div><div class="line">&lt;%- partial(<span class="string">'_partial/head'</span>) %&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">  &lt;header id=<span class="string">"header"</span> class=<span class="string">"inner"</span>&gt;&lt;%- partial(<span class="string">'_partial/header'</span>) %&gt;&lt;/header&gt;</div><div class="line">  &lt;div id=<span class="string">"content"</span> class=<span class="string">"inner"</span>&gt;</div><div class="line">    &lt;div id=<span class="string">"main-col"</span> class=<span class="string">"alignleft"</span>&gt;&lt;div id=<span class="string">"wrapper"</span>&gt;&lt;%- body %&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">    &lt;aside id=<span class="string">"sidebar"</span> class=<span class="string">"alignright"</span>&gt;&lt;%- partial(<span class="string">'_partial/sidebar'</span>) %&gt;&lt;/aside&gt;</div><div class="line">    &lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;footer id=<span class="string">"footer"</span> class=<span class="string">"inner"</span>&gt;&lt;%- partial(<span class="string">'_partial/footer'</span>) %&gt;&lt;/footer&gt;</div><div class="line">  &lt;%- partial(<span class="string">'_partial/after_footer'</span>) %&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div><div class="line"></div><div class="line">&lt;%&#125;<span class="keyword">else</span>&#123; %&gt;</div><div class="line"></div><div class="line">&lt;%- page.content %&gt;</div><div class="line">&lt;%&#125;;%&gt;</div><div class="line">&lt;a href=<span class="string">"https://github.com/szcx"</span> target=<span class="string">"_blank"</span>&gt;&lt;img style=<span class="string">"position: absolute; top: 0; left: 0; border: 0;"</span> src=<span class="string">"https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"</span> alt=<span class="string">"Fork me on GitHub"</span>&gt;&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[设置多说评论]]></title>
+      <url>http://szcx.coding.me/2014/10/27/%E5%A4%9A%E8%AF%B4/</url>
+      <content type="html"><![CDATA[<h3 id="自用多说css设置"><a href="#自用多说css设置" class="headerlink" title="自用多说css设置"></a>自用多说css设置</h3><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#ds-thread #ds-reset ul.ds-comments-tabs li.ds-tab a.ds-current&#123;border:0;text-shadow:none&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-highlight&#123;font-family:Microsoft YaHei,Arial,Helvetica,sans-serif;font-size:14px;font-weight:700&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset ul.ds-comments-tabs li.ds-tab a.ds-current:hover&#123;color:#FFF;background:#37b8eb&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset a.ds-highlight:hover&#123;color:#FFF!important&#125;</span></div><div class="line"><span class="comment">#ds-thread&#123;padding-left:5px&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset li.ds-post,#ds-thread #ds-reset #ds-hot-posts&#123;overflow:visible!important&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-post-self&#123;padding:10px 0 10px 20px&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset li.ds-post,#ds-thread #ds-reset .ds-post-self&#123;border:0!important&#125;</span></div><div class="line"><span class="comment">#ds-reset .ds-avatar,#ds-thread #ds-reset ul.ds-children .ds-avatar&#123;top:15px;left:-30px;width:55px!important;height:55px!important;box-shadow:-1px 0 1px rgba(0,0,0,.15) inset!important;border-radius:50%!important;padding:0&#125;</span></div><div class="line"><span class="comment">#ds-thread .ds-avatar a&#123;display:inline-block;width:45px;height:45px;border:1px solid #b9baa6;border-radius:50%!important;background-color:#fff!important;margin:4px;padding:0&#125;</span></div><div class="line"><span class="comment">#ds-thread .ds-avatar a:hover&#123;border-color:#de5a4e&#125;</span></div><div class="line"><span class="comment">#ds-thread .ds-avatar&gt;img&#123;border:1px solid #b9baa6;margin:4px&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-replybox&#123;box-shadow:none&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset ul.ds-children .ds-replybox.ds-inline-replybox a.ds-avatar,#ds-reset .ds-replybox.ds-inline-replybox a.ds-avatar&#123;left:-15px!important;top:0!important;width:45px!important;height:45px!important;background:0;box-shadow:none;padding:0&#125;</span></div><div class="line"><span class="comment">#ds-reset .ds-replybox.ds-inline-replybox a.ds-avatar img&#123;width:45px!important;height:45px!important;border-radius:50%!important&#125;</span></div><div class="line"><span class="comment">#ds-reset .ds-replybox a.ds-avatar,#ds-reset .ds-replybox .ds-avatar img&#123;width:45px!important;height:45px!important;border-radius:5px;padding:0&#125;</span></div><div class="line"><span class="comment">#ds-reset .ds-avatar img&#123;width:45px!important;height:45px!important;border-radius:50%!important;box-shadow:0 1px 3px rgba(0,0,0,0.22);-webkit-backface-visibility:hidden;-webkit-transition:.4s all ease-in-out;-moz-transition:.4s all ease-in-out;-o-transition:.4s all ease-in-out;-ms-transition:.4s all ease-in-out;transition:.4s all ease-in-out&#125;</span></div><div class="line">.ds-post-self:hover .ds-avatar img&#123;-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)&#125;</div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-comment-body&#123;background:#f0f0e3;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,.15),0 1px 0 rgba(255,255,255,.75) inset;padding:15px 15px 15px 55px!important&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-comments a.ds-user-name&#123;font-weight:700;color:#696a52!important&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-comments a.ds-user-name:hover&#123;color:#D32!important&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset #ds-bubble&#123;display:none!important&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset #ds-hot-posts&#123;border:0&#125;</span></div><div class="line"><span class="comment">#ds-reset #ds-hot-posts .ds-gradient-bg&#123;background:0&#125;</span></div><div class="line"><span class="comment">#ds-reset #ds-ctx .ds-ctx-entry&#123;border-bottom:1px solid #e6e6e6;margin:0;padding:17px 8px&#125;</span></div><div class="line"><span class="comment">#ds-reset #ds-ctx .ds-ctx-entry .ds-avatar&#123;height:55px;left:-36px;top:-9px;width:55px;margin:0&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-comment-body a&#123;color:#999&#125;</span></div><div class="line"><span class="comment">#ds-reset .ds-comment-body #ds-ctx&#123;background-color:rgba(0,0,0,0.03);border-left:0;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.5) inset&#125;</span></div><div class="line"><span class="comment">#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a&#123;color:#696a52;font-weight:700&#125;</span></div><div class="line"><span class="comment">#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a:hover&#123;color:#D32&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset ul.ds-children .ds-avatar img&#123;width:45px!important;height:45px!important;max-width:100%&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset ul.ds-children .ds-comment-body,#ds-thread.ds-narrow #ds-reset .ds-replybox&#123;padding-left:55px&#125;</span></div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-comment-body p,#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-content&#123;color:#39683b&#125;</span></div><div class="line"><span class="comment">#ds-thread &#123;background: #ffffff;&#125;</span></div><div class="line">/*评论框整体的背景色*/</div><div class="line"><span class="comment">#ds-thread&#123; border-radius: 5px;&#125;/*圆角*/</span></div><div class="line"><span class="comment">#ds-reset .ds-gradient-bg&#123;</span></div><div class="line">background:none !important;</div><div class="line">&#125;/*设置评论框下方渐变*/</div><div class="line"><span class="comment">#ds-thread #ds-reset .ds-sort &#123;</span></div><div class="line">display:none;</div><div class="line">&#125;/*隐藏最新最热等*/</div><div class="line"><span class="comment">#ds-thread #ds-reset li.ds-tab a.ds-current&#123;background:none;border:none;&#125;/*隐藏评论总数背景及边框*/</span></div><div class="line"><span class="comment">#ds-thread #ds-reset li.ds-tab a.ds-current&#123;background:none;border:none;&#125;</span></div><div class="line"><span class="comment">#ds-thread .ds-powered-by&#123;display:none!important;&#125;/*隐藏多说底部版权*/</span></div><div class="line"><span class="comment">#ds-thread  &#123;padding:30px;&#125; /*评论框左右边距过小（评论框太宽），输入下列代码调整宽度，直到页面上评论框宽度显示合适*/</span></div></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[免费的 SSH 客户端 - Xshell 4 Build 0138 中文绿色便携版]]></title>
+      <url>http://szcx.coding.me/2014/10/27/ssh/</url>
+      <content type="html"><![CDATA[<p>NetSarang Xshell 是一个极好用的免费 SSH 客户端，可以作为 Telnet、Rlogin、SSH、SFTP、Serial 等协议的安全终端模拟软件，让你轻松管理远程主机。</p>
+<a id="more"></a>
+<p><img src="http://szcxgg.qiniudn.com/Xshell.jpg" alt=""></p>
+<p>大力推荐 Xshell，其特色功能包括标签化管理远程会话、动态端口转发、自定义键盘映射、VB脚本支持、完全的 Unicode 支持等。</p>
+<p>另据 xerr 评测，XShell 比之前介绍的 SecureCRT 更好用些，主要表现在 Xshell 的 Screen 会话不闪屏，而且可以回滚；Script 的执行顺序可以调整；可以同时发送指令到多个 session；支持布局切换等。</p>
+<p>使用说明：已经作成便携版，直接运行 XshellPortable.exe 即可，2014/10/22 更新版本为 Xshell 4 Build 0138 (4.0.0138) 简体中文绿色版，从 0122 版本开始，Xshell 开始有了官方简体中文和繁体中文版本。</p>
+<p>使用须知：</p>
+<p>若运行报错或无反应，请手动安装 VC 运行库后再运行；<br>所有配置相关文件将存储在 Data\Settings 目录；<br>本便携版不支持自定义会话文件夹路径，始终保存 Data\Settings\Sessions 文件夹下，请不要修改，以免出错；<br>运行结束后请务必正常关闭 Xshell 程序，以保持便携化；<br>中文帮助文件：App\Xshell\Xshell_cn.chm。<br>[file]</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[真人朗读小说朗读器]]></title>
+      <url>http://szcx.coding.me/2014/10/23/xiaoshuo/</url>
+      <content type="html"><![CDATA[<p>自动分页，手动翻页，有书签功能，一次看不完，下次可接着看。本软件的优先于同类软件的亮点：女声真人朗读，纯正、流畅、优美、动听，朗读有节奏感，接近央视播音员水准。本软件完全免费可永久使用。(点击小喇叭停止朗读,在窗口任意地方右键可导入您喜欢的小说)</p>
+<p><img src="http://szcxgg.qiniudn.com/38a790929ed90bb76dac940c6f9675cf20140917172647.jpg" alt=""><br><a href="http://pan.baidu.com/s/1qWnwgJ6" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[百度云管家5.0.0 纯净版]]></title>
+      <url>http://szcx.coding.me/2014/10/23/baiduyun/</url>
+      <content type="html"><![CDATA[<p>百度云管家是百度推出的云服务产品。它支持便捷地查看、上传、下载云端各类数据<br>官方更新：<br>新增数据线功能：电脑手机轻松连接互传文件<br>支持在线打开CAD文档<br>支持在线播放asf格式文件<br>本版特点：<br>去自动升级文件<br>禁止自动添加云管家虚拟盘符<br>禁止自动创建虚拟盘符注册表<br>把旧版主目录的users文件夹复制到新版主目录,即可完成旧版数据转移.</p>
+<p>[file]</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[系统安装器 WinNTSetup v3.7.0 汉化绿色版]]></title>
+      <url>http://szcx.coding.me/2014/10/22/WinNTSetup/</url>
+      <content type="html"><![CDATA[<p>WinNTSetup 是一款功能非常强大的系统安装器，可以直接从 Windows 平台或者 PE 环境下运行它来安装 MSDN 原版系统，从硬盘环境下直接安装微软操作系统的方法被称为硬盘安装法，这款工具的诞生以及更新为这一方法提供了诸多捷径，使用 WinNTSetup 您只需要定位好待安装系统文件的位置以及安装目标路径即可。</p>
+<p>WinNTSetup 还允许你在安装系统前对目标系统进行一些使用习惯方面的简单部署，比如：添加硬件驱动、破解第三方主题、添加无人值守、禁用系统还原、禁用虚拟内存页面文件等等。</p>
+<p>当然你还可以勾选执行“禁用用户帐户控制、显示隐藏文件和文件夹、右键菜单显示“命令提示符”、删除快捷方式小箭头”等个性化操作，省去了系统安装完成后再次设置的麻烦。</p>
+<p>预览图：</p>
+<p><img src="http://szcxgg.qiniudn.com/WinNTSetup.jpg" alt=""></p>
+<p>功能&amp;特点：</p>
+<p>支持安装 Win2k/XP/2k3/Vista/7/8/8.1/x86/x64 等；<br>即使在最精简的 WinPE 实际上也可运行；<br>支持选择新的 Windows 安装能驱动器盘符；<br>支持比如：nlite/vlite 已删除 winnt32.exe/setup.exe 安装 Windows；<br>集成驱动程序：正常 PNP 和文本模式的驱动程序也支持；<br>破解主题 uxtheme.dll 以支持第三方主题；<br>支持对系统的一些优化调整；<br>支持无人值守；<br>支持从低版本直到 Windows 8 和更高操作系统版本；<br>操作说明：</p>
+<p>一、驱动程序安装</p>
+<p>NT6.x 窗口中添加的每个驱动程序会添加到驱动程序存储区中。所以不建议添加了过多的驱动程序，但是可以添加真正需要的驱动。</p>
+<p>二、无人值守安装选项：</p>
+<p>它是可以使用 unattend.xml 来运行无人值守的安装程序。但由于实际 WinPE 安装阶段不是有效的安装方式，所有 WinPE 都相关设置里面 unattend.xml 不会被应用。</p>
+<p>三、ini 配置文件</p>
+<p>可以将所有的图形用户界面设置保存到一个 ini 文件：按 Ctrl + S 保存所有的设置到 ini。按 Ctrl + L 从 ini 加载所有设置。作为应用程序本身的相同目录中的 WinNTSetup.ini 文件将会在启动时自动加载。它还可以通过命令行进行选择：WinNTSetup.exe”/configfile:”C:\mysettings.ini。</p>
+<p>四、若要安装 Windows 中一个 VHD 文件</p>
+<p>需要 Windows 7 操作系统与 Windows 7 旗舰版，企业或作为源服务器 2008 R2 ；<br>创建分区的 VHD 并指派一个驱动器号（按 Ctrl + Shift + V，使用生成在 diskpart 安装为此驱动器）；<br>选择 VHD 驱动器作为安装驱动器（确保您启动上的物理磁盘驱动器是一个活动的主分区）；<br>如果您从您的防病毒软件获取防病毒的警告（比如：大数字误报），请添加信任即可！</p>
+<p>WinNTSetup v3.7.0 更新日志：</p>
+<ul>
+<li>新增对 Windows 10（Windows Threshold）环境运行兼容性的支持；</li>
+</ul>
+<p>WinNTSetup v3.6.5 更新日志：</p>
+<ul>
+<li>修正 syspreped WinXP 离线注册表错误的问题；</li>
+<li>修正关于对话框 DPI 问题；</li>
+<li>如果 WIM 中 index 名字和显示名未定义将使用 XML 描述字段；</li>
+<li>如果注册表加载失败，将记录离线日志错误代码和注册表 hive 路径；</li>
+<li>引导项现在包含（WIMBOOT）或）VHDX）如果使用这些选项；</li>
+<li>WinNTSetup_iso 移动 tool 文件夹中；</li>
+</ul>
+<p><a href="http://pan.baidu.com/s/1hq1P812" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[慢慢学习用Hexo做博客]]></title>
+      <url>http://szcx.coding.me/2014/10/09/hexo/</url>
+      <content type="html"><![CDATA[<p>教程如下：</p>
+<p>–慢慢更新</p>
+<p>选择一个适合自己的博客平台，把旧博文挪过去，新博文也在此开垦。</p>
+<p>了解和尝试了很多博客，最终看到了hexo，很简单的配置、很漂亮的主题很实用的功能。<br>下面记录一下其他考虑过的博客的缺点（优点不必说了，存在即有合理性）。</p>
+<hr>
+<p>安装Git</p>
+<p>下载 msysgit 并执行即可完成安装。<br>安装Node.js<br>在 Windows 环境下安装 Node.js 非常简单，仅须下载安装文件并执行即可完成安装。</p>
+<hr>
+<p>安装hexo</p>
+<p>利用 npm 命令即可安装。（运行Git bash，在里输入以下的命令）</p>
+<p>npm install -g hexo<br>创建hexo文件夹<br>安装完成后，在你喜爱的文件夹下（如H:\hexo），执行以下指令(在H:\hexo内点击鼠标右键，选择Git bash)，Hexo 即会自动在目标文件夹建立网站所需要的所有文件。</p>
+<p>hexo init<br>安装依赖包</p>
+<p>npm install<br>本地查看</p>
+<p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在H:\hexo)</p>
+<p>hexo generate<br>hexo server</p>
+<p>然后到浏览器输入localhost:4000看看。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[超级DNS：OpenerDNS：42.120.21.30]]></title>
+      <url>http://szcx.coding.me/2014/10/06/OpenerDNS/</url>
+      <content type="html"><![CDATA[<p>OpenerDNS的服务器托管在国内，比国外DNS服务器访问速度更快。OpenerDNS自开通以来，短短半个月时间就达到日均请求100万 次。2014年6月，日均请求数已经接近1亿次。开发者声称利用动态3层代理技术，实现Google、Twitter、Facebook、Gmail的加 速访问。<br>OpenerDNS: 是面向国内普通互联网用户开放的”高速 安全 免费”的域名解析服务器。 还在使用Google DNS或者Opendns吗？还在不断更改host文件吗？现在就切换到：</p>
+<p>OpenerDNS地址: 42.120.21.30<br><img src="http://szcxgg.qiniudn.com/QQ%E6%88%AA%E5%9B%BE20141006105213.jpg" alt=""><br>博主小提示：请尽量使用要https:// 开头进行网站访问。U2B等不支持HTTPS访问的，用最新版的google chrome （进chrome://flags开启Experimental QUIC protocol和HTTPS over experimental QUIC protocol两项）</p>
+<p>为什么使用OpenerDNS:<br>安全。我们保证解析数据的真实性，域名不被污染。你还在使用8.8.8.8吗？现在就切换到42.120.21.30，所有域名都准确解析了。</p>
+<p>速度快。相比其他国外DNS，我们服务器托管在国内，速度更加快速，使你上网的反应更加迅速。</p>
+<p>稳定。OpenerDNS自开通以来，短短半个月的时间就达到日均请求100万次。2014年6月，我们的日均请求数已经接近1亿次，我们依然很轻松。</p>
+<p>加速访问Google。配合我们的动态3层代理技术，实现google的加速访问。</p>
+<p>加速访问twitter。配合我们的动态3层代理技术，实现twitter的加速访问。</p>
+<p>加速访问facebook。配合我们的动态3层代理技术，实现facebook的加速访问。</p>
+<p>加速访问gmail。配合我们的动态3层代理技术，实现gmail的加速访问。</p>
+<p>神奇吗？？还不快更改你的DNS：42.120.21.30</p>
+<p>OpenerDNS 更新情况:<br>日期：2014.06.24</p>
+<p>公告：到昨天为止，OpenerDNS经过半年多的成长，日均查询次数已经突破了1亿，日代理流量超过100G 。这对我们来说是一个重大的里程碑，激励我们进一步提升服务质量。OpenerDNS还有很多不足，活跃的用户永远是我们强大的动力来源。</p>
+<p>日期：2014.06.22</p>
+<p>play.google.com解析到美国地址。默认就可以在play上买设备了。<br><a href="https://mobile.twitter.com设置三层代理。手机上可以用浏览器访问twitter.com了" target="_blank" rel="external">https://mobile.twitter.com设置三层代理。手机上可以用浏览器访问twitter.com了</a><br>初步修复了安卓平台上的play商店，gmail客户端，以及账户同步功能。（完全顺畅使用还需我们进一步分析处理）<br>wikipedia.org 可以用http访问，包括下属所有域名。https模式仍有问题。<br>临时加入chromium.org的加速支持，方便国内的开发者吧！<br>服务器分流工作初步完成, 现在比较少出现页面打不开的问题。如果还出现的话，请刷新页面即可。</p>
+<p>日期：2014.06.20</p>
+<p>OpenerDNS 42.120.21.30 公告：从昨天开始由于流量巨大，我们解析到的地址可能会经常的访问断线。未来24小时，我们将加入分流服务器来解决这个问题。请大家及时刷新dns缓存。预计加入分流服务器后，大陆东部地区，联通、电信宽带的访问速度会非常好。</p>
+<p>日期：2014.06.18</p>
+<p>针对google所有的服务（youtube暂时除外），提供访问支持。使用OPenerDNS google所有的web服务都可以继续访问，支持http模式，https模式（推荐使用）。<br>在未来几天中，OPenerDNS: 42.120.21.30 预计可能出现不稳定情况。如果某个google服务无法访问，请告知地址（twitter:@Openervpn）我们将持续修复。<br>鉴于我们的开发能力，我们现在希望寻找安卓与苹果手机平台app开发商的合作。 将我们的DNS服务通过App来快速设置到安卓与苹果手机上（类似DNS changer）。有意向的朋友mail：a@openervpn.in<br>希望国内的朋友多多在微博、微信、博客等社交平台上宣传。我们会进一步的强大。</p>
+<ul>
+<li><h1 id="OpenerDNS-加速的域名列表"><a href="#OpenerDNS-加速的域名列表" class="headerlink" title="OpenerDNS 加速的域名列表:"></a>OpenerDNS 加速的域名列表:</h1></li>
+<li><p>下列主域名及其子域名的A记录提供加速功能：</p>
+</li>
+<li>appspot.com（考虑到节省我们的流量，暂时去除，仍然返回google地址）</li>
+<li>android.com</li>
+<li>blogger.com</li>
+<li>blogspot.com</li>
+<li>ggpht.com</li>
+<li>google-analytics.com</li>
+<li>google.cn</li>
+<li>google.com</li>
+<li>google.com.hk</li>
+<li>google.com.tw</li>
+<li>google.com.sg</li>
+<li>googleadservices.com</li>
+<li>googlesyndication.com</li>
+<li>googleapis.com</li>
+<li>googlecode.com</li>
+<li>googlelabs.com</li>
+<li>googleusercontent.com</li>
+<li>gstatic.com</li>
+<li>youtube.com</li>
+<li>ytimg.com</li>
+<li><a href="https://www.google.com/" target="_blank" rel="external">www.google.com</a> | <a href="https://google.com/" target="_blank" rel="external">google.com</a></li>
+<li><a href="https://mail.google.com/" target="_blank" rel="external">Gmail</a></li>
+<li><a href="https://play.google.com/" target="_blank" rel="external">play.google.com</a></li>
+<li><a href="http://en.wikipedia.org/" target="_blank" rel="external">en.wikipedia.org</a></li>
+<li><a href="http://zh.wikipedia.org/" target="_blank" rel="external">zh.wikipedia.org</a></li>
+<li><a href="http://www.wikipedia.org/" target="_blank" rel="external">www.wikipedia.org</a></li>
+<li><a href="https://www.dropbox.com/" target="_blank" rel="external">www.dropbox.com</a></li>
+<li><a href="https://www.youtube.com/" target="_blank" rel="external">www.youtube.com</a>##实验性，需要chrome浏览器<br>OpenerDNS 安卓平台Google内置客户端程序支持情况：<br>Google地图：完全支持。<br>Gmail客户端：完全支持。<br>Google+客户端：完全支持。<br>自动同步功能：完全支持。<br>Keep：完全支持。<br>日历：完全支持。<br>环聊：完全支持。<br>Google地球：完全支持。<br>Play报亭：基本支持（首页图片加载可能会不全）。<br>Play商店：支持浏览。暂不支持下载或者更新功能。<br>Play音乐：未能测试。<br>Play电影：未能测试。<br>Play游戏：不支持。<br>Google搜索：不能支持。（请使用chrome浏览器替代）<br>云端硬盘：不支持。<br>youtube客户端：不支持。</li>
+</ul>
+<p>原文地址：<a href="https://code.google.com/p/openerdns/" target="_blank" rel="external">https://code.google.com/p/openerdns/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Windows 10 技术预览版简体中文版]]></title>
+      <url>http://szcx.coding.me/2014/10/03/windows-10/</url>
+      <content type="html"><![CDATA[<p>北京时间10月1日凌晨1点，微软在美国旧金山为新版Windows系统举行了一个小型发布会。会上微软Windows项目的主负责人Terry Myerson，正式宣布了新一代桌面操作系统的名字——Windows 10！系统代号从Win8跳到了Win10，将“Win9”直接略过。Windows 10正式版将会在明年发布，但是明天，微软就会放出Windows 10技术预览版，功能基本与正式版相似。</p>
+<p>在Windows 10界面上，开始菜单的变化与之前曝光的类似，而比较独特的是，Windows 10还能根据使用设备的不同而不同。在功能上，或许对开发者有利的变化是——终于可以用CTRL+V来直接把命令贴进去了，在这之前，你按下Ctrl+V后只会显示^V。</p>
+<p><img src="http://szcxgg.qiniudn.com/win10.jpg" alt=""></p>
+<p>Windows 10操作系统的新功能包括：</p>
+<p>1、真正的开始菜单，将Win7的开始菜单，与Win8的Modern磁贴结合；</p>
+<p>2、传统界面与Modern界面无缝结合；</p>
+<p>3、多任务桌面，桌面上可以更美观地显示每一个在运行的应用。有点类似加强型的Win+Tap键；</p>
+<p>4、多设备同步，将会运行在微软旗下所有硬件设备上，应用资料、用户数据等内容的跨平台同步功能。</p>
+<p>Windows 10操作系统配置需求：<br>• 处理器：1千兆赫(GHz)或更快<br>• 内存：1 GB（32位）或2 GB（64位）<br>• 可用硬盘空间：16 GB<br>• 图形卡：带有WDDM驱动程序的Microsoft DirectX 9图形设备<br>• Microsoft帐户和Internet接入</p>
+<p>Windows 10技术预览版简体中文版官方下载：</p>
+<p>64位：</p>
+<p>SHA-1 散列值：135E3193571C5AF9FBF36D24D07B2BE7EE49B2E8</p>
+<p>32位：</p>
+<p>SHA-1 散列值 ：3EE3A2033BE666BA55AFED3FCF6BB52A7C15C7CC</p>
+<p>安装密钥：NKJFK-GPHP7-G8C3J-P6JXR-HQRJR</p>
+<p>如何加入Windows Insider计划？</p>
+<p>下载和使用Windows10预览版系统需要注册加入Windows Insider计划，注册流程很简单，进入Insider网站开始。按照以下步骤即可：</p>
+<p>1、首先进入Windows Insider网站，点此链接，登陆微软账号。</p>
+<p>2、点击加入后，确认同意隐私和许可协议，点击“Accept”接受。</p>
+<p>3、跳转完成，显示注册成功。</p>
+<p>注意：微软目前泄漏的Windows 10系统新功能，大部分是基于企业级应用。另外据说，此次的Windows 10预览版也包含两个版本，其中 WindowsTechnicalPreview 第一版是可用密匙激活的，另一个名为WindowsTechnicalPreview consumer 的版本不可激活，安装时请注意选择。另外，Nt6 hdd installer工具直装不用选版本联网自动激活，WinNTSetup或其他安装工具装时要选第一版本。</p>
+<p>提示：在装之前，最好不要在工作用机上覆盖安装，毕竟它仍然是早期的测试版，存在一些未知问题，可能会意外崩溃、导致你的文件丢失。如果你电脑出现问题，微软还有可能会检查你系统文件。如果你非常关注系统文件隐私，微软建议你考虑一下是否还要使用技术预览版。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[fancybox]]></title>
+      <url>http://szcx.coding.me/2014/09/30/fancybox/</url>
+      <content type="html"><![CDATA[<pre><code>可能有人对这个Reading页面中图片的fancybox效果感兴趣，这个是怎么做的呢。
+</code></pre><p>很简单，只需要在你的文章*.md文件的头上添加photos项即可，然后一行行添加你要展示的照片：</p>
+<a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ layout: photo</div><div class="line">$ title: 我的阅历</div><div class="line">$ date: 2085-01-16 07:33:44</div><div class="line">$ tags: [hexo]</div><div class="line">$ photos:</div><div class="line">$ - http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg</div><div class="line">$ - http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg</div></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[今天收到5键鼠标。找了一个改侧键软件。]]></title>
+      <url>http://szcx.coding.me/2014/09/26/shubiao/</url>
+      <content type="html"><![CDATA[<p>淘宝上9.9元买到一个游戏鼠标（国庆活动），质量特好。需要的发连接。</p>
+<p>X-Mouse Button Control(鼠标按键自定义软件)V2.0 汉化绿色版</p>
+<p>非常实用的鼠标按键自定义软件，可以修改鼠标每个按键和滚轮所执行的功能，可以针对不同程序配置不同按键功能。还带有保存桌面图标布局的功能。虽然现在大多数鼠标的驱动都自带按键设置，但对于失去驱动支持的老鼠标和标准3键鼠标，这个工具还是很实用的。<br><img src="http://szcxgg.qiniudn.com/QQ%E5%9B%BE%E7%89%8720140926230633.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/QQ%E5%9B%BE%E7%89%8720140926230643.jpg" alt=""></p>
+<p><a href="http://szcxgg.qiniudn.com/X-Mouse%20Button%20Control.7z" target="_blank" rel="external">点我下载</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[电影《沉睡魔咒》]]></title>
+      <url>http://szcx.coding.me/2014/09/26/dianying/</url>
+      <content type="html"><![CDATA[<p>沉睡魔咒的剧情简介 · · · · · ·</p>
+<p>在宁静祥和的摩尔王国，广袤的大森林中，动物与精灵和谐相处，无忧无虑。那一年，天真无邪的小仙女玛琳菲森（伊莎贝尔·莫洛伊 Isobelle Molloy 饰）邂逅了人类小男孩斯特凡（迈克尔·希金斯 Michael Higgins 饰）。他们两小无猜，成为亲密无间的好朋友， 更在万物的守护下坠入爱河。但是随着年龄的增长，斯特凡（沙尔托·科普雷 Sharlto Copley 饰）褪去了往日的纯真，被人类的贪欲所吸引。而玛琳菲森（安吉丽娜·朱莉 Angelina Jolie 饰）则成长为法术强大的仙女。愚蠢的人类向摩尔王国开战，斯特凡为了成为王位继承者，残忍地割下了玛琳菲森的翅膀。<br>肉体的痛苦和心灵的创伤，让玛琳菲森变成了满怀仇恨的冷酷魔女，为了复仇她给斯特凡的女儿爱洛公主（艾丽·范宁 Elle Fanning 饰）施下了沉睡魔咒……<br>然而随着爱洛的成长，玛琳菲森才逐渐意识到——这位小公主不仅能给两个世界带来和平，也许还能给自己带来真正的快乐……<br>《沉睡魔咒》是全盘改编的《睡美人》，完全颠覆了我们自小看过的那个童话，虽然这个故事里有公主有王子，可是……跟爱情无关。这部电影，几乎可以说是安吉丽娜.朱莉的个人秀，她的黑精灵实在是惊艳。<br>每个故事里都会有一个反派来推动剧情的发展，原来的《睡美人》里，造成一切的邪恶仙子却不过是一个过场的昙花一现，但是在《沉睡魔咒》之中，曾经的大反派不再是匆匆而出匆匆离去，她成了真正的主角。<br><img src="http://szcxgg.qiniudn.com/2014-09-26_193959.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_194050.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_194210.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_194242.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_194337.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_195027.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_195047.jpg" alt=""><br>王子的吻没有唤醒公主后，我低声猜测“真爱应该是那只乌鸦”,但又马上想到：“导演怎会这样幼稚？”当朱莉的黑精灵亲吻公主，公主醒过来之后，才明白这个故事跟我们臆想中的爱情无关了，又有谁界定过所谓的真爱，只能存在于男女之情里？”<br><img src="http://szcxgg.qiniudn.com/2014-09-26_195403.jpg" alt=""><br>有些人觉得自己很可怜，不能得到爱，却忽略了从小到大身边有多少的人疼爱他。父母，朋友，甚至一个陌生人，都曾向他伸出过友善的手。<br><img src="http://szcxgg.qiniudn.com/2014-09-26_202914.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-26_203936.jpg" alt=""><br>看了盗版电影这个翻译还挺逗^_^<br><img src="http://szcxgg.qiniudn.com/2014-09-26_193856.jpg" alt=""></p>
+<p>从诅咒下的那一刻我就知道，最后用真爱之吻唤醒公主的绝对不会是什么王子。因为这部电影跟爱情无关，导演也许也是一个不相信爱情的人，但是他相信母亲的心，相信女人的善。青梅竹马一起长大的两个人依然不能相互深爱，何况是跟公主刚刚见面的王子。一见钟情，钟的从来不是情，而是一张脸。既然是为脸生出的几分喜欢和迷恋，又哪里称得上什么真爱。所以，我从开始就知道，最后唤醒公主的必定是黑精灵。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Microsoft Office 2007 SP3 3in1 绿色版]]></title>
+      <url>http://szcx.coding.me/2014/09/25/microsoft-office-2007-sp3-3in1/</url>
+      <content type="html"><![CDATA[<p>功能介绍：</p>
+<p>这款精简office2007经本人机子测试，在xp win7_32 win7_64 Win8_64机子测试均能正常运行。唯一遗憾的是：在64位机子上运行时，在点击绿化office按钮后，还得再运行一下：office12\setting\regdll.bat，当然在其它系统上只需点击绿化office按钮即可。</p>
+<p><img src="http://szcxgg.qiniudn.com/1.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-25_201321.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-25_201539.jpg" alt=""></p>
+<p><a href="http://pan.baidu.com/s/1eQtLzW2" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WIFI万能钥匙_WiFi Master_V2.9.39_去广告清爽版]]></title>
+      <url>http://szcx.coding.me/2014/09/25/wifi/</url>
+      <content type="html"><![CDATA[<p>WiFi万能钥匙是最好用的智能手机WiFi管理工具。所有热点信息基于云端数据库，内置千万Wi-Fi热点数据，随时随地轻松接入无线网络，最大化使用各种联网移动服务，扫除无网断网状态，尤其适合商务、移动人群和重度网虫。<br>云端:基于云端Wi-Fi热点数据库，内置千万热点数据，包含百余家合作伙伴提供的加密Wi-Fi热点，遍布全球。安全:检测当前热点安全级别，科普移动网络安全知识，了解WiFi趣闻动态。省电:创新的Wi-Fi一键省电功能。屏幕锁定或无网络传输状态，智能关闭Wi-Fi功能，省电又省心。分享:用户可分享自己的Wi-Fi热点信息，也可使用万能钥匙获取已知热点信息。信息互通，共同建立一张属于彼此的“互联网”。轻便:支持网页认证一键连接，解除反复输入困扰。状态栏图标的显示，方便跟踪Wi-Fi热点信号与流量。<br><img src="http://szcxgg.qiniudn.com/2014-09-25_092701.jpg" alt=""><br>【温馨提示】有时WiFi旁边有钥匙仍旧不能解锁的原因,有可能是信号不稳定,或者是WiFi主人修改了密码,可以尝试其他WiFi进行连接;</p>
+<p><strong>【清爽版】<br>去广告，去应用推荐、去安全、去百宝箱，去内置浏览器、去快捷通知栏AD热词、去桌面插件、去MAP条形AD、去发送信息权限、关闭自动分享热点功能以防个人密码信息泄露、精简不必要的语言包与资源文件</strong></p>
+<p><a href="http://pan.baidu.com/s/1sjqbjEt" target="_blank" rel="external">网盘下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[醉酒后吃什么对身体好？]]></title>
+      <url>http://szcx.coding.me/2014/09/24/jiu/</url>
+      <content type="html"><![CDATA[<p>正常人少量饮酒后，肝脏可将其代谢解毒，不至于引起肝损伤。但长期过量饮酒可导致肝细胞和肝功能损害，引发免疫功能紊乱，降低机体对肝炎病毒的抵御能力。醉酒后如何减少对身体的伤害呢？<br><img src="http://szcxgg.qiniudn.com/f52a60a94ab674feb5c7b1feb7794f4f.jpg" alt=""></p>
+<p>1.蜂蜜水——&gt;酒后头痛</p>
+<p>喝点蜂蜜水能有效减轻酒后头痛症状。美国国家头痛研究基金会的研究人员指出，这是因为蜂蜜中含有一种特殊的果糖，可以促进酒精的分解吸收，减轻头痛症状，尤其是红酒引起的头痛。另外蜂蜜还有催眠作用，能使人很快入睡，并且第二天起床后也不头痛。</p>
+<p>2.西红柿汁——&gt;酒后头晕</p>
+<p>西红柿汁也是富含特殊果糖，能帮助促进酒精分解吸收的有效饮品，一次饮用300ml以上，能使酒后头晕感逐渐消失。实验证实，喝西红柿汁比生吃西红柿的解酒效果更好。饮用前若加入少量食盐，还有助于稳定情绪。</p>
+<p>3.新鲜葡萄——&gt;酒后反胃、恶心</p>
+<p>新鲜葡萄中含有丰富的酒石酸，能与酒中乙醇 相互作用形成酯类物质，降低体内乙醇浓度，达到解酒目的。同时，其酸酸的口味也能有效缓解酒后反胃、恶心的症状。如果在饮酒前吃葡萄，还能有效预防醉酒。</p>
+<p>4.西瓜汁——&gt;酒后全身发热</p>
+<p>西瓜汁是天生的白虎汤（中医经典名方），一方面能加速酒精从尿液排出，避免其被机体吸收而引起全身发热；另一方面，西瓜汁本身也具有清热去火功效，能帮助全身降温。饮用时加入少量食盐，还有助于稳定情绪。</p>
+<p>5.柚子——&gt;酒后口气</p>
+<p>李时珍在《本草纲目》中早就记载了柚子能够解酒。实验发现，将柚肉切丁，沾白糖吃更是对消除酒后口腔中的酒气和臭气有奇效。</p>
+<p>6.芹菜汁——&gt;酒后胃肠不适、颜面发红</p>
+<p>酒后胃肠不适时，喝些芹菜汁能明显缓解，这是因为芹菜中含有丰富的分解酒精所需的B族维生素。如果胃肠功能较弱，则最好在饮酒前先喝芹菜汁以做预防。此外，喝芹菜汁还能有效消除酒后颜面发红症状。</p>
+<p>7.酸奶——&gt;酒后烦躁</p>
+<p>蒙古人多豪饮，酸奶正是他们的解酒秘方，一旦酒喝多了，便喝酸奶，酸奶能保护胃黏膜，延缓酒精吸收。由于酸奶中钙含量丰富，因此对缓解酒后烦躁症状尤其有效。</p>
+<p>8.香蕉——&gt;酒后心悸、胸闷</p>
+<p>饮酒后感到心悸、胸闷时，立即吃1～3根香蕉，能增加血糖浓度，使酒精在血液中的浓度降低，达到解酒目的，同时减轻心悸症状、消除胸口郁闷。</p>
+<p>9.橄榄——&gt;酒后厌食</p>
+<p>橄榄自古以来就是醒酒、清胃热、促食欲的“良药”，能有效改善酒后厌食症状。既可直接食用，也可加冰糖炖服</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[今天购买了新域名：szcx.pw以及琥珀主机]]></title>
+      <url>http://szcx.coding.me/2014/09/23/szcx-pw/</url>
+      <content type="html"><![CDATA[<p>今天购买了新域名：szcx.pw</p>
+<p>意思为：遂州创信.pw</p>
+<p>PW 英文全称为（ Professional Website ）其中文意义表示：专业<br>PW域名<br>网站。此外PW是全新推出的新一款顶级国别域名后缀，代指帕劳共和国。PW 是2013年新加入的国际通用顶级域名，和大家比较熟悉的COM、NET域名一样不受任何注册限制，任何个人、机构、单位、组织均可注册，全球通用。由亚洲最大的域名注册商Resellerclub独立运营。</p>
+<p><img src="http://szcxgg.qiniudn.com/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D.jpg" alt=""></p>
+<p><img src="http://szcxgg.qiniudn.com/2014-09-23_183748.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-23_183631.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[今天看了一下卫星地图。能找到老家的房子。还有学校的图。]]></title>
+      <url>http://szcx.coding.me/2014/09/22/weixing/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/2014-09-22_110516.jpg" alt=""></p>
+<p><img src="http://szcxgg.qiniudn.com/%E8%80%81%E5%AE%B6%E5%8D%AB%E6%98%9F%E5%9C%B0%E5%9B%BE.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[映像编辑制作 UltraISO PE v9.6.2.3059 绿色便携版]]></title>
+      <url>http://szcx.coding.me/2014/09/22/UltraISO/</url>
+      <content type="html"><![CDATA[<p>随着大容量硬盘文件存储的普及，人们已经习惯将光盘拷贝成光盘映像文件使用，普遍采用的便是大名鼎鼎的 ISO 9660 国际标准格式，因此，光盘映像文件也简称为 ISO 镜像文件。该类型的镜像文件保留了光盘中的全部数据信息，可以采用常用光盘刻录软件通过刻录机烧录成光碟，也可以通过虚拟光驱软件加载后直接使用。</p>
+<p>UltraISO，中文名：软碟通，是一款功能强大而又方便实用的光盘映像文件制作与编辑以及转换工具，它可以直接编辑镜像文件和从镜像中提取文件或目录，也可以从物理光驱制作光盘映像或者将硬盘上的文件制作成镜像文件。亦或者处理镜像文件的启动信息从而制作可引导光盘，使用软碟通配合光盘刻录软件烧录出自己所需要的光碟。</p>
+<p>预览图：</p>
+<p><img src="http://szcxgg.qiniudn.com/UltraISO.jpg" alt=""></p>
+<p>软碟通独有的智能化镜像文件格式分析器，可以处理目前几乎所有的光盘映像文件，甚至可以支持新出现的光盘映像文件。进行编辑并将这些格式的映像文件转换为标准的镜像格式。软碟通采用双窗口统一用户界面，只需使用快捷按钮和鼠标拖放便可以轻松搞定光盘映像文件。</p>
+<p>功能特点：</p>
+<p>可以直接编辑 ISO 文件；<br>可以从光盘映像中直接提取文件和目录；<br>支持对 ISO 文件任意添加/删除/新建目录/重命名；<br>可以将硬盘上的文件制作成 ISO 文件；<br>可以逐扇区复制光盘，制作包含引导信息的完整映像文件；<br>可以处理光盘启动信息，你可以在 ISO 文件中直接添加/删除/获取启动信息；<br>可直接设置光盘映像中文件的隐藏属性；<br>支持 ISO 9660 Level1/2/3 和 Joliet 扩展；<br>自动优化 ISO 文件存储结构，节省空间；<br>支持 shell 文件类型关联，可在 Windows 资源管理器中通过双击或鼠标右键菜单打开 ISO 文件；<br>双窗口操作，使用十分方便；<br>配合选购插件，可实现 N合1 启动光盘制作、光盘映像文件管理，甚至软光驱，功能更强大；<br>支持几乎所有已知的光盘映像文件格式（.ISO、.BIN、.CUE、.IMG、.CCD、.CIF、.NRG、.BWT、.BWI、.CDI等），并且将它们保存为标准的 ISO 格式文件；<br>该版本由卡饭软件版主 ikimi 基于官方安装版 UltraISO Premium 高级版制作而成，精简其他国语言包文件以及无用的说明文档等，添加配置参数文件实现单文件绿色便携版，均可设置以及使用虚拟光驱组件加载镜像文件，该单文件绿色版完美适用于 WinPE 维护系统平台。</p>
+<p>单文件特色：</p>
+<p>1、含 Lame 编码器；<br>2、启动时自动加载虚拟光驱驱动，退出时自动卸载，释放所占用的盘符；<br>3、优先使用本地配置信息，不受系统已安装 UltraISO 影响；<br>4、精简语言文件，仅保留简体中文/英语。</p>
+<p>UltraISO PE v9.6.2.3059 更新日志：</p>
+<p>+) 改进了写入磁盘映像功能, 支持包含多个分区的移动硬盘(“便捷写入”)，并大幅缩短准备文件所需要的时间；<br>+) 在制作音乐光盘时支持MP3媒体文件重新采样；<br><em>) 改进了检查光盘功能；
+</em>) 修正了处理有些 dmg 映像文件存在的一个错误；<br><em>) 修正了检测光盘刻录机存在的一个错误；
+</em>) 一些小的改进和错误修正；</p>
+<p><a href="http://pan.baidu.com/s/1c0pfCdE" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如今的国产动画片怎么了？国产动画要让我失望到何时？]]></title>
+      <url>http://szcx.coding.me/2014/09/22/donghua/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/2014-09-22_094736.jpg" alt="1"></p>
+<p>昨天晚上，观看了网络上吹得很火的国产动画片《神笔马良》<br>一直在关注国产动画的发展，记得还在上学的时候，每天晚上老师带着看新闻联播，当时的某届三中全会说要大力支持国产动画发展，那时候就兴奋了，想着终于了吗？结果呢，到现在，就是个喜洋洋灰太郎、熊来了、完全变样的大头儿子小头爸爸。几个月前看到了神笔的宣传，精致的感觉，让我一下就期待了，期期念念终于等到预告片出来，也还不错，看起来创意有、精良的制作。结果，我能说还能更失望吗。。。等了几个月，TM就给我看这？<br>幼稚的台词，过抖的剧情，莫名的想要搞笑，极烂的人物形象设计、三观好正的玛丽苏女主，智商太低的反派。。。。优秀动画人肯定是有的，所以我一直想知道上面的人在想什么，他们是觉得现在的小孩跟几十年前的小孩是一样的吗，你给他什么的，他就能是你想要的样子。呵呵。<br>失望吧，还有张学友的片尾曲，我只希望我的师傅姜子牙能给点力，动画不是只能给小孩子看的，好吗！<br><img src="http://szcxgg.qiniudn.com/2014-09-22_094834.jpg" alt="2"><br><img src="http://szcxgg.qiniudn.com/2014-09-22_094636.jpg" alt="3"><br><img src="http://szcxgg.qiniudn.com/2014-09-22_094909.jpg" alt="4"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[怀念父亲]]></title>
+      <url>http://szcx.coding.me/2014/09/20/%E6%80%80%E5%BF%B5%E7%88%B6%E4%BA%B2/</url>
+      <content type="html"><![CDATA[<p>今天周六，按惯例回乡去。由于学车，基本上是一周回去一次，也有两周才回去一次。欣言放假，也会回去。今天又把父亲的书画作品拿出来慢慢品味……<br>时间过得好快，转眼父亲已经离开我们将近半年了。<br>多少次父亲的音容笑貌依然犹存，多少次父亲熟悉的身影历历在目，多少次父亲的教导萦绕耳边……漫长的夜晚,辗转难眠，多么希望父亲还在。父亲在世时，不懂得珍惜父爱的无私，常常嫌弃父亲的唠叨。父亲走了，才感到了从未有过的的无助，才感到从未有过的孤独。多么希望父亲再看我一眼，多么希望父亲再教训我一句，就一句，多么希望父亲再和我拉拉家长里短……就是他老人家揍我一顿也好。可都不行了，都不行了！如今，与父亲的一切都不在了，都不在了！只剩下一片愈加浓烈的思念。<br>亲爱的父亲，今夜，我静静的把思念展开，一遍遍地回忆和您共同度过的岁月，在记忆的尘埃里，你依旧还是那么清晰，那么可亲可敬！<br>亲爱的父亲，安息吧！请您老放心，我们会好好照顾母亲的。<br>附：父亲的遗作三幅：</p>
+<p><a href="http://szcxgg.qiniudn.com/2014-09-20_205902.jpg" target="_blank" rel="external"><img src="http://szcxgg.qiniudn.com/2014-09-20_205902.jpg" alt="2014-09-20_205902"></a></p>
+<p><a href="http://szcxgg.qiniudn.com/2014-09-20_205836.jpg" target="_blank" rel="external"><img src="http://szcxgg.qiniudn.com/2014-09-20_205836.jpg" alt="2014-09-20_205836"></a></p>
+<p><a href="http://szcxgg.qiniudn.com/2014-09-20_205815.jpg" target="_blank" rel="external"><img src="http://szcxgg.qiniudn.com/2014-09-20_205815.jpg" alt="2014-09-20_205815"></a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[无偿献血]]></title>
+      <url>http://szcx.coding.me/2014/09/17/xianxue/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/1.png" alt="1"><br><img src="http://szcxgg.qiniudn.com/2.png" alt="2"></p>
+<p>一、无偿献血的好处<br>1、可以享受免费用血<br>（一）献血者累计献血八百毫升以下，自献血之日起五年内临床用血，可以累计按其献血量的三倍免费用血；自献血之日起五年后临床用血，可以累计按其献血量等量免费用血。<br>（二）献血者累计献血八百毫升以上的，可以终生免费临床用血。<br>除献血者本人按上款规定享受的用血优惠外，献血者的配偶和直系亲属临床用血时，可以累计按献血者的献血量等量免费用血。</p>
+<p>2、有利身体健康<br>◆适量献血会使人更加健康、长寿坚持长期适量献血的人，由于骨髓造血系统不断受到激发，新鲜的血细胞的比例明显高于未献过血的人。献血后会降低血液粘稠度。<br>◆献血可减少冠心病<br>研究结果表明：献血对心脑血管系统有良好的影响，对减少心脑血管病的发病率具有积极的预防作用。<br>◆献血可减少癌症的发病率<br>铁质是人体不可缺少的元素之一，但铁质过高超过正常值的10％，患癌症的机会就会增加。惟一的方法是通过流血排除过多的铁质，因而鼓励体内铁质含量过高的男士们可以定期献血。<br>◆献血能净化人的心灵<br>无偿献血者用自己的献血延续、挽救了他人的生命，使心灵得到慰藉，使人生更加充实。</p>
+<p>二 、献血前注意事项<br>1、学习献血知识，消除紧张心理；<br>2、献血前三天不要服药；<br>3、献血当天应按往常的习惯进餐，但不宜吃肥肉、鱼、油条等高脂肪或高蛋白食物；<br>4、献血前不饮酒；<br>5、保持睡眠充足，不宜做剧烈运动。</p>
+<p>三、献血后注意事项<br>1、献血完毕，针眼处要压迫5-10分钟，避免血液渗出；<br>2、要保护好静脉穿刺部位，穿刺部位止血后不等于完全愈合，至少在24小时内不要被水浸润，也不要被不洁物品污染，更不要在静脉穿刺部位揉搓。<br>3、运动要适度，献血后当天请不要从事体育比赛、通宵娱乐等活动；<br>4、饮食营养要适中，不要进食过量。<br>5</p>
+<p>四、其他注意事项<br>有下列情况之一者暂不能献血：<br>1、拔牙或其他小手术后未满半个月者，较大手术后未满半年者；<br>2、妇女月经前后三天、妊娠期、流产后未满六个月、分娩及哺乳期未满一年者；<br>3、感冒、急性胃肠炎病愈未满一周者，肺炎病愈未满三个月者；<br>4、痢疾病愈未满半年者，疟疾病愈未满三年者；<br>5、近五年内输注全血及血液成分者；<br>6、皮肤局限性炎症愈合后未满一周者；<br>7、上次献血未满半年者。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[软件卸载器 Uninstall Tool v3.4.0.5354 绿色便携版]]></title>
+      <url>http://szcx.coding.me/2014/09/16/Uninstall%20Tool/</url>
+      <content type="html"><![CDATA[<p>Uninstall Tool 是一款来自于美国的且人气度超高的安全、高效的软件卸载辅助工具，它支持软件本身的卸载程序卸载完毕后再扫描软件残留的注册表项及残余文件，将待卸载程序彻底从当前系统环境中移除。可完美替代微软系统自带的程序卸载模块，让您的系统重新焕发高速率运行魅力。</p>
+<p>Uninstall Tool 的跟踪安装模块可以监视每款软件的安装过程，实时监视软件安装在系统中的任何文件及注册表项等，以便卸载时更彻底将其删除干净。同时它还可以显示卸载系统组件及隐藏组件，按名称过滤已安装程序的列表并保存安装程序列表。</p>
+<p>预览图：<img src="http://szcxgg.qiniudn.com/2014-09-16_180931.jpg" alt=""></p>
+<p>功能&amp;特点：</p>
+<p>完全删除任何软件；<br>比标准删除程序快3倍；<br>添加删除系统启动项；<br>可以删除“添加/删除程序”无法卸载的程序；<br>强制删除卸载相关的注册表和文件系统项目；<br>智能搜索，可以快速找到你所需要的任何应用程序；<br>批量删除操作；<br>突出显示列表中的最近安装的应用程序；<br>定位到选定程序的注册表项、安装文件夹和网站；<br>查看您电脑上安装的某个程序的详细信息；<br>易于使用和现代化的用户界面；<br>替换控制面板图标，HTML 报告，调用 Windows 工具等；<br>该版由国外著名绿软大神 Vnvvnv 精心破解制作而成，已实现主程序的绿色便携化解压即用甚是方便，软件缘精简多余无用文件和其他国家语言包后简单整理打包后分享！</p>
+<p>Uninstall Tool v3.4.0.5354 更新日志：<a href="http://www.crystalidea.com/uninstall-tool-version-history；" target="_blank" rel="external">http://www.crystalidea.com/uninstall-tool-version-history；</a></p>
+<p><a href="http://pan.baidu.com/s/1sj6pXOL" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[共享PDF阅读器 PDF-XChange Viewer v2.5.309.0 绿色便携版]]></title>
+      <url>http://szcx.coding.me/2014/09/16/PDF-XChange/</url>
+      <content type="html"><![CDATA[<p>PDF-XChange Viewer 是一款由美利坚 Tracker 软件出品的轻巧易用的多功能可移植文档格式即 PDF 阅读器，其主要分为免费版与专业版两个版本，它具有丰富的标注功能、多页签显示、强大的导出图像功能、批量搜索、放大与导航等实用功能。支持中文注释，电子书阅读必备技巧。</p>
+<p>PDF-XChange Viewer 还可以协同其他软件如：Word、Excel、AutoCAD 等制作出与 Adobe 相兼容的可编辑与阅读的 PDF 文档，丰富的配置与功能选项使其屹立于同类软件中且备受广大用户的好评。能够替代传统的纸张输出，用作 PDF 文档打印辅助工具，因此它也是优秀的办公助手。</p>
+<p>预览图：<img src="http://szcxgg.qiniudn.com/2014-09-16_175109.png" alt=""><br>功能&amp;特点（专业版）：</p>
+<ul>
+<li>添加/编辑/移动书签；</li>
+<li>删除页面；</li>
+<li>移动页面，在预览缩略图里拖放；</li>
+<li>插入/导入页面；</li>
+<li>提取页面到一个新的PDF/图像文件；</li>
+<li>裁剪页面/文件；</li>
+<li>贴注释/评论；</li>
+<li>插入空白页；</li>
+<li>总括注释；</li>
+<li>导出注释；</li>
+<li>扫描直接生成PDF文件；</li>
+<li>从文本文件和RTF文件生成PDF文件；</li>
+<li>将15种格式的图形文件转换成PDF文件；</li>
+<li>添加数字签名；</li>
+</ul>
+<p>文件说明：</p>
+<p>HvOCR – 带有 OCR 语言拓展；<br>NoOCR – 不带 OCR 语言拓展；<br>该版由软件缘博主基于官方安装包及便携版优化制作而成，和谐化主程序并且去除相关水印功能，精简语言包组件仅保留简、繁体中文，特别制作了32及64位两个便携版本，最后打包并集成中、英文 OCR 语言拓展包。</p>
+<p>更多 OCR 语言拓展包：<a href="http://www.tracker-software.com/pdf-xchange-viewer-ocr；" target="_blank" rel="external">http://www.tracker-software.com/pdf-xchange-viewer-ocr；</a></p>
+<p>PDF-XChange Viewer v2.5 Build 309.0 更新日志：<a href="http://www.tracker-software.com/PDFXE_history.html；" target="_blank" rel="external">http://www.tracker-software.com/PDFXE_history.html；</a></p>
+<p><a href="http://pan.baidu.com/s/1dDcSoy1" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[谷歌浏览器 Google Chrome v37.0.2062.120 便携增强版]]></title>
+      <url>http://szcx.coding.me/2014/09/16/Google%20Chrome/</url>
+      <content type="html"><![CDATA[<p>Google Chrome，又称：谷歌浏览器，是一款由谷歌（Google）公司精心开发设计的网页浏览器，在简约的外观下，蕴含了尖端的技术，让网络浏览变得更快捷、更安全且更轻松。基于开源代码撰写而成，其本身也是开源软件的一份子，拥有自主知识产权的 WebKit 极速内核，致力于简单且有效率的用户交互界面。</p>
+<p>谷歌浏览器也是一款可定制的网页浏览器，可以安装许多实用的拓展程序与用户脚本，打造属于自己的个性化网页浏览器，创造非同凡响的网络冲浪体验。支持多标签浏览，每个标签页面都在独立的“沙箱”内运行，在提高安全性的同时，一个标签页面的崩溃也不会导致其他标签页面被关闭。</p>
+<p>预览图：</p>
+<p><img src="http://szcxgg.qiniudn.com/Google_Chrome.jpg" alt="1"><br>本博分享的多款便携版谷歌浏览器均由软件缘博主基于官方稳定版以及甲壳虫的 MyChrome 便携化引导器配置完成，均有设置 Hao123 为导航首页（可手动修改成其他），增强版配备实用扩展程序及用户脚本，使网页浏览变得更加有趣、简单、高效且富有个性化。</p>
+<p>功能特点（增强版）：</p>
+<p>一、扩展程序</p>
+<p>1、SimpleUndoClose – 这个简单的弹出可让您轻而易举的撤销关闭的标签；<br>2、OneTab – 聚合凌乱的网页标签，节省95%的内存开销；<br>3、Tampermonkey – 用于 Chrome 的用户脚本管理器<br>4、Adblock Plus – 让低俗的网页广告成为往事；<br>5、划词翻译 – 多语言互译与阅读；<br>6、IE Tab – 在标签页中以IE内核显示网页，快捷、稳定、安全；<br>7、CrxMouse – 鼠标手势，通过鼠标来实现一些功能操作，充分挖掘鼠标的所有操作；<br>8、V+新标签页 – 随意添加网站与应用，可自动获取网站图标，透明风格，简约时尚的上网导航；<br>9、谷歌搜索助手 – 谷歌搜索增强与优化工具；<br>10、小乐图客 – 军工级取图利器，支持取图规则直接抓取并保存大图。另外支持截图、拼图、JS代码等；<br>11、一键管理 – 一键开启、禁止所有应用，一键开启关闭扩展，一键直达应用，一键直达常用功能等；</p>
+<p>二、用户脚本</p>
+<p>1、百度网盘助手 – 显示百度网盘文件的直接链接，突破大文件需要使用云管家的限制；<br>2、百度音乐下载 – 突破百度音乐会员限制，带您自由畅享高品质音乐；<br>3、虾米音乐助手 – 带您下载虾米音乐；<br>4、CL1024 – 草榴社区，取消viidii跳转，种子链接转化为磁链接，去帖子广告等；<br>5、MiniblogImgPop 微博浮图 – 微博浮图控件，鼠标移过小图弹出浮动大图；<br>6、网页强制复制 – 右键强力解锁，可以复制一些网站的免费章节或者特殊文字；<br>7、My Novel Reader – 小说阅读脚本，统一阅读样式，内容去广告，修正拼音字，段落整理，自动下一页等；<br>8、数据银行下载助手 – 更方便的下载华为网盘资源；<br>9、verycd补全下载链接 – 在 verycd 页面直接显示下载链接，可通过多个站点获取，防止失效；<br>10、nolazyload – 将 lazyload 图片提前读进缓存，提高加载速度；<br>11、bili_fix_player – 修复B站播放器，黑科技，列表页、搜索页弹窗，破乐视限制，提供高清、低清晰源下载，弹幕下载；</p>
+<p>文件说明：</p>
+<p>Stable – 纯净版；<br>Stable+ – 增强版；<br>Google Chrome v37.0.2062.120 更新日志：</p>
+<p>1、在 Windows 平台上支持 DirectWrite 以改善字体渲染；<br>2、许多新的应用程序/扩展 API；<br>3、大量内核稳定性和性能的变化；<br>4、关键修复：导致在 Windows 上多字节字符有时不被呈现的问题；<br>5、当显示缩放比例设置为 125% 或更低时 Chrome 如何渲染文本的问题；<br>6、此版本包含一个 Flash Player 更新和一些其他修复；</p>
+<p><a href="http://pan.baidu.com/s/1ntjx4nv" target="_blank" rel="external">下载地址</a></p>
+<p>转载注明：软件缘</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[欣言作文]]></title>
+      <url>http://szcx.coding.me/2014/09/16/%E6%AC%A3%E8%A8%80%E4%BD%9C%E6%96%87/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/%E6%AC%A3%E8%A8%80%E4%BD%9C%E6%96%872014%E5%B9%B4.png" alt="欣言作文"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[易视宝，机顶盒看直播已解决]]></title>
+      <url>http://szcx.coding.me/2014/09/15/jidinghe/</url>
+      <content type="html"><![CDATA[<p>本人亲测可以看直播了，准备U盘一个<br>安装兔子桌面以及电视家或泰捷视频</p>
+<p><a href="http://pan.baidu.com/s/1c0pLzK8" target="_blank" rel="external">下载地址</a></p>
+<p>使用方法：<br>首先进入机顶盒界面，选择应用，文件预览，安装U盘内下载的软件，安装完成后，按遥控器首页。进入兔子桌面选择安装的电视家或泰捷视频就可以观看直播了若想看点播点首页后选择旧界面即可！</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Notepad++ V6.6.9 - 特色编辑器、支持语法高亮]]></title>
+      <url>http://szcx.coding.me/2014/09/15/notepad/</url>
+      <content type="html"><![CDATA[<p>Notepad++是一款免费的源代码编辑器，并且可以替代系统自带的记事本的功能，同时也支持各类流行的计算机编程语言。编辑器可以运行在微软的windows系统环境下，它的使用是受GPL许可证保护的，支持的语言：C、C++、Java、C#、XML、HTML、PHP、Javascript。</p>
+<p>Notepad++ 是一款非常有特色的编辑器，是开源软件，可以免费使用。 功能有：<br>①、内置支持多达 27 种语法高亮度显示(囊括各种常见的源代码、脚本，值得一提的是，完美支持 .nfo 文件查看)，也支持自定义语言；<br>②、可自动检测文件类型，根据关键字显示节点，节点可自由折叠/打开，代码显示得非常有层次感！这是此软件最具特色的体现之一；<br>③、可打开双窗口，在分窗口中又可打开多个子窗口，允许快捷切换全屏显示模式(F11)，支持鼠标滚轮改变文档显示比例，等等；<br>④、提供数个特色东东，如 邻行互换位置、宏功能，等等…现在网上有很多文件编辑器，这个却是不可多得的一款，不论是日常使用还是手写编程代码，都能让你体会到它独有的优势和方便。<br>支持的语言: C, C++ , Java , C#, XML, HTML, PHP, Javascript , ！<br>基于强大的编辑组件Scintilla，Notepad++也是使用C++代码开发而成，并且使用了win32的api接口和STL标准模板库，因此确保软件有更高效的执行效率和更小的程序体积。在不失用户体验度的同时，也可以尽可能允许用户自定义多项的程序设置。</p>
+<p><img src="http://szcxgg.qiniudn.com/2014-09-16_174300.png" alt="1"><br>Notepad++ 6.6.9更新日志：</p>
+<p>• 新增：为功能列表加入python</p>
+<p>• 修复：解决颜色选择器无法工作的bug</p>
+<p>• 新增：新建文件时允许应用默认系统设置</p>
+<p>Notepad++ v6.6 新特性概览：</p>
+<p>1、新增会话快照、定期备份功能；</p>
+<p>2、修正RTL/LTR命令制作文本错误；</p>
+<p>3、自动检测字符编码设置为可选；</p>
+<p>4、在查找和替换对话框选项卡和用户自定义语言对话框选项卡中加入DPI识别功能；</p>
+<p>5、在功能列表中加入Shell脚本解析器；</p>
+<p>6、在SQL中可选使用反斜线，充当为转义字符。<br>文件大小: 6M;<br>MD5: 317D699FD1C576584558D60688B98717<br>SHA1: C6811F3816ED15C3B7783D082CB62984947B341D<br>CRC32: A955E7D7</p>
+<p><a href="http://pan.baidu.com/s/1sjM4VQP" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[教师节来了，祝天下的老师快乐！祝自己快乐！]]></title>
+      <url>http://szcx.coding.me/2014/09/12/jiaoshi/</url>
+      <content type="html"><![CDATA[<p>教师节来了，祝天下的老师快乐！祝自己快乐！<br>PS：<br>引用：<br>尊师重教是中国的优良传统，早在公元前11世纪的西周时期，就提出“弟子事师，敬同于父”。教师节，旨在肯定教师为教育事业所做的贡献。1985年，第六届全国人大常委会第九次会议通过了国务院关于建立教师节的议案，会议决定将每年的9月10日定为教师节。1985年9月10日，是中国第一个教师节。从2004年开始，时任全国政协委员的著名人文学者李汉秋以提案的方式，多次呼吁以孔子诞辰作为教师节。经权威部门研究测算，孔子诞生于公元前551年9月28日（阳历），这个日子也恰当其时：新学年开始时的繁忙已经过去，可以有时间筹办教师节和国庆节。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[驾校科三训练视频]]></title>
+      <url>http://szcx.coding.me/2014/09/11/kesan/</url>
+      <content type="html"><![CDATA[<p>驾校科三考场训练1时间8：26</p>
+<embed src="http://player.youku.com/player.php/sid/XNzc4NzI0MDI0/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br>驾校科三考场训练2时间17：48<br><embed src="http://player.youku.com/player.php/sid/XNzc5MjMwMDAw/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br>驾校科三考场训练3时间2：49<br><embed src="http://player.youku.com/player.php/sid/XNzc4NzIzNDQ0/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[我的体重！]]></title>
+      <url>http://szcx.coding.me/2014/09/06/%E4%BD%93%E9%87%8D/</url>
+      <content type="html"><![CDATA[<p>今天到安居去练习科目三，回家路时顺便称了一下体重。65.65KG，看来假期学车还瘦了。</p>
+<p><img src="http://szcxgg.qiniudn.com/2014-09-06_150343.png" alt="我的体重"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[再试七牛]]></title>
+      <url>http://szcx.coding.me/2014/09/05/%E4%B8%83%E7%89%9B/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/favicon.png" alt="LOGO"></p>
+<p><a href="http://szcxgg.tk/wp-content/uploads/2014/08/WP_20140824_19_00_58_Pro.jpg" target="_blank" rel="external"><img src="http://szcxgg.tk/wp-content/uploads/2014/08/WP_20140824_19_00_58_Pro-280x200.jpg" alt="WP_20140824_19_00_58_Pro"></a></p>
+<p><img src="http://szcxgg.qiniudn.com/logo.png" alt="logo"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Internet Download Manager V6.21 build10绿色版]]></title>
+      <url>http://szcx.coding.me/2014/09/04/idm/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/7_209794_752765a5f710c0e.jpg" alt="1"><br>Internet Download Manager是一款很不错的下载工具！用它找在线视频下载地址，非常給力！<br>Internet Download Manager的续传功能可以恢复因为断线、网络问题、计算机当机甚至无预警的停电导致下传到一半的软件。此程序具有动态档案分割、多重下载点技术，而且它会重复使用现有的联机，而不需再重新联机登入一遍。聪明的in-speed技术会动态地将所有设定应用到某种联机类型，以充分利用下载速度。<br>Internet Download Manager 支持所有流行的浏览器，包括：Microsoft Internet Explorer, Netscape, MSN Explorer, AOL, Opera, Mozilla, Mozilla Firefox, Mozilla Firebird, Avant Browser, MyIE2, Google Chrome等。如果启用高级集成，则可以捕获和接管从任何程序的下载。</p>
+<p>Internet Download Manager 支持 HTTP, FTP, HTTPS 和 MMS 协议。IDM 不是p2p下载软件，因此无法用于下载通过bt和eMule发布的内容。</p>
+<p><a href="http://pan.baidu.com/s/1kTFVGov" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Windows2003 IIS6完美实现WordPress伪静态的方法]]></title>
+      <url>http://szcx.coding.me/2014/09/03/windows2003/</url>
+      <content type="html"><![CDATA[<p>[PHP+MYSQL, WordPress]Posted on 2011-03-15 by 李 勇 | 3,259 views | 6 Comments »Windows2003 IIS6下实现伪静态的方法有很多，一种通过IIS的404处理机制来实现（缺陷是搜索结果页分页错误），这比ISAPI_ReWrite要方便，可是对搜索引擎的友好度可圈可点，暂不推荐；还有一种是通过服务器端安装伪静态组件实现，这种也是现在最常用的。当然，你如果是LINUX服务器，那就简单多了，直接使用Apache的Mode Rewrite和.htaccess配合即可。<br>为什么要使用伪静态？<br>1.最主要的就是通过伪静态来改变网站URL结构，增强网站对搜索引擎的友好度。对搜索引擎来说，静态的URL更受搜索引擎蜘蛛(Spider）的欢迎，也更方便Spider来抓取网页上的相关内容。<br>2.保证网站内容的实时更新，这样Spider来爬的时候，就不会错过你网站更多精彩的内容。另外，相对真静态来说，也省去频繁生成静态网页对硬盘的伤了。<br>3.极大方便了SEO，加强了网站信任度，对你网站的搜索引擎排名来说，可谓功不可没。<br>很多朋友在研究SEO的时候，因为有些技术原因，伪静态却成了最大的门槛。下面我就分享一下我的WordPress伪静态的方法，帮你省点事，少些弯路，效果嘛，我的博客就是个很好的例子，包括困扰很多站长朋友的分页问题也完美解决。<br>WordPress伪静态Windows2003 IIS6下配置方法<br>1.下载WordPress URL Rewrite组件<br>发布页：<a href="http://www.binaryfortress.com/wordpress-url-rewrite" target="_blank" rel="external">http://www.binaryfortress.com/wordpress-url-rewrite</a><br>WordPress URL Rewrite主要功能与特色：完全无需人工干预，全自动重写URL，只需要在后台设置好固定链接（Permalinks）形式，就能直接使用，就像linux下用.htaccess一样。可以使用在一级目录和子目录，也可以排除不需要重写的目录。这个非常方便，对于某些目录不需要URL重写的就将其排除，不会造成无法访问。因为全自动，所以免去了在写重写规则时候遇到的规则重复造成部分目录和文件无法实现的情况。我想，很多站长都遇到过这种情况吧，当然我也有过，那个叫折腾来着。<br>2.安装WordPress URL Rewrite<br>把下载的压缩包解压到任何地方，只要保证WordPressURLRewrite.ini和WordPressURLRewrite32.dll（32位版本，64位版本对应为64.dll）在同一文件夹下就可以了。<br>然后打开WordPressURLRewrite.ini设置你的博客目录，以及需要排除的目录，这里就不详细说了，Readme.txt里有详细说明，有什么不清楚的地方可以给我留言。<br>接下来，在IIS中选择相应的站点，在ISAPI筛选器中加载WordPressURLRewrite32.dll就可以了，加载完不用重启IIS，可以停掉网站再启动。<br>注意：要给dll所在的目录加上IIS_WPG组的写入权限，否则无法加载对应dll文件。<br>如果你的文章、栏目、tag别名均是用的英文的话，那到这里就OK了，下面是针对特殊情况的解决办法。<br>存在的问题:<br>(1)中文的tag无法访问<br>解决办法：需要使用ISAPI_Rewrite来写一条规则：<br>RewriteRule /tag/(.*) /index.php\?tag=$1(2)含有中文的网址也是不能访问的<br>3.安装ISAPI_Rewrite<br>网站根目录下新建立一个httpd.ini文件，用记事本或是emeditor打开，规则写在httpd.ini里，如下：<br>[ISAPI_Rewrite]</p>
+<h1 id="3600-1-hour"><a href="#3600-1-hour" class="headerlink" title="3600 = 1 hour"></a>3600 = 1 hour</h1><p>CacheClockRate 3600<br>RepeatLimit 32<br>RewriteRule /tag/(.*)/ /index.php\?tag=$1现在中文tag是能访问了，但是还是存在问题。<br>存在的问题：<br>(1) tag页面的文章超过1页，翻页时都不能访问<br>解决办法：修改这条规则为：RewriteRule /tag/[^/]+)/([^/]+)/?([0-9]+)?/ /index.php?tag=$1&amp;paged=$3 [L]<br>但是修改之后中文tag又不能访问了，别担心，接着看下一步。<br>4.修改wp-include中的classes.php<br>继续修改第三步中的问题，因为修改Rewrite规则之后中文tag还是不能访问，含有中文的网址也是不能访问。最好使用专门的PHP编辑器工具，如EditPlus，我用的是emeditor。<br>修改WP-include中的classes.php<br>原代码：<br>$pathinfo = $_SERVER[‘PATH_INFO’];替换为：<br>$pathinfo = mb_convert_encoding($_SERVER[‘PATH_INFO’], “UTF-8”, “GBK”);原代码：<br>$req_uri = $_SERVER[‘REQUEST_URI’];替换为：<br>$req_uri = mb_convert_encoding($_SERVER[‘REQUEST_URI’], “UTF-8”, “GBK”);修改后，保存下，然后将保存后的classes.php文件上传并覆盖原文件即可，这里需要注意文件保存格式。<br>我地个乖乖，好长的文章，总算结束了，有啥不明白的尽管M我！<br>附：常用WordPress固定链接格式<br>1）/%postname%/<br>2）/%year%/%monthnum%/%postname%/<br>3）/post/%post_id%.html<br>4）/%year%/%monthnum%/%day%/%postname%/<br>5）/%year%/%monthnum%/%day%/%postname%.html个人推荐前3种了，URL相对搜索引擎来说比较友好，辛苦下自己测试了，很容易理解。<br>最后，要说明的是，使用伪静态后将占用一定量的CPU占有率，大量使用将导致CPU超负荷，这是伪静态表现不好的地方。可是，当你的网站真正流量起来收益后，我想，升级一下硬件装备，这都不是什么难题了。</p>
+<p>本文来源于小拼SEM博客：<a href="http://www.xp-sem.com/" target="_blank" rel="external">http://www.xp-sem.com/</a> 原文链接：<a href="http://www.xp-sem.com/win2003-iis6-wordpress-rewrite/" target="_blank" rel="external">http://www.xp-sem.com/win2003-iis6-wordpress-rewrite/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WordPress固定链接设置的几种方法]]></title>
+      <url>http://szcx.coding.me/2014/09/02/wordpress/</url>
+      <content type="html"><![CDATA[<p>传说中，固定链接有SEO功能，今天试了试，现在给大家分享一下：<br>wordpress固定链接设置技巧：<br>1、不要让日期出现在固定链接里面<br>　　这基于两个方面的考虑。一是如果数字出现在固定链接里面，等于提醒搜索引擎，这是很旧的内容了，没必要再爬一遍了。另外一个原因是，假如你要修改文章的日期重新发布的话，链接地址就变了，也就是意味着你的反向链接，PR 等等都没有了。<br>2、不要让分类的链接出现在固定链接里面<br>　　这一点是很多人都会忽略的地方。让分类出现在固定链接里面有两个缺陷：一是一篇文章如果选择了多个分类的话，则会出现多个链接地址，这很容易造成因为重复内容而被搜索引擎惩罚；二是有可能会造成关键词堆砌而被搜索引擎惩罚。<br>3、链接不要过深<br>　　这一点经常看到。很多wordpress 用户的固定链接是年/月/日/分类名/文章名。这种过于深的固定链接对搜索引擎是非常不友好的。<br>4、不要让中文字符出现在固定链接里面<br>　　虽然现在的搜索引擎已经能识别URL地址里面的中文字符，但无论是从美观上，还是从wordpress 优化的角度来看，都是非常差的。<br>wordpress固定链接设置的一些参数：<br>%year%：基于文章发布的年份，比如2010；<br>%monthnum%：基于文章发布的月份，比如01；<br>%day%：基于文章发布当日，比如06；<br>%hour%：基于文章发布小时数，比如23；<br>%minute%：基于文章发布分钟数，比如43；<br>%second%：基于文章发布秒数，比如33；<br>%postname%：基于文章的postname，其值为撰写时指定的缩略名，不指定缩略名时是文章标题；<br>%post_id%：基于文章post_id，比如48；<br>%category%：基于文章分类，子分类会处理成“分类/子分类”这种形式；<br>%author%：基于文章作者名。<br>　　将上述参数进行组合，即可得到wordpress的固定链接形式。<br>网上常见的几种设置方法：<br>•/%year%/%monthnum%/%day%/%postname%/</p>
+<p>•/%year%/%monthnum%/%postname%/</p>
+<p>•/%year%/%monthnum%/%day%/%postname%.html</p>
+<p>•/%year%/%monthnum%/%postname%.html</p>
+<p>•/%category%/%postname%.html</p>
+<p>•/%post_id%.html<br>总结：最好的 wordpress固定链接形式是：域名/文章 名（参数为/%postname%.html）。<br>PS：原文作者已经说明最好参数，可本人觉得用/%post_id%.html 最简洁了。<br>注：本站采用/%post_id%.html</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[博客搬家]]></title>
+      <url>http://szcx.coding.me/2014/08/28/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6/</url>
+      <content type="html"><![CDATA[<p>从今天起博客搬家到华美云，感谢网友“〆从此っ”赞助，他的博客地址是：<a href="http://yqfsj.pw" target="_blank" rel="external">http://yqfsj.pw</a><br><a href="http://kirito.cn" target="_blank" rel="external">http://kirito.cn</a><br>华美云感觉还不太稳定，白天好一点，晚上服务器有时有点短路、抽风。先试用一段时间再说。</p>
+<p><a href="http://idc-ip.com" target="_blank" rel="external">9.12日搬家到</a></p>
+<p>这个空间比较便宜，但有点小，慢慢试用一个月再说</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[【 分享 GHOST 版“烦烦烦”精简企业版Win7，集成一键修复系统问题工具 】]]></title>
+      <url>http://szcx.coding.me/2014/08/28/win7/</url>
+      <content type="html"><![CDATA[<p><table cellspacing="0" cellpadding="0"></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td id="postmessage_2927957" class="t_f"><span style="color: red;">随着4月8日微软对XP撒手不管，最近在无忧，“烦烦烦”精简企业版Win7 炒的很热，究其原因，这个精简Win7体积很小（原包只有239MB），<br>可以说到了极致，但功能并不弱，速度极快，在老机上运行很顺畅，比XP还快，堪称经典，所以受到很多网友的青睐！</span><br><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="color: blue;"><br>“烦烦烦”精简企业版Win7，原包为7z压缩包，部分网友不知道安装方法，还要写硬盘和分区引导！<br>为此，特做了个 GHOST 映像，直接恢复映像即可，这样，对普通网友来说，简化了解决问题的繁琐。高手略过！<br>普通网友装原版的话，劳神费时，遇到问题时很难自己解决，所以建议普通网友装这个GHOST版，一步到位，不必东找西问！<br>原系统文件没有任何更改：只是添加了必须的应用软件，集成了“一键修复系统问题工具”，体积比原包大：介意体积的，且个人能力强可以下载原包：</span></span></span><span style="color: #ff00ff;">◆ 修复的系统问题列表:</span>1.修复本系统不能使用无线网络问题，<br>2.开启 Print Spooler 服务，支持使用网络打印机,<br>3.修复“组策略mmc无法创建管理单元问题”、安装原版Office问题、字体乱码问题，<br>4.取消系统激活一段时间后，打开“控制面板”和附件应用程序提示的“授权提示框”，<br>5.开启 Smart Card 服务，支持使用网银盾，修复不能安装“建行2代网银盾驱动问题”，添加的应用软件，全部绿色无广告：</td></p>
+<p>1. install_flash_player_ax.exe   （这个是必须安装的，否则，有些网站的视频看不了，游戏玩不了，可以说大部分网站都要基于flash_player的支持）<br>2. WinRAR_x86-501sc.exe   （这个不装的话，下载的文件是压缩包的话，无法解开，关键是此软件绿色无广告不用注册呀！当然你用其他解压缩软件也可以）<br>3. 搜狗拼音6.6.exe               （输入法，打字都要用的，关键是此软件绿色无广告呀！用五笔的就免了）<br>4. DirectX_VC，                    （安装修复 DirectX，安装c++2005-2008-2010-2012 支持绿软QQ等 )<br>5. Microsoft .NET Framework_4.5.1_Full   ( 微软运行库 )。<br>6.添加本系统专用虚拟WiFi工具。不保证其它第三方虚拟 WiFi 工具能应用本系统 ！ 不过，使用过本工具后，其他第三方虚拟WiFi工具，应该可以使用了！<br><span style="color: #ff00ff;">（使用本工具时有个：“下列帮助者 DLL 不能被加载：AUTHFWCFG。” 的错误提示，忽略他没关系，不影响使用！)</span></p>
+<p><span style="font-weight: bold;"><span style="color: blue;">完成系统安装后，自己选择安装。装完后，系统就可以正常使用了 ！</span></span></p>
+<p><span style="font-weight: bold;"><span style="color: red;">特别说明：<br>本人只是提供此系统问题的解决方法与修复工具，并没有对原系统进行更改，<br>如果不使用修复工具和软件，装完系统后和原作者系统一样，没有任何更改！<br></span></span><br><span style="font-weight: bold;"><span style="color: #ff00ff;">如果您不需要“应用软件”，想减小体积，可以用GHO映像编辑器打开本GHO文件，<br>删除 C:\Program Files\激活优化\ 的“常用软件”目录，之后，重新编译，可减小体积，对系统没有影响。</span></span></p>
+<p>下载地址：觉得好就顶顶贴！</p>
+<p><a href="http://pan.baidu.com/s/1dDlEWiX" target="_blank" rel="external">http://pan.baidu.com/s/1dDlEWiX</a></p>
+<p>文件大小：752 MB</p>
+<p><span style="color: #ff00ff;">============================================================<br>如果您觉得GHO文件大，或不喜欢集成的软件工具，或您的个人能力强，可以下载 239 MB 的原版：</span></p>
+<p>原7z包下载：<a href="http://pan.baidu.com/s/1bBFVw" target="_blank" rel="external">http://pan.baidu.com/s/1bBFVw</a></p>
+<p><span style="color: #ff00ff;">============================================================</span><br><br><br></p>
+<div class="pattl"><br><br>&nbsp;<br><br><dl class="tattl attm"><dd style="color: #999999;"><br><div class="mbn savephotop"><span style="color: #ff0000;"> 大家好我是马甲，明天4月8日，xp即将停止支持，某位制作的c盘占用1.6G居然还不带打印和无线，足以证明精简水平一般，本人这个虽说精简，但是功能齐全度比某位要好，本人最痛恨的是系统信息修改成作者信息，这个不带任何作者个人信息，也不带推广信息，更没有病毒，如果不放心，装好系统可以用360，金山毒霸，包括国外的杀毒软件查杀</span><br><br><span style="color: #ff0000;">这是我以 Windows 7 SP1 企业版 原版封装的系统，功能齐全，完美保留打印机、无线、蓝牙。没有安装任何其它软件。包括输入法也没有</span><br><br><span style="color: #ff0000;">只有256M内存（而且以256M内存开启aero效果，还剩余81%内存），没有设置虚拟内存的情况下仍可进入系统，绝对兼顾老机子，再夸张一点，比xp占用资源还小。当然，如果你真是只有256M内存的机子，要想运行程序还是要设置虚拟内存的。</span><br><br><span style="color: #ff0000;">1.镜像文件只有239M，一个256M大小U盘都可以放下。装好系统后C盘1GB占用都不到（包括本人已装好驱动），可以说是麻雀虽小，五脏俱全。</span><br><br><span style="color: #ff0000;">建议大家都用正版密钥激活，不要用</span><span style="color: blue;"><span style="font-size: large;">chew-wga</span></span><span style="color: #ff0000;">工具激活，如果微软赚不到钱倒闭了怎么办呢？大家说是不是</span><br><br><span style="color: #ff0000;">File: D:\1\7.7z</span><br><span style="color: #ff0000;">Size: 251417778 bytes</span><br><span style="color: #ff0000;">Modified: 2014年4月7日, 15:12:18</span><br><span style="color: #ff0000;">MD5: 2594903AA5D9A9E3D71BBADCCBBBAEAB</span><br><span style="color: #ff0000;">SHA1: F198BBE4F6DC454F3F6A783CA685B28CC72B7801</span><br><span style="color: #ff0000;">CRC32: 7EEA78C0</span><br><br><span style="color: #ff0000;">由于个人在广东，腾讯的服务器在我这里超快，所以选择微云：</span><a href="http://url.cn/R73YXo" target="_blank" rel="external">http://url.cn/R73YXo</a></div><br><div class="mbn savephotop"></div><br><div class="mbn savephotop"><br><table cellspacing="0" cellpadding="0"><br><tbody><br><tr><br><td id="postmessage_2925264" class="t_f">需要在PE系统下安装：进入PE系统，格式化C盘，用 7z 解压 7.7z 到C盘，然后用 bootice 选择安装系统的硬盘：更新：主引导记录写入Windows NT6 MBR，分区引导记录写入BOOTMGR引导程序，重启电脑开始安装。<br><br><span style="color: #ff00ff;"><span style="font-weight: bold;">用 bootice 更新 MBR 和分区引导记录为 NT6 ：</span></span></td><br></tr><br></tbody><br></table><br><div class="pattl"><br><br>&lt;ignore_js_op&gt;<br><br><dl class="tattl attm"><dt style="font-weight: bold;"></dt><dd><br><br><a href="http://bbs.wuyou.com/forum.php?mod=attachment&amp;aid=MTkyMTczfDg2MGI5ODUxfDE0MDkyMTYzNDl8MTg5NDczfDMzMzc1Nw%3D%3D&amp;nothumb=yes" target="_blank" rel="external">更新主引导记录_MBR.jpg</a> <span class="xg1" style="color: #666666;">(149.36 KB, 下载次数: 37)</span><br><br><div class="mbn savephotop"><img src="http://bbs.wuyou.com/forum.php?mod=attachment&amp;aid=MTkyMTczfDg2MGI5ODUxfDE0MDkyMTYzNDl8MTg5NDczfDMzMzc1Nw%3D%3D&amp;noupdate=yes" alt="更新主引导记录_MBR.jpg" title="更新主引导记录_MBR.jpg"></div><br></dd></dl>&lt;ignore_js_op&gt;<br><br><dl class="tattl attm"><dt style="font-weight: bold;"></dt><dd><br><br><a href="http://bbs.wuyou.com/forum.php?mod=attachment&amp;aid=MTkyMTc0fDZhZDE2NzQyfDE0MDkyMTYzNDl8MTg5NDczfDMzMzc1Nw%3D%3D&amp;nothumb=yes" target="_blank" rel="external">更新分区引导记录.jpg</a> <span class="xg1" style="color: #666666;">(187.08 KB, 下载次数: 36)</span><br><br><div class="mbn savephotop"><img src="http://bbs.wuyou.com/forum.php?mod=attachment&amp;aid=MTkyMTc0fDZhZDE2NzQyfDE0MDkyMTYzNDl8MTg5NDczfDMzMzc1Nw%3D%3D&amp;noupdate=yes" alt="更新分区引导记录.jpg" title="更新分区引导记录.jpg"></div><br></dd></dl></div><br></div><br></dd></dl></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[遂宁手机随拍小景]]></title>
+      <url>http://szcx.coding.me/2014/08/24/suining/</url>
+      <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/2014-09-19_155023.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154940.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154859.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154829.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154720.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154701.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154527.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-09-19_154403.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WordPress 给长文章内容分页]]></title>
+      <url>http://szcx.coding.me/2014/08/22/wordpress2/</url>
+      <content type="html"><![CDATA[<p>我们可能会碰到这样一种情况：发布的文章或页面太长，想要把一篇文章分成好几页，有的时候是为了方便用户阅读，有的时候可以说是为了SEO，到底为了什么目的，那是你的事儿了，我们在这里只是告诉你如何实现Wordpress的文章分页功能。</p>
+<!--nextpage-->
+<p>WordPress系统是内置分页功能的，要实现它极其简单，只需要在你想要分页的地方加入下面的代码即可(注意，是在<strong>文本</strong>编辑模式下)：</p>
+<p><em>&lt;!–nextpage–&gt;</em></p>
+<p>但还有一个问题．要让这个代码真正能够实现其分页功能，还需要你所使用的Wordpress主题支持，Wordpress的默认主题是支持的，如果你的主题不支持，那解决方法也很简单，找到你主题文件内的<strong>single.php</strong>里的下面这行代码：</p>
+<div class="wp_syntax" style="color: #110000;"><br><table><br><tbody><br><tr><br><td class="line_numbers"><br><pre style="color: gray;">1<br></pre><br></td><br><td class="code"><br><pre class="php"><span style="font-weight: bold;">&lt;?php</span> the_content<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> <span style="font-weight: bold;">?&gt;</span></pre><br></td><br></tr><br></tbody><br></table><br></div>
+
+<p>在这段代码下面加上：</p>
+<div class="wp_syntax" style="color: #110000;"><br><table><br><tbody><br><tr><br><td class="line_numbers"><br><pre style="color: gray;">1<br></pre><br></td><br><td class="code"><br><pre class="php"><span style="font-weight: bold;">&lt;?php</span> wp_link_pages<span style="color: #009900;">(</span><span style="color: #0000ff;">‘before=&lt;div id=”page-links”&gt;&amp;after=&lt;/div&gt;’</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> <span style="font-weight: bold;">?&gt;</span></pre><br></td><br></tr><br></tbody><br></table><br></div>
+
+<p>即可。</p>
+<p>如果你想了解更多，请查阅 <a href="http://codex.wordpress.org/Function_Reference/wp_link_pages" target="_blank" rel="external">wp_link_pages()</a></p>
+<p>如果你不想每次都切换到文本编辑模式，那你可以 <a href="http://www.wpdaxue.com/add-next-page-button-wordpress-post-editor.html" target="_blank" rel="external">在 WordPress 编辑器添加“下一页”分页按钮</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[逗B二货,怎么笑你都不为过]]></title>
+      <url>http://szcx.coding.me/2014/08/22/youmo2/</url>
+      <content type="html"><![CDATA[<p><span style="color: #656d77;">1、A：“昨天夜里我干了件大事，感觉立马回到了童年。”</span><br><span style="color: #656d77;">B：“什么事？”</span><br><span style="color: #656d77;">A：“尿床。”</span></p>
+<p><span style="color: #656d77;">2、A：“你有没有恐高症？”</span><br><span style="color: #656d77;">B：“有！我低头时望脚尖，都会觉得头晕！”</span></p>
+<p><span style="color: #656d77;">3、火车上突闻到一股脚臭味，余光一瞟就看见我对面妹子脱了鞋，…就听到我上铺喊了句：大妹子啊。</span><br><span style="color: #656d77;">那妹子‘啊’了一声。</span><br><span style="color: #656d77;">上铺又说：大城市来的吧？</span><br><span style="color: #656d77;">妹子说：你怎么知道啊？</span><br><span style="color: #656d77;">上铺笑道：一闻这味怎么着也是香港的啊～～</span></p>
+<p><span style="color: #656d77;">4、“你怎么一有钱就买包包啊？”</span><br><span style="color: #656d77;">“有钱当然买包包啊。你走在路上拿着爱马仕，经过的人都知道你有钱。你不能拉着每个人说：呵呵，姐昨晚吸了五万块的粉。对于我这种虚荣的人来说，得憋死。就跟搞了吴彦祖不让说一样，我图什么呀！”</span></p>
+<p><span style="color: #656d77;">5、我俩逗B哥们看动物世界来着，说到大马哈鱼为了产卵，最后付出了生命，河滩上漂着好多死鱼，这时A说：“这么多死鱼你进去捡两条回来煮呗。”</span><br><span style="color: #656d77;">B：“怎么进去？”</span><br><span style="color: #656d77;">A：“把电视砸了不就可以了。”</span><br><span style="color: #656d77;">当时我那哥们就急了：“你TM当我傻B啊！我要是把电视砸了，那一河的水流出来还不把我家淹了啊！”</span><br> <!--nextpage--><br><span style="color: #656d77;">1、士兵问连长：作战时踩到地雷咋办？连长大为恼火：靠，能咋办？踩坏了照价赔偿。</span><br><span style="color: #656d77;">2、很久墨收到你的信息俺很心疼</span><br><span style="color: #656d77;">俺想到死曾用薯片割过脉用豆腐撞过头用降落伞跳过楼</span><br><span style="color: #656d77;">用面条上过吊可都墨死成</span><br><span style="color: #656d77;">你就请俺吃顿饭撑死俺算了</span><br><span style="color: #656d77;">3、如果感到心里挖凉挖凉的，请拨打俺的电话！谈感情请按1，谈工作请按2，谈人生请按3，给俺介绍对象请按5，请俺吃饭请直说，找俺借钱请挂机。</span><br><span style="color: #656d77;">4、长颈鹿嫁给了猴子，一年后长颈鹿提出离婚：我再也不要过这种上蹿下跳的日子了！猴子大怒：离就离！谁见过亲个嘴还得爬树的！</span><br><span style="color: #656d77;">5、鱼说：“我时时刻刻把眼睁开是为了在你身边不舍离开。”水说：“我终日流淌不知疲倦是为了围绕你，好好把你抱紧。”锅说：“都他妈快熟了还这么多废话。”</span><br><span style="color: #656d77;">6、吃饭了吗？请接收短信。大象把大便排在路中央，一只蚂蚁正好路过，它抬头望了望那云雾缭绕的顶峰，不禁唱到：呀啦索，这就是青藏高原！~~~~</span><br><span style="color: #656d77;">7、你都长大了，有些事应该让你知道了：天，是用来刮风下雨的；地，是用来长花长草的；我，是用来证明人类是多伟大的；你是用来炖粉条的。</span><br><span style="color: #656d77;">8、在铁路旁大号却没带纸时，别着急，火车会提醒你：裤擦，裤擦，裤裤擦！在河边上大号却没带纸时，别着急，青蛙会告诉你：棍刮，棍刮，棍棍刮！</span><br><span style="color: #656d77;">9、钱可以买房子但买不到家，能买到婚姻但买不到爱，可以买到钟表但买不到时间，钱不是一切，反而是痛苦的根源，把你的钱给我，让我一个人承担痛苦吧！</span><br><span style="color: #656d77;">10、老天，太蓝！大海，太咸！人生，太难！工作，太烦！和你，有缘！想你，失眠！见你，太远！唉，这可让我怎么办？想你想得我吃不下筷子，咽不下碗！</span><br><span style="color: #656d77;">11、送你12生肖，祝你聪明如鼠，强壮如牛，胆大如虎，可爱如兔，自信如龙，魅力如蛇，浪漫如马，温顺如羊，顽皮如猴，美丽如鸡，忠诚如狗，长得像猪！</span><br><span style="color: #656d77;">12、黑猩猩不小心踩到了长臂猿拉的大便，长臂猿温柔细心地帮其擦洗干净后它们相爱了，别人问起它们是怎么走到一起的？黑猩猩感慨地说：猿粪！都是猿粪啊！</span><br><span style="color: #656d77;">13、狮子和熊分别在树旁大便，一个月后，狮子发现自己大便旁的树木比熊的那棵长得粗壮，于是说了一句饱含沧桑的哲理——狮屎胜于熊便！</span><br><span style="color: #656d77;">14、心里想一个数字，用它加上52.8，再乘以5，然后减区3.9343，再除以0.5，最后再减去心里想的那个数的十倍，答案很浪漫哦！</span><br><span style="color: #656d77;">15、你在办公室里老放响屁，同事忍不住说你能不能不出声。然后便见你坐在那里摇来晃去抖个不停，问你在干什么，你回答说我调成震动的了！</span><br><span style="color: #656d77;">16、亲爱的上帝，请保佑那些不打电话给我，也不传短信给我，更没有想念我的朋友们：愿主把他们的手机掉到厕所里去吧，阿门！</span><br><span style="color: #656d77;">17、传说你可狠了，在戏院里横躺着占四个座位，别人叫你起来，你却只哼哼两声不动地方，保安来了说：朋友够狠，哪条道上的？你咬牙说：楼上过道摔下来的！</span><br><span style="color: #656d77;">18、思你念你想着你，找个画家画下你，把你贴在杯子里，整天喝水望着你——幸福吗？倒杯开水烫死你！</span><br><span style="color: #656d77;">19、尊敬的用户，此时我们已从您的话费中扣除20元献给巴勒斯坦民族解放事业，为此巴自治政府决定以全体阿拉伯世界的名义授予您崇高的称号：本.沙勒巴基！</span><br><span style="color: #656d77;">20、学问之美，在于使人一头雾水；诗歌之美，在于煽动男女出轨；女人之美，在于蠢得无怨无悔；男人之美，在于说谎说得白日见鬼。</span><br><span style="color: #656d77;">21、在乎你的我只在乎我在乎的是是否在乎在乎你的我，我在乎的你是否和在乎你的我在乎我在乎的你一样在乎在乎你的我，小样儿，看晕你！</span><br><span style="color: #656d77;">22、听说过吗？前世的五百次回眸，才换得今生的一次擦肩，象你我这样亲密的朋友，上辈子似乎没干什么，光他妈回头了！</span><br><span style="color: #656d77;">23、有两个造假钞的不小心造出面值15元的假钞，两人决定拿到偏远山区花掉，当他们拿一张15元买了1元的糖葫芦后，他们哭了，农民找了他们两张7块的</span><br><span style="color: #656d77;">24、你的人生写照：十岁学会自己洗澡——猪自清；二十岁光彩照人——猪时茂；三十岁找到工作——猪立业；四十岁雇了佣人——猪得佣；五十岁学会打篮球——猪投！</span><br><span style="color: #656d77;">25、一个三岁小男孩拉着一个三岁小女孩的手说：“我爱你。”小女孩说：“你能为我的未来负责吗？”小男孩说：“当然能，我们都不是一两岁的人了！”</span><br><span style="color: #656d77;">26、刚才和朋友聊天，其中有谈到你，知道吗？我和他们吵了起来，还差点动手打起来，因为他们有的说你像猴子，有的说你像猩猩，实在太过分了！根本没有把你当猪看！</span><br><span style="color: #656d77;">27、有一天，我对你说你是猪，你说：我是猪才怪。于是我便开始叫你猪才怪。终于有一天你忍不住在众人面前大声宣布：我不是猪才怪！</span><br><span style="color: #656d77;">28、伊拉克战争期间最流行的三个词：和平peace，战争war.发现found，把这三个英文单词连起来大声读三遍，你会揭开一个重大历史谜团。（屁是我放的）…</span><br><span style="color: #656d77;">29、人</span><br><span style="color: #656d77;">会谈恋爱，</span><br><span style="color: #656d77;">不特殊；</span><br><span style="color: #656d77;">牛</span><br><span style="color: #656d77;">会吃青草，</span><br><span style="color: #656d77;">不特殊；</span><br><span style="color: #656d77;">猪</span><br><span style="color: #656d77;">会按电话，</span><br><span style="color: #656d77;">才特殊；</span><br><span style="color: #656d77;">还按！</span><br><span style="color: #656d77;">真是神猪！</span><br><span style="color: #656d77;">哇噻！还会笑！</span><br><span style="color: #656d77;">真是酷呆了的猪！</span><br><span style="color: #656d77;">30、有两句话一直很想对你说，今天终于提起勇气：第一句，我爱你我好喜欢你；第二句，千万不要把第一句当真</span><br><span style="color: #656d77;">31、心理测验：</span><br><span style="color: #656d77;">自我觉得智商挺高的往下按</span><br><span style="color: #656d77;">觉得自己还挺幽默的往下按</span><br><span style="color: #656d77;">觉得自己还挺有魅力的往下按</span><br><span style="color: #656d77;">觉得自己还相貌挺帅的往下按</span><br><span style="color: #656d77;">测验结果：</span><br><span style="color: #656d77;">挺不要脸的</span><br><span style="color: #656d77;">32、在你的眉宇间我看到沧桑，在你的眼中我看到自信，在你的额头我看到岁月，在你的唇齿间我看到韭菜，快去刷牙！</span><br><span style="color: #656d77;">33、吃屎、簟璁、醭歙、艽绱、癀穑、魍旃、偬彘、硪钚、鲥硐、上面的词你认识几个，是不是发现自己除了吃屎就什么也不会了呢？</span><br><span style="color: #656d77;">34、两头牛在吃草。其中一头说；“最近流行疯牛病，我们不会被传染上吧？”另一头说；“不会，我们是袋鼠啊。”已经疯了！</span><br><span style="color: #656d77;">35、我一直是江湖中不知名的侠客，直到有一天遇到了传说中最神秘的你，竟然叫出了你的名字，从此，我在江湖上也有了响当当的名号：知猪狭！</span><br><span style="color: #656d77;">36、征婚：家穷人丑一米四九</span><br><span style="color: #656d77;">小学文化农村户口</span><br><span style="color: #656d77;">破屋三间薄田一亩</span><br><span style="color: #656d77;">冷锅热灶老婆没有，</span><br><span style="color: #656d77;">一年四季药不离口</span><br><span style="color: #656d77;">今日短信广征女友</span><br><span style="color: #656d77;">革命道路并肩携手</span><br><span style="color: #656d77;">愿否？</span><br><span style="color: #656d77;">37、医生：“怎么找不到我的笔了呢？我想给你开药方.”病人小声地提醒到：“医生，您不是把它放在我的胳肢窝里了吗？”</span></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[幽默乱侃,想到那侃到那]]></title>
+      <url>http://szcx.coding.me/2014/08/21/youmo/</url>
+      <content type="html"><![CDATA[<p>[pe2-image src=”<a href="http://lh5.ggpht.com/-JZKaKMwsUew/U-7rBue4aJI/AAAAAAAAAKg/eT3Jl_wVDvY/s144-c-o/WP_20140502_13_03_11_Pro.jpg" target="_blank" rel="external">http://lh5.ggpht.com/-JZKaKMwsUew/U-7rBue4aJI/AAAAAAAAAKg/eT3Jl_wVDvY/s144-c-o/WP_20140502_13_03_11_Pro.jpg</a>“ href=”<a href="https://picasaweb.google.com/111994961921407437567/RvJMSG#6048029764495108242" target="_blank" rel="external">https://picasaweb.google.com/111994961921407437567/RvJMSG#6048029764495108242</a>“ caption=”” type=”image” alt=”WP_20140502_13_03_11_Pro.jpg” ]</p>
+<p>1、仅凭微博内容就爱上一个人是如此幼稚可笑，成熟睿智的人都知道还要翻翻相册。</p>
+<p>2、我们都像小孩，胡闹是因为依赖你；懂礼貌，是因为你是外人。</p>
+<p>3、懂我的人都知道我是个搞不懂的人！</p>
+<p>4、人生需要四种人：名师指路，贵人相助，亲人支持，小人刺激。</p>
+<p>6、看到朋友圈里的好友一个接一个地成了代购，我的内心无比失落。难道彼此之间原本简简单单的好友关系，非要这样残酷地变成竞争关系吗？</p>
+<p>7、我一哥们出趟警，回来说：卧槽！有个SB去网吧上网发现没位置了！于是打电话报警说好多未成年人上网！</p>
+<p>8、如果你说国足队员踢的一脚臭球，还能拿到年薪百万，听上去就不太好；但如果说一群人年薪百万了，居然还来为了维护国家尊严和希望，参与国足比赛，就满满正能量了…</p>
+<p>9、朋友间加深友情的方法：男人，一起干过坏事；女人，一起说别人坏话；男女之间，干坏事还说别人坏话。</p>
+<p>10、建议保险公司推出一个保险，周末意外加班险，如果周末意外加班，且无任何加班费，可获得保险补偿。同意的赞起。。。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[影音播放器 PotPlayer v1.6.49479 美化便携版]]></title>
+      <url>http://szcx.coding.me/2014/08/20/PotPlayer/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.appcgn.com/potplayer.html" target="_blank" rel="external">PotPlayer</a> 是一款由世界老牌的著名多媒体影音播放器软件 KMPlayer 的原创作者姜龙喜先生进入韩国多音公司后开发的新一代多媒体播放器软件作品。前者的优势在于内置了功能强大的视频及音频解码器，而后者的优势在于强大的定制能力和个性化功能。不过用它们来看蓝光影片或者听无损音乐，体验都是相当不错的哟。</p>
+<p><a href="http://www.appcgn.com/potplayer.html" target="_blank" rel="external">PotPlayer</a> 使用的是当下最流行的微软程序设计语言 Visual C++ 编写而成，而后者的 KMPLayer 播放器则是使用汇编语言 Delphi 编写而成，异曲同工均旨在提升用户影音体验。</p>
+<p><a href="http://www.appcgn.com/potplayer.html" target="_blank" rel="external">PotPlayer</a> 拥有着自己的独立著作权，并非由姜龙喜先生原创，目前仍然由 KMPlayer 的原始作者姜龙喜进行后续开发；需要注意的是国内的汉化版作品只有两种而且一直保持着强有力的更新速度，在此对于他们的辛苦劳作表示崇高敬意。</p>
+<p><strong>预览图：</strong></p>
+<p>[pe2-image src=”<a href="http://lh4.ggpht.com/-DnF-rDwtPF4/U_RZkfiq3pI/AAAAAAAABDc/VkPvpG4-S-U/s144-c-o/PotPlayer.jpg" target="_blank" rel="external">http://lh4.ggpht.com/-DnF-rDwtPF4/U_RZkfiq3pI/AAAAAAAABDc/VkPvpG4-S-U/s144-c-o/PotPlayer.jpg</a>“ href=”<a href="https://picasaweb.google.com/111994961921407437567/RvJMSG#6049558682942496402" target="_blank" rel="external">https://picasaweb.google.com/111994961921407437567/RvJMSG#6049558682942496402</a>“ caption=”” type=”image” alt=”PotPlayer.jpg” ]</p>
+<p>该版由软件缘博主蓝星天宇基于 Daum 官方正式版 Stable 安装版 <a href="http://www.appcgn.com/potplayer.html" target="_blank" rel="external">PotPlayer</a> 精简配置而成，实现便携化并集成三枚 iOS 风格和一枚 Zetro 风格精美皮肤，仅保留简、繁体中文语言包及必要的文本说明文件等，简约清爽无广告的用户界面，力荐的非常优秀的本地影音播放器。</p>
+<p><strong>Daum PotPlayer v1.6.49479 更新日志：</strong></p>
+<ul>
+<li>添加外部音频文件夹；</li>
+</ul>
+<ul>
+<li>修正 Haali 和 madVR 渲染时不显示字幕问题；</li>
+<li>修正在某些系统中搜索字幕功能无法使用问题；</li>
+<li>修正个别 MP4 文件无法播放问题；</li>
+</ul>
+<p><strong>下载地址：</strong></p>
+<p>1、某度盘：<a href="http://pan.baidu.com/s/1i3Ly4FN" target="_blank" rel="external">http://pan.baidu.com/s/1i3Ly4FN</a>（密码：3o7f）；<br>2、地板壳：<a href="http://dl.vmall.com/c0lx81o1gl" target="_blank" rel="external">http://dl.vmall.com/c0lx81o1gl</a>；<br>3、渣浪微：<a href="http://vdisk.weibo.com/s/vAXP4JyoHRqt" target="_blank" rel="external">http://vdisk.weibo.com/s/vAXP4JyoHRqt</a>；<br>4、秤砣子：<a href="http://www.400gb.com/shared/folder_6509866_6303c2d9/" target="_blank" rel="external">http://www.400gb.com/shared/folder_6509866_6303c2d9/</a>；</p>
+<p>转载请注明：<a href="http://www.appcgn.com/" target="_blank" rel="external">软件缘</a> » <a href="http://www.appcgn.com/potplayer.html" target="_blank" rel="external">影音播放器 PotPlayer v1.6.49479 美化便携版</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Picasa V3.9.0 Build 138.151 - Google免费图片管理]]></title>
+      <url>http://szcx.coding.me/2014/08/20/picasa6/</url>
+      <content type="html"><![CDATA[<p>Picasa 是一款可帮助您在计算机上立即找到、修改和共享所有图片的软件。每次打开 Picasa 时，它都会自动查找所有图片（甚至是那些您已经遗忘的图片），并将它们按日期顺序放在可见的相册中，同时以您易于识别的名称命名文件夹。您可以通过拖放操作来排列相册，还可以添加标签来创建新组。Picasa 保证您的图片从始至终都井井有条。<br>Picasa 还可以通过简单的单次点击式修正来进行高级修改，让您只需动动指尖即可获得震撼效果。而且，Picasa 还可让您迅速实现图片共享–可以通过电子邮件发送图片、在家打印图片、制作礼品 CD，甚至将图片张贴到您自己的 blog 中。</p>
+<p><img src="http://bbs.crsky.com/1236983883/thumb/Mon_1004/7_49536_c532f360a6a9f62.jpg" alt=""></p>
+<p>添加照片</p>
+<p>使用 Picasa 可查看您计算机上已有的照片，或从照相机中导入照片。<br>添加您计算机上已有的照片在您下载并安装 Picasa 后，便可对 Picasa 显示的照片进行总体控制。Picasa 会在您指定其搜索的文件夹中显示具有您要求其查找的文件类型的照片和视频。<br>导入新照片<br>当然，并非所有照片都位于计算机上。您可以将照片从多种来源（包括照相机、CD、存储卡、扫描仪、摄像头等等）导入 Picasa。您导入的照片会保存在您的计算机中，并会自动显示在 Picasa 中。<br>整理功能　Picasa 会立即查找到并整理您计算机上的所有图片。<br>查找您已经遗忘的图片。<br>当您在计算机上查看、扫描图片时，Picasa 会整理整个图片集并按照日期将所有图片自动排序。</p>
+<blockquote>
+<p>从 Picasa 移出和重命名照片。</p>
+</blockquote>
+<p>想要清理那些杂乱的文件夹并在计算机的硬盘上转移图片？只需在 Picasa 中将图片从一个文件夹拖放到另一个文件夹即可。经您仔细检查之后，Picasa 会将您所做的更改变成永久更改。想要将图片 671056398a.jpg 的文件名更改为 Lisa.jpg？在 Picasa 中，只需几秒钟就可以完成一张图片或一组图片的重新命名。<br>在最新版本3.6中，Picasa 会扫描图片集中的所有照片，标识有头像的照片，并将具有相似头像的照片整理在一起。通过点击照片下的”添加名称”标签并键入此人的名称，可以轻松将名称标签一次添加到多张照片中。在标记一些图片后，您只需点击一下即可创建头像拼贴，此外您可以轻松找到具有两个相同人物的所有图片，或将名称标签上传到 Picasa 网络相册。</p>
+<blockquote>
+<p>添加标签</p>
+</blockquote>
+<p>在 Picasa 中使用标签来标记照片以快速创建照片组。查看和共享通过标签分组的照片非常容易。这些照片可以制作成精美的幻灯片演示和电影，或者，您可以通过电子邮件将它们发送给亲朋好友。最新版本Picasa3.6 已改进了名称标签。有了名称标签，您就可以根据最重要的内容（照片中的人物）来整理照片，并且改善了添加标签的体验。只需点击照片任务栏右边的新标签按钮即可更轻松地添加快速标签 、查看图片组的标签数，和管理标签。</p>
+<blockquote>
+<p>添加星级</p>
+</blockquote>
+<p>给您最喜爱的照片添加金星：一眼就可认出您最喜欢的图片。Picasa 甚至还具有星标搜索功能，可在 1 秒钟之内找出整个照片集里那些好上加好的照片。<br>在多个相册中保存同一张图片。<br>Picasa 为您标记的每张照片都创建“例图”而不占用计算机空间，因此，您可以将同一张图片放在多个相册中。<br>受密码保护的图片集。<br>有没有想要自己独享的照片？您可以给任何一个 Picasa 图片集添加密码（这不会影响您和他人可在您的计算机硬盘上看到的图片）。<br>修改功能<br>将灰色天空变成适合照片内容的完美天空。<br>基本修正就是反复修正，然后效果更好。<br>Picasa 的基本修正就是使用一些按钮，快速轻松完成这些工作：裁减、消除红眼、修正对比度和颜色以及增强您的数码照片的效果。<br>让效果平常的图片变成令人惊叹的艺术品。<br>您会看到 Picasa 的 12 项新的视觉效果如何在数秒钟之内（而不是数小时）改变您的照片效果。变成褐色、暖化、使照片呈现流行的色彩，或使用单纯的黑白色。尝试使用简单的一次单击或可精细调整的滑块，在您需要的地方更自如地调整。当然，在整个过程中，您可以在任何一步撤消修改。</p>
+<blockquote>
+<p>添加图片标题</p>
+</blockquote>
+<p>Picasa 使用 IPTC 标准，也就是新闻记者添加标题的方式来添加标题。这意味着，您添加的标题保存在图片内，无论您是将图片作为网页导出，还是制作 CD 演示，标题都会和图片一起保存。Picasa 标题可以进行完全编辑和搜索，并且您还可以选择是否显示标题。<br>缩放。平移。倾斜。获取您需要的角度。<br>您还没有拍到好照片吗？有了 Picasa，这就不会是最终结果。靠近一点，稍稍关注一下左侧。您的相机拍出的照片质量欠佳？这有什么关系？反正无论如何，您都会得到完美的相片。<br>知道如何在手动模式下使用相机吗？<br>摄影发烧友们现在可以使用 Picasa 的 EXIF显示功能来精确地调整他们的照片了。此窗口会向您显示储存在图片原始文件内的所有相机数据，如相机型号、拍摄日期，甚至是否使用过闪光灯。EXIF 显示还有一个实时的 RGB 直方图，以图形方式显示图片内的色彩强度，以及您在 Picasa 内进行修改时的颜色变化情况。</p>
+<p><img src="http://img2081.poco.cn/mypoco/myphoto/20130104/12/662106092013010412085803.png" alt=""></p>
+<p>文件大小: 15M;<br>MD5: D459898F685E6D49E5B8B5992CC7F035<br>SHA1: AE5707CB9953CA456A60891441C0696CCC7AD37E<br>CRC32: A348A6DE<br><a href="http://pan.baidu.com/s/1sj6VoeD" target="_blank" rel="external">网盘下载 - Picasa绿色版</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WPS Office 2013 V9.1.0.4793便携绿色版 - 全新设计界面优化]]></title>
+      <url>http://szcx.coding.me/2014/08/20/wps-office-2013/</url>
+      <content type="html"><![CDATA[<p>WPS Office 2013版本经过全新的交互设计和界面优化，采用全新的Win8扁平化设计风格，并重新绘制了1000多个功能图标，界面看起来更加舒适。WPS Office2013还将配备极速的V9引擎，性能将大幅提升25%，处理文档更快更稳定。</p>
+<p><img src="http://bbs.crsky.com/1236983883/Mon_1305/7_209794_5e9da837ff182fd.jpg" alt=""></p>
+<p>随着WPS Office2013发布的同时，金山还将推出Linux版WPS Office Alpha10，延续原生跨平台、永久免费、深度平台整合等优势。新版本的Linux版WPS Office Alpha10首次支持中英文双语切换。</p>
+<p><img src="http://bbs.crsky.com/1236983883/Mon_1305/7_209794_c4d73f1d1b1db4c.jpg" alt=""></p>
+<p>新版本的WPS考虑到目前电脑屏幕越来越多采用宽屏，特别在界面设计上压缩了常用工具面板的高度，给予用户更大的操作空间。同时充分利用横向空间，使宽宽的屏幕得以更好的使用。<br><a href="http://bbs.crsky.com/1236983883/Mon_1305/7_209794_bd067e6567daebd.jpg" title="点击查看大图" target="_blank" rel="external"><img src="http://bbs.crsky.com/1236983883/Mon_1305/7_209794_bd067e6567daebd.jpg" alt=""></a></p>
+<p>WPS 2013为用户准备了四套皮肤界面，用户可以根据自己的喜好对产品进行换肤。WPS为喜欢尝鲜的用户准备了2款2013风格的皮肤，分别是素雅黑和清新蓝。同时也为习惯使用老版本的用户准备2012风格和经典风格的皮肤，无论喜欢哪类风格的用户都能使用自己喜欢的皮肤。</p>
+<p><img src="http://bbs.crsky.com/1236983883/Mon_1305/7_209794_b7de7ef5e1505ac.png" alt=""></p>
+<p><code>便携绿色版说明：</code><br><span style="color: #333333;">精简在线升级</span><br><span style="color: #333333;">精简轻办公功能</span><br><span style="color: #333333;">精简文档漫游</span><br><span style="color: #333333;">精简自带模板</span><br><span style="color: #333333;">程序关联相应的任何文件和右键</span><br><span style="color: #333333;">默认启动界面为空白文档</span><br><span style="color: #333333;">默认保存文档格式为Microsoft Office格式</span><br><span style="color: #333333;">无最近文件列表功能</span></p>
+<p>文件大小:56M;<br>MD5: A90F7284485EF73117B8FC4AB92A870E<br>SHA1: 53501193FC3EECC12F819B64DEE8DD1F8868B687<br>CRC32: 19232238</p>
+<p><a href="http://pan.baidu.com/s/1bngZ2Tx" target="_blank" rel="external">网盘下载 - WPS Office 2013绿色版</a></p>
+<p>文件大小:56M;<br>MD5: 5074D17B0E03628C6836D43F24CFFABD<br>SHA1: 16E66DCC226CF5B590046EF8CDEFD066E555BC4C<br>CRC32: 4B754CC0</p>
+<p><a href="http://pan.baidu.com/s/1gdmWV6N" target="_blank" rel="external">网盘下载 - WPS Office 2013便携绿色版</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[集体照的POSE这么摆]]></title>
+      <url>http://szcx.coding.me/2014/08/20/pos/</url>
+      <content type="html"><![CDATA[<p><section class="single-content"><article id="post-5677" class="post-5677 post type-post status-publish format-standard hentry category-information tag-information"></article></section></p>
+<div class="single-main"><br><div class="content-main"><br><div align="left"><br><br><span style="color: #000000;">小伙伴们一起出去玩，同学聚会，家人团聚的时候自然少不了要拍合照，还在傻傻地站成一排吗？试试下面这21种姿势吧。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F6202C5728.jpg" alt="集体照全家福经典照相姿势 (1)"></span><br><br><span style="color: #000000;">1、当拍摄一大群人时，你不可能控制每个人的动作与表达方式，但你应留意整体的构图，将全体视为一个主体来拍照，同时注意是否每个人都有露面。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F67031C201.jpg" alt="集体照全家福经典照相姿势 (2)"></span><br><br><span style="color: #000000;">2、拍摄一大群人时，以全身照拍摄是最可行、最常用的方式，也用作记录及公式合照，拍摄时须注意是否每人都露面。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F680462ED9.jpg" alt="集体照全家福经典照相姿势 (3)"></span><br><br><span style="color: #000000;">3、可以的话，在高角度例如走上露台或是屋顶来拍摄团体照，会是不错的选择，照片会变得更有吸引力、更有趣。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F6505B89B2.jpg" alt="集体照全家福经典照相姿势 (4)"></span><br><br><span style="color: #000000;">4、这种各自站立的合照，颇适合小组团队，例如一支乐队，然后让主力、重心人物站在中间及站前一点，会有突出效果。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F66060F49B.jpg" alt="集体照全家福经典照相姿势 (5)"></span><br><br><span style="color: #000000;">5、这种方式是很自然、普通的朋友间合照，很普通，但是很容易拍出效果，所以很不错。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F6B0755074.jpg" alt="集体照全家福经典照相姿势 (6)"></span><br><br><span style="color: #000000;">6、这个比起普通合影有趣一点。请所有人靠近，尤其是头部要靠拢多一些，并拥向镜头。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F6C08ABB4D.jpg" alt="集体照全家福经典照相姿势 (7)"></span><br><br><span style="color: #000000;">7、围圈躺下，头贴头，在户外的草地之类会是有趣的拍摄方式。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F6909F1726.jpg" alt="集体照全家福经典照相姿势 (8)"></span><br><br><span style="color: #000000;">8、选一个做最前面的那位，然后一个跟一个靠着前面那个来站着合照，这样整体的投入感会很强，也很有气氛。（虽然很像八十年代的乐队CD封面……）</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/72F6A0A4820F.jpg" alt="集体照全家福经典照相姿势 (9)"></span><br><br><span style="color: #000000;">9、有点像前一个的变奏，同样选一个做最前，然后其他人好像探头出来的样子，你可以透过控制光圈大细，来决定谁会清晰于画面。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B46061F1D.jpg" alt="集体照全家福经典照相姿势 (10)"></span><br><br><span style="color: #000000;">10、一群朋友的趣味合照，一起跑、一起跳，都能增加欢乐感。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B361B7AF5.jpg" alt="集体照全家福经典照相姿势 (11)"></span><br><br><span style="color: #000000;">11、试着横排合照之余，从旁边拍摄，选择大光圈，同时对焦于最接近的那一位，会得到浅景深效果，远一点的人虽然变得模糊，但出来的感觉会很有趣。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B6620E5DE.jpg" alt="集体照全家福经典照相姿势 (12)"></span><br><br><span style="color: #000000;">12、这是最基本的家庭合照，一家人坐在或靠在沙发上，然后如果尽可能把照片剪裁，将不需要的家具等移除于照片外，效果会更好。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B563541B7.jpg" alt="集体照全家福经典照相姿势 (13)"></span><br><br><span style="color: #000000;">13、一家人在户外合照的轻松方式，就是坐在草地上之类，留意拍摄时与他们保持视线水平。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B864AAC80.jpg" alt="集体照全家福经典照相姿势 (14)"></span><br><br><span style="color: #000000;">14、一家人俯卧在地，同时以双手撑起上身，拍摄时以低角度为佳。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B765F0869.jpg" alt="集体照全家福经典照相姿势 (15)"></span><br><br><span style="color: #000000;">15、这种拍摄姿势，适合在户外草地或是自家床上，感觉会很有趣，而且有复数的孩子也会非常好玩。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775BA6647342.jpg" alt="集体照全家福经典照相姿势 (16)"></span><br><br><span style="color: #000000;">16、同样坐在沙发上，而这种姿势感觉会十分亲密。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B9679DE1B.jpg" alt="集体照全家福经典照相姿势 (17)"></span><br><br><span style="color: #000000;">17、也是一同坐在沙发上，但这次试试从沙发的背面来拍摄，你会得到截然不同的效果。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775BC68E3AF3.jpg" alt="集体照全家福经典照相姿势 (18)"></span><br><br><span style="color: #000000;">18、这个也是从背面拍摄，不过姿势略有改变。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775BB693A5DC.jpg" alt="集体照全家福经典照相姿势 (19)"></span><br><br><span style="color: #000000;">19、由父母背着子女来拍摄合照，会是另一种很亲密的拍摄姿势。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B473DC365.jpg" alt="集体照全家福经典照相姿势 (20)"></span><br><br><span style="color: #000000;">20、很基本而舒适的全身合照，而且也不论家庭成员的数字，同样可以做得不错。</span><br><br><span style="color: #000000;"><img src="http://rescdn.qqmail.com/dyimg/20140123/775B37423F3E.jpg" alt="集体照全家福经典照相姿势 (21)"></span><br><br><span style="color: #000000;">21、让一家人手牵手迎面走过来，连续拍摄，选择各人步伐最好的一张，留意对焦情况。</span><br><br><span style="color: #000000;">最后，以上都只是基本的姿势，大家要多动脑筋去创出更有趣味的合照方式。大家可以多看看电影海报，通常都会有很强的视觉效果。</span><br><br></div><br></div><br></div><br><br><div class="authorbio"><br><br><em>   <em>*转载请注明：</em></em><a href="http://zmingcx.com/group-photo-of-such-a-swing-pose.html" title="本文固定链接 http://zmingcx.com/group-photo-of-such-a-swing-pose.html" target="_blank" rel="external">集体照的POSE这么摆 | 知更鸟</a><a href="http://zmingcx.com/group-photo-of-such-a-swing-pose.html#" target="_blank" rel="external"> +复制链接</a><br></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Everything 1.3.4.686 便携版 - 最快最好用的文件搜索工具]]></title>
+      <url>http://szcx.coding.me/2014/08/19/everything/</url>
+      <content type="html"><![CDATA[<p><span style="font-weight: bold; font-style: inherit; color: #555252;">Everything</span> 大家应该比较熟悉了，这是目前速度最快的<span style="font-weight: bold; font-style: inherit; color: #555252;">文件名搜索工具</span>，可以极速搜索、瞬间定位文件，在输入搜索词时即时显示匹配结果，是每一个用户都需要安装的效率工具。</p>
+<p>神器 <a href="http://www.portablesoft.org/everything-portable/" target="_blank" rel="external">Everything</a> 最具优势的就是其<span style="font-weight: bold; font-style: inherit; color: #555252;">超快的搜索速度</span>，使用起来也极其简单，键入搜索词，所有匹配的文件或文件夹都会实时显示，再配合快捷键打开 Everything 搜索窗口，搜索文件就变成一件极其轻松、高效的事情了。<span id="more-3313" style="font-weight: inherit; font-style: inherit;"></span></p>
+<p>当然 Everything 也提供了高级搜索用法，如搜索操作符、通配符、正则表达式等等，灵活使用的话，就能实现各种检索需求，具体可以从帮助菜单中学习这些技巧，更多高级用法还可以参见「善用佳软」的专题文章「<a href="http://xbeta.info/everything-search-tool.htm" target="_blank" rel="external">Everything: 速度最快的文件名搜索工具</a>」。</p>
+<p>使用说明：<span style="font-weight: bold; font-style: inherit; color: #555252;">2014/8/19 更新版本为 Everything 1.3.4.686 正式版</span>，解压后直接运行 Everything.exe 即可（需要管理员权限），第一次会有一个索引数据初始化过程，但它通过读取 NTFS USN 日志建立索引，所以索引速度也极快。</p>
+<p>Everything 从 1.3.3.653 Beta 开始添加了 64 位版，这样在 64 位系统下就更加高效稳定了，要使用 64 位版，将 Everything_x64.exe 重命名为 Everything.exe 即可。</p>
+<p><img src="http://www.portablesoft.org/wp-content/uploads/2013/06/Everything-Logo.jpg" alt="Everything Portable" title="Everything Portable"></p>
+<p>打开程序后，需要到菜单 Tools-&gt;Options-&gt;General-&gt;Language 中选择「简体中文」，切换为中文界面。由于工作原理的限制，<a href="http://www.portablesoft.org/everything-portable/" target="_blank" rel="external">Everything</a> 目前只支持 NTFS 文件系统，如果需要快速搜索 FAT32 文件系统，则可以尝试<a href="http://www.portablesoft.org/quick-search/" target="_blank" rel="external">Quick Search</a> 或<a href="http://www.portablesoft.org/istart/" target="_blank" rel="external">淘奇桌面</a>，而全文搜索的话，<a href="http://www.portablesoft.org/filelocator-pro-portable/" target="_blank" rel="external">FileLocator</a> 是目前最好的免索引全文搜索工具。</p>
+<h2 id="Everything-v1-3-4-686-绿色便携版的所有下载地址："><a href="#Everything-v1-3-4-686-绿色便携版的所有下载地址：" class="headerlink" title="Everything v1.3.4.686 绿色便携版的所有下载地址："></a>Everything v1.3.4.686 绿色便携版的所有下载地址：</h2><p><div class="leftside" style="color: #707070;"></div></p>
+<div class="rightside" style="color: #707070;">
+
+<ul>
+<li>城通网盘：<a href="http://www.400gb.com/file/71212597" target="_blank" rel="external">http://www.400gb.com/file/71212597</a></li>
+<li>华为网盘：<a href="http://dl.dbank.com/c00ew2elnu" target="_blank" rel="external">http://dl.dbank.com/c00ew2elnu</a></li>
+<li>百度网盘：<a href="http://pan.baidu.com/s/1jGtCtxk" target="_blank" rel="external">http://pan.baidu.com/s/1jGtCtxk</a></li>
+<li>官方原版：<a href="http://www.voidtools.com/downloads/" target="_blank" rel="external">官方安装包</a><br></li></ul></div><br>&nbsp;
+
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[自己使用的age代理与SwitchySharp配置文件]]></title>
+      <url>http://szcx.coding.me/2014/08/18/age/</url>
+      <content type="html"><![CDATA[<p>GoAgent必要设置：<br>如何部署和使用goagent，以Windows为例：<br>1.申请Google Appengine并创建appid。 (需要google账号)<br>2.下载goagent最新稳定版 <a href="http://code.google.com/p/goagent/" target="_blank" rel="external">http://code.google.com/p/goagent/</a><br>3.解压后修改localproxy.ini中的[gae]下的appid=你的appid(多appid请用|隔开)<br>4.双击serveruploader.bat，上传成功后即可使用了！<br>5.完成这四步后就要开始设置浏览器部分了！</p>
+<p><a href="http://pan.baidu.com/s/1hqzMfli" target="_blank" rel="external">下载地址</a></p>
+<p>参考文章：GAE架设goagent设置常见问题总结及解决方法<br>地址：<a href="http://www.i7086.com/gaejiashegoagentshezhichangjianwentizongjiejijiejuefangfa" target="_blank" rel="external">http://www.i7086.com/gaejiashegoagentshezhichangjianwentizongjiejijiejuefangfa</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[FastStone Capture 7.9 汉化绿色便携版]]></title>
+      <url>http://szcx.coding.me/2014/08/18/faststone-capture/</url>
+      <content type="html"><![CDATA[<p><span style="font-weight: bold; font-style: inherit; color: #555252;">FastStone Capture</span> 是一款极好用的图像浏览、编辑和截屏工具，支持 BMP、JPG、JPEG、GIF、PNG、TIFF、WMF、ICO 和 TGA 在内的主流图片格式，其独有的光滑和毛刺处理技术让图片更加清晰，提供缩放、旋转、剪切、颜色调整功能。</p>
+<p><a href="http://www.portablesoft.org/faststone-capture/" target="_blank" rel="external">FastStone Capture</a> 已经支持<span style="font-weight: bold; font-style: inherit; color: #555252;">固定区域截图</span>和<span style="font-weight: bold; font-style: inherit; color: #555252;">重复上次截取</span>功能，也增强了滚动窗口截图性能，支持到各大浏览器的最新版本。除此之外，FastStone Capture 也提供了实用小工具，如屏幕录像机、屏幕放大镜、屏幕取色器、屏幕标尺、屏幕十字线等。<span style="font-weight: bold; font-style: inherit; color: #555252;">屏幕录像机</span>功能可以录制屏幕动作，将窗口/对象、矩形区域或全屏区域的屏幕录制为高清晰 WMV 视频。</p>
+<p>使用说明：现提供绿色便携版，FSCapture.exe、FSCrossHair.exe、FSRecorder.exe 为汉化版（汉化作者：窗外有蓝天），FSCapture_en.exe、FSCrossHair_en.exe 和 FSRecorder_en.exe 为英文原版文件，如发现汉化版有问题请自行替换，绿色便携、配置自动保存，2014/8/18 更新版本为 FastStone Capture 7.9 汉化绿色版。<span id="more-117" style="font-weight: inherit; font-style: inherit;"></span></p>
+<p>作为一款极其优秀好用的屏幕截图软件，FastStone Capture 具有体积小巧、功能强大、操作简便等优点，其方便的<span style="font-weight: bold; font-style: inherit; color: #555252;">浮动工具条</span>和便捷的<span style="font-weight: bold; font-style: inherit; color: #555252;">快捷键</span>堪称完美结合，截图后的图片编辑与<span style="font-weight: bold; font-style: inherit; color: #555252;">保存选项</span>也特别丰富和方便，同时支持图片转换 PDF，满足各种需求，不过有一点不太满意，截图后需要在新窗口中编辑图片。</p>
+<p>另一款我用的较多的截图工具是 <a href="http://www.portablesoft.org/tnt-screen-capture/" title="TNT Screen Capture" target="_blank" rel="external">TNT Screen Capture</a>，<a href="http://www.portablesoft.org/picpick-portable/" target="_blank" rel="external">PicPick</a> 也很不错，它的<span style="font-weight: bold; font-style: inherit; color: #555252;">固定区域</span>截图模式很好用，再强大一些的截图软件可以看看 <a href="http://www.portablesoft.org/ashampoo-snap/" target="_blank" rel="external">Ashampoo Snap</a> 或是 <a href="http://www.portablesoft.org/techsmith-snagit-studio/" target="_blank" rel="external">SnagIt</a>。</p>
+<h2 id="FastStone-Capture-v7-9-绿色便携版的所有下载地址："><a href="#FastStone-Capture-v7-9-绿色便携版的所有下载地址：" class="headerlink" title="FastStone Capture v7.9 绿色便携版的所有下载地址："></a>FastStone Capture v7.9 绿色便携版的所有下载地址：</h2><div class="leftside"></div><br><div class="rightside"><br><br><em>   城通网盘：<a href="http://www.400gb.com/file/71210844" target="_blank" rel="external">http://www.400gb.com/file/71210844</a>
+</em>   华为网盘：<a href="http://dl.dbank.com/c06a59z6fa" target="_blank" rel="external">http://dl.dbank.com/c06a59z6fa</a><br><em>   百度网盘：<a href="http://pan.baidu.com/s/1ntE4Xgl" target="_blank" rel="external">http://pan.baidu.com/s/1ntE4Xgl</a>
+</em>   官方原版：<a href="http://www.faststonesoft.net/DN/FSCapture79.zip" target="_blank" rel="external">官方安装包</a><br></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[腾讯QQ6.2（qq2014）V12179 去广告绿色精简版]]></title>
+      <url>http://szcx.coding.me/2014/08/17/qq6.2/</url>
+      <content type="html"><![CDATA[<p>QQ是中国电脑用户必备聊天工具，一个做工精良的软件，功能那么细致具体，腾讯QQ6.2正式版已经发布。新版本“我的收藏”支持分类查看，新增音视频通话等状态标识，收藏网页助手支持收藏的内容可编辑等众多新功能。</p>
+<p><img src="http://www.orsoon.com/uploads/allimg/2014/07/29/3-85341406597202.jpg" alt="" title="QQ6.2体验版(QQ2014)"></p>
+<h3 id="腾讯QQ-6-2-特性如下："><a href="#腾讯QQ-6-2-特性如下：" class="headerlink" title="腾讯QQ 6.2 特性如下："></a>腾讯QQ 6.2 特性如下：</h3><p>1“我的收藏”支持分类查看，内容更清晰、查找更便捷；<br>2、主面板新增音视频通话等状态标识，加入畅聊触手可及；<br>3、收藏网页助手支持收藏的内容可编辑，备注信息更方便；<br>4、多人通话过程中支持摄像头、麦克风随意换，聊天不间断；<br>5、群成员等级头衔提供更多新选择，也可自定义炫出你的个性；<br>6、腾讯课堂新增机构大厅，老师与同学课外也能更多互动</p>
+<h3 id="版本特点："><a href="#版本特点：" class="headerlink" title="版本特点："></a>版本特点：</h3><p>去所有效验、</p>
+<p>去所有广告、</p>
+<p>去所有多余文件，</p>
+<p>去干扰提示，弹窗、推广等，去所有间接推广行为，</p>
+<p>优化无用按钮、选项、菜单等等。</p>
+<p><a href="http://pan.baidu.com/s/1ntDOYRB" target="_blank" rel="external">下载地址</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[设置“Everything”而让它调用外部文件管理器]]></title>
+      <url>http://szcx.coding.me/2014/08/17/Everything2/</url>
+      <content type="html"><![CDATA[<p>打开“Everything”安装文件夹中的Everything.ini文件。添加如下两行到文件末尾。<br>open_folder_command=$exec(“ExternalFileManager.exe” “%1″)<br>open_folder_path_command=$exec(“ExternalFileManager.exe” “$parent(%1)”)</p>
+<h2 id="请用完整的路径名和文件名替换上两行中的-ExternalFileManager-exe"><a href="#请用完整的路径名和文件名替换上两行中的-ExternalFileManager-exe" class="headerlink" title="请用完整的路径名和文件名替换上两行中的 ExternalFileManager.exe"></a>请用完整的路径名和文件名替换上两行中的 ExternalFileManager.exe</h2><p>比如，<br>open_path_command=$exec(“d:\Program Files\tc\TOTALCMD.EXE” “$parent(%1)”)<br>open_folder_command=$exec(“d:\Program Files\tc\TOTALCMD.EXE” “%1″)</p>
+<p>&nbsp;</p>
+<h2 id="Everything-1-3-1-636b及此后版本，配置界面或修改ini文件，调用外部文件管理器"><a href="#Everything-1-3-1-636b及此后版本，配置界面或修改ini文件，调用外部文件管理器" class="headerlink" title="Everything 1.3.1.636b及此后版本，配置界面或修改ini文件，调用外部文件管理器"></a>Everything 1.3.1.636b及此后版本，配置界面或修改ini文件，调用外部文件管理器</h2><p>Everything 1.3.1.636b版本，已经可以通过配置界面进行修改，如图：<br>[pe2-image src=”<a href="http://lh6.ggpht.com/-UEyVbYzr6mU/U_Ghknmy3JI/AAAAAAAAAbo/YfVnhRi70Ko/s144-c-o/veve.jpg" target="_blank" rel="external">http://lh6.ggpht.com/-UEyVbYzr6mU/U_Ghknmy3JI/AAAAAAAAAbo/YfVnhRi70Ko/s144-c-o/veve.jpg</a>“ href=”<a href="https://picasaweb.google.com/111994961921407437567/RvJMSG#6048793425014348946" target="_blank" rel="external">https://picasaweb.google.com/111994961921407437567/RvJMSG#6048793425014348946</a>“ caption=”” type=”image” alt=”veve.jpg” ]</p>
+<p>open_folder_command2=open_folder_command2=$exec(“d:\资源管理\TOTALCMD64.EXE” “%1”)</p>
+<p>配置结果记录在ini文件中。为了避免与旧版冲突，配置后的结果记录于新参数（原参数后面加2）。当然，你也可以直接修改ini文件，得到同样的效果。</p>
+<p>open_path_command<strong>2</strong>=$exec(“d:\Program Files\tc\TOTALCMD.EXE” “$parent(%1)”)</p>
+<p>open_folder_command<strong>2</strong>=$exec(“d:\Program Files\tc\TOTALCMD.EXE” “%1″)</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2014国家级重点示范城镇（四川省名单）]]></title>
+      <url>http://szcx.coding.me/2014/08/17/2014%E5%9B%BD%E9%87%8D/</url>
+      <content type="html"><![CDATA[<p>四川省（277个）</p>
+<p>成都市龙泉驿区洛带镇、西河镇，青白江区城厢镇、祥福镇，新都区石板滩镇、新繁镇，温江区万春镇、永宁镇，金堂县淮口镇、竹篙镇，双流县太平镇、黄龙溪镇、新兴镇，郫县安德镇、友爱镇，大邑县安仁镇、沙渠镇，蒲江县寿安镇，新津县花源镇、兴义镇，都江堰市蒲阳镇、青城山镇，彭州市濛阳镇，邛崃市羊安镇、平乐镇，崇州市羊马镇</p>
+<p>自贡市自流井区仲权镇，贡井区成佳镇、五宝镇，大安区牛佛镇，沿滩区邓关镇，荣县旭阳镇、双石镇、长山镇，富顺县富世镇、代寺镇、赵化镇</p>
+<p>攀枝花市西区格里坪镇，仁和区仁和镇、平地镇，米易县攀莲镇、丙谷镇、白马镇，盐边县红格镇、渔门镇</p>
+<p>泸州市江阳区通滩镇，纳溪区大渡口镇，龙马潭区特兴镇，泸县福集镇、玄滩镇，合江县合江镇、九支镇，叙永县叙永镇、江门镇、水尾镇，古蔺县古蔺镇、太平镇、二郎镇</p>
+<p>德阳市旌阳区黄许镇、孝泉镇，中江县辑庆镇、集凤镇，罗江县金山镇，广汉市向阳镇，什邡市洛水镇、师古镇，绵竹市汉旺镇、新市镇</p>
+<p>绵阳市涪城区丰谷镇，游仙区石马镇、魏城镇，三台县西平镇、芦溪镇，盐亭县玉龙镇、富驿镇，安县桑枣镇、秀水镇，梓潼县许州镇，北川羌族自治县曲山镇、安昌镇，平武县古城镇、南坝镇，江油市武都镇、厚坝镇</p>
+<p>广元市利州区荣山镇、三堆镇，昭化区柏林沟镇、昭化镇，朝天区羊木镇，旺苍县木门镇、三江镇，青川县青溪镇，剑阁县普安镇、白龙镇、下寺镇，苍溪县陵江镇、元坝镇、歧坪镇</p>
+<p>遂宁市船山区龙凤镇，<strong>安居区拦江镇</strong>、西眉镇，蓬溪县赤城镇、蓬南镇，射洪县太和镇、金华镇、沱牌镇，大英县隆盛镇、回马镇、蓬莱镇</p>
+<p>内江市市中区白马镇，东兴区田家镇、双才镇，威远县严陵镇、镇西镇、连界镇，资中县球溪镇、银山镇，隆昌县金鹅镇、龙市镇、界市镇</p>
+<p>乐山市市中区土主镇、茅桥镇，沙湾区嘉农镇，五通桥区金山镇、西坝镇，犍为县玉津镇、罗城镇，井研县马踏镇、竹园镇，夹江县漹城镇、甘江镇、新场镇，沐川县舟坝镇，峨边彝族自治县沙坪镇，马边彝族自治县民建镇，峨眉山市符溪镇、桂花桥镇</p>
+<p>南充市顺庆区共兴镇、搬罾镇，高坪区东观镇、长乐镇，嘉陵区吉安镇、大通镇，南部县建兴镇、伏虎镇、升钟镇，营山县骆市镇、小桥镇、回龙镇，蓬安县徐家镇，仪陇县金城镇、新政镇、马鞍镇，西充县多扶镇，阆中市河溪镇、水观镇</p>
+<p>眉山市东坡区白马镇、万胜镇、思蒙镇，仁寿县富加镇、汪洋镇，彭山县青龙镇，洪雅县柳江镇，丹棱县张场镇，青神县黑龙镇、西龙镇</p>
+<p>宜宾市翠屏区李庄镇，南溪区大观镇，宜宾县观音镇、白花镇，江安县红桥镇、夕佳山镇，长宁县竹海镇，高县沙河镇，珙县底洞镇，筠连县沐爱镇，兴文县僰王山镇，屏山县书楼镇</p>
+<p>广安市广安区协兴镇、花桥镇、恒升镇，前锋区代市镇，岳池县九龙镇、顾县镇、罗渡镇，武胜县沿口镇、街子镇，邻水县鼎屏镇、九龙镇、丰禾镇，华蓥市高兴镇</p>
+<p>达州市达川区麻柳镇、石桥镇，宣汉县南坝镇、胡家镇、双河镇，开江县任市镇，大竹县石桥铺镇、庙坝镇，渠县临巴镇、三汇镇、土溪镇，万源市白沙镇</p>
+<p>雅安市雨城区中里镇、多营镇，名山县蒙阳镇，荥经县严道镇，汉源县富林镇、九襄镇，石棉县新棉镇，天全县城厢镇、始阳镇，芦山县芦阳镇，宝兴县灵关镇</p>
+<p>巴中市巴州区清江镇、化成镇，恩阳区柳林镇，通江县广纳镇、诺水河镇，南江县长赤镇、正直镇，平昌县白衣镇、驷马镇</p>
+<p>资阳市雁江区中和镇、伍隍镇，安岳县龙台镇、石羊镇、李家镇，乐至县童家镇、劳动镇，简阳市养马镇、贾家镇</p>
+<p>阿坝藏族羌族自治州汶川县威州镇、映秀镇、水磨镇，茂县凤仪镇，松潘县进安镇，九寨沟县漳扎镇，金川县观音桥镇，小金县美兴镇，黑水县芦花镇，马尔康县马尔康镇，壤塘县壤柯镇，阿坝县阿坝镇，红原县邛溪镇</p>
+<p>甘孜藏族自治州康定县姑咱镇，泸定县磨西镇，丹巴县章谷镇，九龙县呷尔镇，雅江县河口镇，炉霍县新都镇，甘孜县甘孜镇，新龙县茹龙镇，德格县马尼干戈镇，白玉县建设镇，石渠县洛须镇，色达县洛若镇，理塘县高城镇，巴塘县夏邛镇，乡城县香巴拉镇</p>
+<p>凉山彝族自治州西昌市礼州镇、安宁镇，木里藏族自治县乔瓦镇，盐源县盐井镇，德昌县德州镇、麻栗镇，会理县黎溪镇，会东县会东镇，宁南县披砂镇，布拖县特木里镇，金阳县天地坝镇，昭觉县新城镇，冕宁县复兴镇、泸沽镇，越西县中所镇，美姑县巴普镇，雷波县锦城镇。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[无垠PE1404版组合包，DOS+NV03PE+03PE网络版+X64W8PE网络版，兼容100% ]]></title>
+      <url>http://szcx.coding.me/2014/08/17/pe/</url>
+      <content type="html"><![CDATA[<p>转自：<a href="http://blog.163.com/wuyin__123456/" target="_blank" rel="external">http://blog.163.com/wuyin__123456/</a></p>
+<p>工具最全、兼容最好、制作最简单方便、DIY最容易的PE组合来了，DOS+NV03PE+03PE网络版+X64W8PE网络版  小内存占用，速度相对比其它PE作品快速稳定。</p>
+<p> ISO只有BOOT、SRS、EFI、TOOLS 四个目录，FBA只有BOOT一个目录；简化洁净！</p>
+<p> ISO，568M，支持刻盘、量产、B+、U+（ZIP隐藏/不隐藏、HDD隐藏/高端隐藏/不隐藏），BIOS/UEFI 启动，特别是也适用06年以前的把U盘识别为ZIP盘的老机，集成的PE都可以启动；兼容更好！</p>
+<p> FBA，2M，BIOS/UEFI启动，需要先把ISO U+HDD+V2高端隐藏 后再UD，然后用DiskGenius取消U盘可见区活动属性保存后即可；以后需要修改UD文件每次UD后都要再取消一次。再UD不影响高端隐藏区的数据，您如想换03PE、8PE的核心，添加EFI32启动支持的核心（ISO/FBA预留接口备用），增加工具等，最好按预计大小事先增加个大文件到ISO中，U+后再删掉。可以可写挂载更新，也可以U盘PE启动后直接在Z盘操作；随心所欲换系统！</p>
+<p>UD共用U+高端隐藏区pe的核心文件和tools目录工具，新创意！</p>
+<p>如果您的机子既不支持量产UEFI启动，也不支持U+（UD）高端隐藏的UEFI启动，你还可以把ISO中的EFI目录复制到U盘可见区，只需一个目录就行，这个应该是最兼容的了。好整！</p>
+<p>您可以制作量产+U+，量产+U++UD的双启U盘系统，可以删除ISO中的TOOLS目录，共享高端隐藏区的工具和网络模块，可写挂载更新很方便!</p>
+<p>更多…………</p>
+<p>新结构，高兼容，很方便！充分应用现有成熟的工具，人人都熟悉的工具，一看就会！</p>
+<p>您若觉得好用，请点击无垠的链接支持，无垠会有更好的PE作品来共享，您的举手之劳，是无垠更新PE的动力！</p>
+<p>支持链接：<a href="http://www.2345.com/?k1049747" target="_blank" rel="external">http://www.2345.com/?k1049747</a> 出来网页后，请随意点一下新闻什么的，很方便。</p>
+<p>压缩包内有图文并茂的制作/更新教程。</p>
+<p>下载：<a href="http://www.400gb.com/file/70771831" target="_blank" rel="external">http://www.400gb.com/file/70771831</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[试一下GOOGlE的网络相册]]></title>
+      <url>http://szcx.coding.me/2014/08/16/GOOGlE/</url>
+      <content type="html"><![CDATA[<p>&nbsp;</p>
+<p><img src="https://lh3.googleusercontent.com/-GBKFdMRsSxg/U-7HxsNodEI/AAAAAAAAAFc/Tf36Rjz1PAc/w1096-h685-no/HDR-001020.jpg" alt="1"></p>
+<p><img src="https://lh4.googleusercontent.com/-zjoqU3FQ2mk/U-7JoyooJgI/AAAAAAAAAGE/LAUs0o9JyA4/w1096-h685-no/1440-9.jpg" alt="2"><br><img src="https://lh6.googleusercontent.com/-jgYlr-I_cVY/U-45dSQ7CrI/AAAAAAAB30A/8qyTDr5Rytc/w489-h685-no/sunset%2Bn%2Bsea1.gif" alt=""></p>
+<p>Picasa是大家非常常用的网上相册之一，我也在被某无良相册商坑了一把以后转向Picasa。Picasa的优点就不多说了，强大的背景厚道的外链（相比起某拍那往图片上糊牛皮藓的做法），还有很不错的速度和方便的上传工具，没什么理由不用它。原来没觉得手工从Picasa相册中粘链接到文章中是什么事，最近因为经常需要批量上传图片，呃…还真是个体力活…</p>
+<p>其实我的要求很简单，需要一个插件能自动读取相册的图片，并且批量加入到文章中的图片能够自动加链接指向更大尺寸的图片（为了图片特效和显示需要）…Picasa相关插件一大堆，我还真迷糊了…后来一位朋友给我介绍了这款插件，Picasa Image Express. 装上它一看，OMG，考虑得太周到了，我想要的功能全有，并且还有非常贴心的剪裁功能（下面说），太好用啦。</p>
+<p>先来看看这个插件的官方版介绍（实际上现在我用的是一位高人的修改版，有大量的修改和改进，所以不要用Wordpress插件目录中那个，后面细说）：</p>
+<p>浏览，搜索并将公开Picasa网上相册中的图片插入到你的Wordpress页面和文章中的工具。</p>
+<p>点击链接查看视频演示：<a href="http://vimeo.com/1557869" target="_blank" rel="external">http://vimeo.com/1557869</a></p>
+<p><strong>特性包括：</strong></p>
+<ul>
+<li>浏览任何有公开图片的Picasa用户相册</li>
+<li>可通过说明和标签搜索图片</li>
+<li>选择单一图片或多个图片来构成相册</li>
+<li>支持Lightbox / Thickbox  效果（据我测试是Box都支持，Shadowbox显示正常）</li>
+<li>显示说明字幕</li>
+<li>支持所有Picasa API支持的图片尺寸</li>
+<li>所有选项在你插入图片时都可再次设置</li>
+</ul>
+<p>安装要求:</p>
+<ul>
+<li>需要Adobe Flash Player 9 （只在编辑文章/页面时需要。Blog访客不需要Flash）。</li>
+</ul>
+<p>如何安装：</p>
+<ul>
+<li>1. 上传 picasa-image-express 文件夹和所有内容到 /wp-content/plugins/ 目录下</li>
+<li>2. 从Wordpress的插件页中激活插件</li>
+<li>3. 从 “设置”-“Picasa Image Express”进入设置页面</li>
+</ul>
+<p><strong>常见问题：</strong></p>
+<h6 id="如何选中多个图片？"><a href="#如何选中多个图片？" class="headerlink" title="如何选中多个图片？"></a>如何选中多个图片？</h6><p>你可以在一个相册中使用 CTRL+点击 和SHIFT+点击 来选中多个图片（和我们一般选中各种文件的操作习惯一样）</p>
+<h6 id="为什么你将所有内容以段落节点方式包围，而不是DIV？"><a href="#为什么你将所有内容以段落节点方式包围，而不是DIV？" class="headerlink" title="为什么你将所有内容以段落节点方式包围，而不是DIV？"></a>为什么你将所有内容以段落节点方式包围，而不是DIV？</h6><p>这样是为了避免TinyMCE在你从所见即所得和源代码两种编辑方式间来回切换时把内容搅乱。</p>
+<h6 id="我想跳过默认的样式表。它在哪个位置？"><a href="#我想跳过默认的样式表。它在哪个位置？" class="headerlink" title="我想跳过默认的样式表。它在哪个位置？"></a>我想跳过默认的样式表。它在哪个位置？</h6><p>所有相关CSS样式都在 picasa-image-express.css文件中</p>
+<h6 id="有没有办法不在每张图片的四周加入空隙？"><a href="#有没有办法不在每张图片的四周加入空隙？" class="headerlink" title="有没有办法不在每张图片的四周加入空隙？"></a>有没有办法不在每张图片的四周加入空隙？</h6><p>在“设置”－Picasa Image Express中，找到空袭设置，并从每个空格中删除内容（把它们留空）。现在你可以通过样式表来控制它们<a href="http://zuoshen.com/" target="_blank" rel="external">&lt;</a>。</p>
+<p>这是一个很难得的由非原作者继续维护并且变得更好的插件。如果你要用这个插件记得要在非官方站点下^^。下面要说的是我正在用的，由Zern修改和改进的Picasa Image Express。在Zern的版本中，加入了多语言支持（.po/.mo语言文件支持），多种Highslide JS效果后台选择，集成图片集特效，后台的Highslide JS支持等等…</p>
+<p>Zern的主页上已经做了详细的<a href="http://www.cisvi.com/bo/picasa-image-express-965/" target="_blank" rel="external">介绍</a>，大家可以去看看。自带图片特效这个不错，如果你喜欢Highslide的特效，就不用再安装其它插件实现这个效果了。当然，也可以把选项设置为使用Lightbox，这样的话，Lightbox和类似Lightbox的特效都可以正常显示。</p>
+<p>设置中的介绍已经非常详细，所以很好上手。来看看先。</p>
+<p><img src="http://plugins.wopus.org/wp-content/uploads/plugins/2009/05/screenshot005941.jpg" alt="screenshot005941"></p>
+<p>如果我们在上图中的账户设置中填入要用的Picasa账户名，以后从编辑器中打开Picasa Image Express都会自动打开这个账户的公开相册。</p>
+<p><strong>图片设置</strong></p>
+<p>Highslide JS选择： 这里可以按照你自己的实际需求进行修改，如果你在使用其他的图片显示特效，可以不用启用Highslide的图片集特效。外部网页特效这个很有用，可以很方便地在不频繁打开Picasa Image Express窗口的情况下多次插入图片。</p>
+<p>是否链接到大图： 这个是我最需要的功能。为了应用各种图片特效，必须将图片链接到更大尺寸或者是同尺寸的图片上，原来这工作我都是自己一个一个加的，真囧…</p>
+<p>略缩图尺寸： 这个就看你自己的喜好了，尺寸就是Picasa API能够支持的那几种尺寸。要注意这个值和下面的设置相关。</p>
+<p>剪切到1:1? 如果你的Blog经常插入大量图片，特别是大尺寸图片，这个功能可以让你的图片缩略图都大小统一，整齐，很像图片站…但是要注意你在上面一个选项中的“略缩图”尺寸中只能使用最大160尺寸的图，更大的图无法剪切为1:1。</p>
+<p>是否显示说明文字： 是否在图片下显示Picasa相册里的说明文字？如果你是一个摄影爱好者，这个选项肯定是要选中的。</p>
+<p>大图尺寸设置： 800,嗯,既然大图，那就800吧…</p>
+<p><img src="http://plugins.wopus.org/wp-content/uploads/plugins/2009/05/screenshot005951.jpg" alt="screenshot005951"></p>
+<p>打开方式： 就是给图片加的链接的打开方式。有多种选择，直接链接直接打开图片，Picasa就进入Picasa网络相册。Lightbox则启用第三方的图片特效，除了Lightbox外，至少我用的Shadowbox也能正常显示。 Highslide就启用了这个插件集成的图片特效，如果你在使用其他特效插件，那么不要选择这项。Picasa Image Express的特效效果，大家可以到<a href="http://www.cisvi.com/bo/picasa-image-express-965/" target="_blank" rel="external">Zern的Blog</a>上查看。</p>
+<p><strong>样式控制</strong></p>
+<p>单张图片的对齐方式：　如果你对图片的对齐方式有特殊的设置，可以通过这里修改</p>
+<p>相册图片集的对齐方式：　默认是左边</p>
+<p>空隙大小：　如果你想让图片紧密排列，就把这四个空留空吧。</p>
+<p><strong>其他设置</strong></p>
+<p>自定义编辑器中的Picasa图标：　控制新建和编辑文章时Picasa Image Express图标的样式</p>
+<p>恢复到默认设置： 如果你把什么地方弄乱了又不知原来的设置是什么，选择它吧..</p>
+<p>下图是在编辑器中Picasa Image Express的样子</p>
+<p><img src="http://plugins.wopus.org/wp-content/uploads/plugins/2009/05/screenshot005961.jpg" alt="screenshot005961"></p>
+<p>左上角你可以输入Picasa用户名，输入之后点击“切换用户”就会读取那个用户的所有公开相册。然后在下面列出的相册中选择一个，准备插入图片<a href="http://zuoshen.com/" target="_blank" rel="external">。</a></p>
+<p><img src="http://plugins.wopus.org/wp-content/uploads/plugins/2009/05/screenshot005971.jpg" alt="screenshot005971"></p>
+<p>上图显示的是一个相册中的图片。选中的图片被高亮显示。你可以用Ctrl+点击或Shift+点击选中多个图片。</p>
+<p><img src="http://plugins.wopus.org/wp-content/uploads/plugins/2009/05/screenshot005981.jpg" alt="screenshot005981"></p>
+<p>点击“设置”，可以对这次图片插入进行“一次性”设置。你<a href="http://zuoshen.com/" target="_blank" rel="external">]</a>在这里作出的设置修改不会被保存。如果有需要永久修改的设置的话，请从“设置”－Picasa Image Express中选择。</p>
+<p>然后，点击“插入相册”就完成了图片插入过程。</p>
+<p><img src="http://plugins.wopus.org/wp-content/uploads/plugins/2009/05/screenshot005991.jpg" alt="screenshot005991"></p>
+<p>上图是插入图片后的代码。</p>
+<p>Picasa Image Express的设置就是这么多，这是个非常强大和好用的Picasa相册插件。更多的信息，比如图片集效果预览，繁体中文语言包，视频演示等等，请访问<a href="http://www.cisvi.com/bo/picasa-image-express-965/comment-page-1/#comments" target="_blank" rel="external">zern的Blog</a>。</p>
+<p><strong>Picasa Image Express</strong> <a href="http://www.uushare.com/user/juaner/file/1422384" target="_blank" rel="external">下载地址</a>（网盘）　或　<a href="http://eyebo.googlecode.com/files/picasa-images-express-best.zip" target="_blank" rel="external">右键直接另存为</a></p>
+<p>[pe2-image src=”<a href="http://lh4.ggpht.com/-wV3tSYD8M4U/U-7FbjGDbFI/AAAAAAAAAE4/Fisd0S8C3R4/s144-c-o/HDR-001020.jpg" target="_blank" rel="external">http://lh4.ggpht.com/-wV3tSYD8M4U/U-7FbjGDbFI/AAAAAAAAAE4/Fisd0S8C3R4/s144-c-o/HDR-001020.jpg</a>“ href=”<a href="https://picasaweb.google.com/111994961921407437567/RvJMSG#6047988426672925778" target="_blank" rel="external">https://picasaweb.google.com/111994961921407437567/RvJMSG#6047988426672925778</a>“ caption=”” type=”image” alt=”HDR-001020.jpg” ]</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[迷你智能手机进入中国市场]]></title>
+      <url>http://szcx.coding.me/2014/08/14/shouji/</url>
+      <content type="html"><![CDATA[<div id="detailWord" class="cont1" style="color: #555555;"><br><br>香港美蘭恒讯有限公司【下面简称美蘭公司】的杰作MELROSE M001凭着优质的品质和独特的设计风格风摩全球后，近日小编又闻息到他们又有能二次风摩全球的新力作，今日小编终于约上了美蘭公司的老总，对已经在俄罗斯大卖，近日计划在国内发售的迷你小智能<a href="http://product.it168.com/list/b/0302_1.shtml" title="手机" target="_blank" rel="external">手机</a>进行了一个详细的了解。<br><br><img src="http://image20.it168.com/201408_500x375/1941/cbfae00acb6074ea.png" alt="迷你智能手机进入中国市场"><br><br>美蘭公司的通讯产品拥有一批忠实的回头客，是什么让他们自己买了，还要介绍朋友来购买呢?原来是除了精美的外观外，最最重要的是他们拥有了极为稳定的品质，当然这个品质不是靠说出来或写出来的，而是看得见的，有客户使用反馈所在的，美蘭公司他们拥有一支以前TCL移动公司出来的研发团队，还有一个强大的工厂流水线，MELROSE 所有系列的<a href="http://product.pcpop.com/Mobile/10734_1.html" title="手机" target="_blank" rel="external">手机</a>均都是军工厂振华组装厂组装。【公司官方网站www.MELrose.cn】<br><br><img src="http://image20.it168.com/201408_800x800/1941/54aaf2a31ead9f1d.png" alt="迷你智能手机进入中国市场"><br><br>小巧精致功能齐全<br><br>智能手机大家都耳闻眼熟，但是迷你的小智能机，一直都是大家关注的焦点，如今，即将在国内上市的Melrose S1,解开了这个迷团，首先来了解一下Melrose小智能的尺寸，长8.8CM,宽4.5CM，厚1.2CM，此身段加上安卓的配置，MTK6572的<a href="http://product.it168.com/list/b/1420_1.shtml" title="芯片" target="_blank" rel="external">芯片</a>，双核，4.2.2的软件版本，2.4寸的进口原装苹果IPS屏，支持多点触控，让许多迷你手机都黯然失色。<br><br><img src="http://image20.it168.com/201408_500x375/1941/aac5109973807872.png" alt="迷你智能手机进入中国市场"><br><br>质量是企业发展的硬道理<br><br>美蘭公司的理念就是坚持：卓越品质、优质服务的原则，把品质控制放在公司长远发展首重位置，坚持忠于设计产品、生产产品，对最终用户负责的原则性，保证最终的用户体验及需求为产品设计的出发点，满足最终客户的需求为最终目的，长远达到最终用户的认可，从而使美蘭在广大客户朋友的支持下得到磅礴发展。。。。。。。。。。。。<br><br><img src="http://image20.it168.com/201408_500x375/1941/6b1ef47f54b8ee18.png" alt="迷你智能手机进入中国市场"><br><br>科技现代感十足 市场普遍看好<br><br>现代人基本上都在用高端品牌的IOS或安卓的智能一线产品，而这些一线品牌都是单卡，现每人手上基本都会有二张卡，那么此款产品正好是当备机的首选了，据美蘭公司的老总透露，虽然产品暂未在国内上市，但是各省的代理商都十分看好此机器，都在开始做预售的筹备工作了，让我们拭目以待此产品的销量。。。。<br><br><img src="http://image20.it168.com/201408_500x375/1941/ed7fa28eda0a66e0.png" alt="迷你智能手机进入中国市场"><br><br>&nbsp;<br><br></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[真是一群聪明的傻孩子！]]></title>
+      <url>http://szcx.coding.me/2014/08/14/youmo3/</url>
+      <content type="html"><![CDATA[<p>1、小时候，和一帮小伙伴们去别人家偷黄瓜，他们偷完了都跑了，<br>而我还趴在地上吃，后来我被逮着了，人问我偷黄瓜为什么趴地上，我说黄瓜蒂还在秧上你们会以为是猪吃的。。。</p>
+<p>2、儿子用老爸的手机玩游戏，角色挂了要复活时，爸爸说：别，要钱的。<br>这时儿子冷冷的说：你要钱还是要命…</p>
+<p>3、爸爸问儿子：“六和三哪个大？”<br>儿子自信满满的说“三比六大”<br>爸爸问到：“为什么？”<br>儿子伸出手比划了六和三说到：“六是两根手指，三有三根手指……</p>
+<p>4、儿子急拉粑粑，就对妈妈说：“妈妈我要粑粑，拉在哪呢？”<br>妈妈说拉在鸭子旁边吧，一会儿子就哭着回来了，“妈，鸭子老跑”。</p>
+<p>5、妈叫儿子去买盐，因为盛盐的纸袋底下有个破洞，所以盐漏掉了一半。<br>儿子回到家才发现盐少了。他看看纸袋，奇怪地问妈妈：“明明纸袋的破洞在底下，怎么底下的盐一点也没漏掉，却漏掉上面的盐呢？”</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[闲话男女的幽默趣语]]></title>
+      <url>http://szcx.coding.me/2014/08/14/youmo5/</url>
+      <content type="html"><![CDATA[<p>1、最性感的男人是，从不提上床，切悄无声息的就把你给睡了。最性感的女人是，整天把上床挂在嘴边，你切无论如何就是睡不到她。</p>
+<p>2、周迅说，李亚鹏满足了我对男人所有的幻想。<br>刘烨说，我非谢娜不娶。<br>姚晨说，最适合我的人是凌潇肃。<br>张柏芝说，再也找不到比谢霆锋更好的老公了。<br>文章说，我这辈子最骄傲的事情就是我的女人叫马伊俐。<br>我说，这都是爱情响屁啊！！！</p>
+<p>3、“为什么520除以3除不尽？”<br>“因为爱情是容不下小三的。”<br>“错，因为小三是除不尽的。”</p>
+<p>4、女人：“没事。”绝对有事。<br>女人：“没事啊～”可能有事。<br>女人：“沒事了啦。”基本没事。<br>女人：“艹，都说没事了他妈要我说几次才听得懂啊！” 没事变有事了。</p>
+<p>5、所谓的缘分就是希望你在的时候你不在，不想看到你的时候，你TM总是阴魂不散。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[搞笑的QQ聊天对话：牛人是这样泡妞的]]></title>
+      <url>http://szcx.coding.me/2014/08/14/youmo4/</url>
+      <content type="html"><![CDATA[<div style="color: #000000;">女：在不？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：我无处不在！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：晕哦……</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：来，往我怀里晕，Com on baby !</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：呵呵…你叫什麽？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：我没叫啊，你又没非礼我？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：我是问你姓名。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：噢耶～我复姓南宫叫鹏友，简称南鹏友！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：呵呵，朋友…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：是的，请叫我全名男朋友OK？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：少来了，又占我便宜…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：你又不是市场里的菜，我占你便宜作甚？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：你……</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：噢，扫泪！其实刚那是我艺名啦，我姓倪，叫劳恭，你哩？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：额……我叫小薇！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：原来是你！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：你认识我？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：嗯，我天天都哼着你！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：怎麽哼？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：小薇啊，你可知道我多爱你…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：呵呵，你真幽默！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：大家都那麽说！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：你真不谦虚。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：错！是我不虚伪！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：你好自恋！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：错！我是自信！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：我服了你…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：我60公斤在，你服的进去麽？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：……（郁闷中）你多大？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：没法形容，很魁梧！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：我是问你年龄？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：二二得四，四四十六，十六加八减去四得多少？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：二十…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：回答正确，可惜没奖…你呐？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：呵呵，我十八了。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：十八真好！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：何以见得？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：都说十八十八一朵花哈！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：那又怎麽样？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：我斗胆想摘你，如何？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：我是带刺的玫瑰，你不怕？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：pa字我打不出来。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女（转移话题）：你是哪儿的？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：中原。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：额…中原哪里？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：惭愧，在下四海为家居无定所！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：真的假的？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：凭你的智慧我哄得了你不？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：说的也是…但你不想有个真正的家麽？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：何尝不想，只是…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：只是什麽？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：只是没有女孩愿与我比翼**。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：去找个呗！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：现今社会现实不堪真爱难寻，谈何容易？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：喂，别那麽扫兴啊，会有的！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：会麽？我好孤单，不知何时才能摆脱？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：我现在跟你聊天你还孤单？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：不，感觉良好，可惜只是一时…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：你不是怕字打不出来么？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男（恍然过来）：对喔，我要摘你这带刺的玫瑰。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：我已收了刺，摘我回家别让我枯萎你可做得到？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：有两首歌是我对你的承诺…</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：哪两首？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：《小薇》与《护花使者》。</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：真的？</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：的确是，此心天地可鉴日月可表！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：嗯，男朋友！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：呵呵，叫我劳恭比较好！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：嗯…老公！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">男：嘘…老婆别说了，有人在看我们对话呢！</div><br><div style="color: #000000;"></div><br><div style="color: #000000;">女：哦，果然如此</div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[通用离线激活 KMSpico v9.3.1 绿色典藏版]]></title>
+      <url>http://szcx.coding.me/2014/08/12/74/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.appcgn.com/tag/kms" target="_blank" rel="external">KMS</a>，全名：Key Management Service，中文译名：Windows 密钥管理服务，此功能是诞生自 Vista 商业版、企业版以及 2008 服务器版操作系统中的一种新型产品激活机制，目的是为了更好的简化企业系统部署。关于它的激活原理与破解方法，有兴趣的可以去查阅相关百科。</p>
+<p><a href="http://www.appcgn.com/kmspico.html" target="_blank" rel="external">KMSpico</a> 是一款来自于国外大牛 heldigard 精心开发与设计的绿色通用本地离线激活工具，其几乎支持目前微软所有的主流操作系统及应用程序产品，功能强悍、体积小巧、操作简单，只需运行安装而无需其他操作即可自动激活，无需联网状态且不安装任何永久的文件。</p>
+<p><strong>主要版本：</strong></p>
+<ol>
+<li><a href="http://www.appcgn.com/kmspico.html" target="_blank" rel="external">KMSpico</a> Install – KMSpico 安装版，即安装到本地系统中，实现循环 180 天永久激活；</li>
+<li>KMSpico Only Service – KMSpico 仅 KMS 服务，即只安装 KMS 服务器；</li>
+<li><a href="http://www.appcgn.com/kmspico.html" target="_blank" rel="external">KMSpico</a> Portable – KMSpico 便携版：便携化使用，随用随装；</li>
+<li>KMSpico OEM – KMSpico OEM 功能包，用于集成在系统 ISO 镜像文件中，制作无人值守全自动安装与激活版；<br><strong>支持产品：</strong></li>
+</ol>
+<ul>
+<li>Windows Vista 商业版/企业版；</li>
+<li><a href="http://www.appcgn.com/windows-7-sp1.html" target="_blank" rel="external">Windows 7</a> 专业版/企业版；</li>
+<li>Windows 8 所有版本；</li>
+<li><a href="http://www.appcgn.com/windows-8-1-with-update1.html" target="_blank" rel="external">Windows 8.1</a> 所有版本；</li>
+<li><a href="http://www.appcgn.com/office-2010-sp1.html" target="_blank" rel="external">Office 2010</a>/<a href="http://www.appcgn.com/office-2013-sp1.html" target="_blank" rel="external">2013</a> 所有版本；</li>
+<li>Windows Server 2008/2008 R2 标准版/数据中心版/企业版；</li>
+<li><a href="http://www.appcgn.com/windows-server-2012-r2.html" target="_blank" rel="external">Windows Server 2012</a>/2012 R2 标准版/数据中心版/企业版；<br><strong>操作实践：</strong> 1、需要安装 <a href="http://www.microsoft.com/zh-cn/download/details.aspx?id=17718" target="_blank" rel="external">.Net FrameWork v4.0</a> 运行库组件，Win8/8.1 等以上系统平台无需安装之； 2、关闭杀毒软件以及防火墙，系统管理员身份默认安装； 3、如需创建激活文件备份，点击“<strong>Create</strong>”按钮即可； 4、点击“红色印章”按钮开始手动激活； 5、耐心等候直至安装完即可自动激活； <strong>静默参数：</strong><a href="http://www.appcgn.com/kmspico.html" target="_blank" rel="external">KMSpico</a>.exe /silent <strong>KMSpico v9.3.1 Final 更新日志：</strong> - 修复安装时崩溃问题； <strong>KMSpico v9.3.0 Final 更新内容：</strong> - 新增 OEM Key 导出工具；</li>
+</ul>
+<p><strong>下载地址：</strong></p>
+<p>1、某度云：<a href="http://pan.baidu.com/s/1gdswijT" target="_blank" rel="external">http://pan.baidu.com/s/1gdswijT</a>；</p>
+<p>2、渣浪微：<a href="http://vdisk.weibo.com/s/vAXP4JyoFBZP" target="_blank" rel="external">http://vdisk.weibo.com/s/vAXP4JyoFBZP</a>；</p>
+<p>3、地板壳：<a href="http://dl.vmall.com/c0doyie9l5" target="_blank" rel="external">http://dl.vmall.com/c0doyie9l5</a>；</p>
+<p>4、多瑙盘：<a href="http://qiannao.com/ls/52tianyu/208af618/" target="_blank" rel="external">http://qiannao.com/ls/52tianyu/208af618/</a>；</p>
+<p>5、秤砣子：<a href="http://www.400gb.com/shared/folder_6815775_89b0687b/" target="_blank" rel="external">http://www.400gb.com/shared/folder_6815775_89b0687b/</a>；</p>
+<p>转载请注明：<a href="http://www.appcgn.com/" target="_blank" rel="external">软件缘</a> » <a href="http://www.appcgn.com/kmspico.html" target="_blank" rel="external">通用离线激活 KMSpico v9.3.1 绿色典藏版</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[微风-世界杯温八-64冠军杯]]></title>
+      <url>http://szcx.coding.me/2014/08/11/weifeng8/</url>
+      <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1pJCyVY7" target="_blank" rel="external">下载地址</a></p>
+<p>密码: cdwc</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[端午节棕子win7x64 sp1 ie11 绿色主题系统]]></title>
+      <url>http://szcx.coding.me/2014/08/11/weifeng7/</url>
+      <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1c0nIPVi" target="_blank" rel="external">下载地址</a></p>
+<p>密码: 0pif</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Serv.DC.2012.R2.17085.cn_legam.esd]]></title>
+      <url>http://szcx.coding.me/2014/08/11/2012/</url>
+      <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1gd25LRX" target="_blank" rel="external">下载地址</a></p>
+<p> 提取密码: lmcg</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[截图工具-FastStone Capture 7.8 绿色汉化版]]></title>
+      <url>http://szcx.coding.me/2014/08/10/FastStone%20Capture/</url>
+      <content type="html"><![CDATA[<p>FastStone Capture 是一款出色的屏幕捕捉（截图）软件，它集图像捕捉、浏览、编辑、视频录制等功能于一身，功能完善、使用方便，值得推荐！软件提供多种捕捉方式（如：活动窗口、指定窗口/对象、矩形区域、手绘区域、整个屏幕、滚动窗口等），提供屏幕录像机、放大镜、拾取颜色、标尺等辅助功能，支持快捷键操作，对于捕捉到的图像，软件提供了多种处理方式，如：在编辑器打开；存入剪贴板或文件；发送到打印机、邮件、WORD、Powerpoint 甚至是网络 FTP 等。用户还可以通过文件名称模板定制文件名以自动保存捕捉内容，支持BMP、GIF、JPG、PNG、TIF、PDF等文件格式，输出文件夹位置也可以自行设定。软件内置功能完善的图像编辑器，支持几乎所有主流图片格式，除提供缩放、旋转、剪切、格式转换、调整大小等基本功能外，还可向图像中加入标题、边框和水印、文本、线条、图形等内容，并可调整图像颜色，进行多种特效处理。</p>
+<p><strong>软件特点</strong><br>基于官方英文原版汉化，集成注册文件，并优化了部分设置</p>
+<p><strong>软件核对信息及下载详情</strong><br>大小: 2856034 字节<br>MD5: C70B722233DB0CA29158C83E9A17D3DE<br>SHA1: 2F798468BA09EEB4D742957AE274DE15E678CAA6<br>CRC32: 89C142C2</p>
+<p><strong>下载地址：<a href="http://pan.baidu.com/s/1i343ugl" target="_blank" rel="external">下载地址一</a>(百度网盘)&lt;===&gt;<a href="https://mega.co.nz/#!BpgFCCCK!ERP_Ip4IMBxDcm7uUvNw3OHPJksaGJBr3PoSwydnRHE" target="_blank" rel="external">下载地址二</a>(MEGA云盘)</strong></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[图像压缩工具Image Optimizer]]></title>
+      <url>http://szcx.coding.me/2014/08/10/Image%20Optimizer/</url>
+      <content type="html"><![CDATA[<p>图像压缩工具Image Optimizer</p>
+<p><img src="http://szcxgg.qiniudn.com/2014-09-19_094513.png" alt=""></p>
+<p><a href="http://szcxgg.lllld.com/wp-content/uploads/2014/08/Image-Optimizer.7z" target="_blank" rel="external">点我下载</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在驾校学不到的安全行车驾驶技巧]]></title>
+      <url>http://szcx.coding.me/2014/08/10/jiaxiao/</url>
+      <content type="html"><![CDATA[<p>1、即使路再窄，也要走自己这边的路，不要占道行驶，这是保证行车安全的基本前提。“走自己这边的路”，具体地说，就是要按照交通规则的要求，走自己应该走的路！</p>
+<p>　　请记住：不交叉就不会有事故！</p>
+<p>2、学会使用灯光（前大远光灯）警示信号。据我观察，绝大部分司机都不会或者是没有意识到灯光警告信号（尤其是在白天）对于安全行车的重要性。经常看到这样的司机（几乎占白天超车者的百分之九十以上），在不做任何警示的情况下，从你旁边刷的一声就超车过去了。此时如果被超车由于某种原因稍微变换一下车道，那将是十分危险的！而如果超车司机用灯光提醒一下被超车司机，那就要安全的多了。造成这一现象的原因是除了司机麻痹大意主观的认为没事以外，其最主要的原因是大家普遍认为大白天阳光灿烂，故而灯光的作用有限，打了灯也没用。其实不然，实践证明白天灯光的警示作用无论是对于横过马路的行人还是前方车辆或者是对面来车其警示效果都要远远的大于喇叭，尤其是在夏天炎热季节和冬季寒冷季节大部分车子都关窗开空调的情况下更是如此，这一点对于行车安全十分重要，没用过的司机网友可以试一下。但有两点需要注意：一是晚上在超车时或是虽不超车但前车距你不十分远时不要让远光灯常亮，这样会严重干扰前车司机视线，如前车司机是经验不足的新手则极易在你超车时由于视线不清和慌张而导致发生危险。二是超车时给前车超车信号白天不要超过两次晚上不要超过一次，以免前车司机对你产生误会。</p>
+<p>　　请记住：超车前给前车一个信号，为了他人也为了你自己的安全！</p>
+<p>3、安全并不意味着在所有情况下都要谦让，而是应该在该谦让的时候就谦让，在不该谦让的时候就要抢道，在某些情况下，抢道也是为了安全。例如，当你的位置正好处在一辆车（尤其是大车）后面时，你后面有一辆车要超你的车，如果让他超上来，你将处于三台车构成的三角形中最危险的一角上，如处理不当将极有可能对你自己和他人造成危险。这时如果经判断有足够的处理时间不至于和后车碰撞的的话，应该果断地打左转弯灯迅速占住超车道不让后车超上来并先行超越前方车辆，超越后迅速打右转弯灯回到行车道让后车超越。在这种情况下，我认为这是最安全又不影响大家行车速度的处理方法。如果后车来得太快，自己左转会有危险，此时应该迅速减速以便加大和前车的安全距离，待后车超过去后确实判明安全时再打左转向灯超越前车。技术不熟练者尤其是新司机特别要注意这一点！</p>
+<p>　　请记住：安全并不意味着在所有的情况下都要谦让，但在大部分场合主动谦让会让你更安全。</p>
+<p>4、车上常备一点儿速溶咖啡，行车途中可以提神,以始终保持精力充沛，不疲劳驾驶。同时，可以在紧急情况下犯困时又不得不继续驾车（如抢险救灾等非正常情况下）时使用。茶也可以，但茶需开水才能泡开，而速溶咖啡却可以直接用矿泉水冲饮，比茶方便得多。新交通法颁布前，我曾经有一次连续29个小时、两次连续19个小时连续驾驶不下车，就是靠的咖啡这个宝贝，照样精神抖擞，真是管用。咖啡以雀巢咖啡和越南的威拿咖啡为佳。但在没有咖啡或者是坚持不住的情况下，千万不要硬挺着，一定要找服务区或是安全处小睡一会儿，一切以安全为重！我有两次在离南宁仅有十几分钟车程的情况下，由于没咖啡了人又有点儿犯困，都在伶俐服务区停车睡一会儿再走，确保始终精神饱满，决不疲劳驾驶。总之要以确保行车安全为前提。</p>
+<p>　　请记住：生命只有一次。</p>
+<p>5、遇前方绿灯时间估计所剩无几，到你的车过十字路口时可能会变成红灯，应提前瞄一下后视镜，看后面有无跟你跟的比较紧的车，防止你遇红灯刹车时后车追你的尾。作为预防性措施，在离路口尚有一段距离时，可以轻踩一下刹车（以刹车灯亮为限，并不是真的要刹车，主要是提醒后方跟车者不要跟得太近），提醒后车注意。</p>
+<p>　　请记住：有备无患，防患于未然。</p>
+<p>6、当你想越线超越前车而对面又有车来的情况下，只要路足够宽，在不会造成和对方在超车时交汇的前提下，在打左转弯灯开始超车后，可以先打大灯警示一下对面来车注意你然后迅速打右转弯灯以向对面来车示意（此举的目的一是提醒对方注意你，一是礼貌的用灯光告诉对方你只是想超车并无其他恶意），然后迅速超越前车并驶回本车道。这样既保证了安全，又争取了时间，避免了慢吞吞的跟在前车后面直到对面来车过了以后才能超车的尴尬局面。</p>
+<p>　　请记住：灵活处理很重要。</p>
+<p>7、在路况不十分好的情况下，如果后面有车要超越你(即后车已经发出超车示意信号)时，千万不要故意不让路，而应该在可以超车的路段上打开右转弯灯，礼貌的示意后车可以超车。请注意：这里指的是“在可以超车的路段上”。</p>
+<p>　　请记住：与人方便，自己方便。</p>
+<p>8、正常行驶时决不要违章超速。但如果需要经常走某些缺德交警为了罚款而专门设立的非正常限速（超低限速）的陷阱路段时，最好自备一台功能齐全的电子狗，我卖我车网，以防万一。由于现在交警也贼了，有时采取的是用测速雷达照射驶过的车辆后部的方法测速，使得电子狗有时也不太灵了。所以在这些路段行驶时，还要密切注意前方路边有无可疑车辆（一般如果有一台车尤其是警车孤零零的停在前方路边就要注意了）。</p>
+<p>　　请记住：为了安全我们不违章超速，但为了不被无辜受罚警惕性还是要高点儿。</p>
+<p>9、行车要文明。遇到下雨天或者是遇到前方有积水可能会溅起水花时，尽量要减点儿速，以防积水溅到行人，造成行人惊慌失措发生危险（如被旁边的车撞上）。</p>
+<p>　　请记住：我们在不开车时也会走路，我们自己也经常会是一个行人。</p>
+<p>10、事故往往发生在超车时（尤其是重大恶性事故），所以没有把握时绝对不要超车。在高速路超车至少在一百米以外就要变好道，做好超车准备。而一旦决定超车，动作一定要坚决，不要犹犹豫豫拖泥带水，尽快完成超车动作并驶回正常行车道。在弯道视野受限和上大坡快到坡顶看不到坡后路面的情况下，绝对不要抱侥幸心理超车，因为那是用生命在开玩笑！</p>
+<p>　　请记住：眼见才为实，在任何时候都不要拿生命开玩笑！<br>11、决不酒后驾车和驾车时打电话，驾车一定要系安全带，一定要养成上车就系安全带的良好驾车习惯。</p>
+<p>　　请记住：酒是安全驾车之大敌，驾车分神最可怕，安全带是你生命的保护神。</p>
+<p>12、不要长时间跟在遮挡视线使你看不清前方路况的大家伙后面。</p>
+<p>　　请记住：要把命运时刻把握在自己手里就必须做到对行车途中的一切心理都要有数。</p>
+<p>13、十次车祸九次块，这话没错，但更重要的是对车要时刻保持其可控性。也就是说，在任何情况和车速下，你都要保证在突然遇到危险情况时车前要保持有足够的刹车距离，都要预留有让你处理危险情况的足够时间。</p>
+<p>　　请记住：失去控制就意味着失去生命。</p>
+<p>14、要对相对于你的行人和其他车辆的动向有足够的预见性。例如你经过一辆停在路边的公交车时，你要想到可能会有下车的乘客突然从公交车前窜出到你的车前；你左边有的士行驶时，它会不会突然变道猛向右拐去搭乘路边招手的打车人；前方有几个孩子同行时，会不会因为动手打闹突然跑到你的车前．．．．．．。</p>
+<p>　　请记住：没有预见性不会提前预防的司机不是一个好司机。</p>
+<p>15、中控台上不要放置圆的、容易滚动的东西，如水果、矿泉水瓶等，因为在颠簸尤其是转弯时它们容易滚下来，如分神伸手去捡则严重影响驾车安全。曾经就发生过苹果滚到刹车之下，司机弯腰去取，结果车子偏移撞上护栏，造成车毁人亡的事故。</p>
+<p>　　请记住：细节也能决定你和乘车人的生命安全与否。</p>
+<p>16、行车途中对生命威胁最大的就是轮胎出问题（尤其是在高速公路上），所以平时应该注意检查轮胎，该换就换，决不要吝啬，要知道轮胎再贵也贵不过人的生命！补过的胎只能临时救急用一下，用后最好换掉，最好不要用补过的胎上高速路跑长途（尤其是盛夏和严冬）。</p>
+<p>　　请记住：没有了生命什么都白搭。</p>
+<p>17、驶过颜色不一致（尤其是见路上补有一块光光滑滑的深色补丁）的路面而且只有一边轮子能压到的时候尽量不要刹车尤其切忌急刹车，因这时两个轮子对路面的摩擦力和抓地力是有很大差别的，刹车不当将极易导致车子侧滑倾翻。同样道理，雨中或雨后行车尽量不要让车子走一边有积水一边无积水的的路线，因为这时两轮的摩擦力和抓地力也是有很大不同的，刹车不当容易发生事故。</p>
+<p>　　请记住：你意想不到的地方往往是要命的。</p>
+<p>18、晚上在高速路上的最安全行车速度是90公里／小时左右。因为对你威胁最大的大型车在晚上大部分都运行在这个速度附近，在这个速度左右超车和被超车的频次是最低的，你只要在行车道把稳方向盘好好开好你自己的车就OK了。至于其他不要命的要超你的车你让他超好了。</p>
+<p>　　请记住：晚上行车比白天要危险得多。</p>
+<p>19、如果跑长途，尤其是跑省外，车上最好备一根铁制水管，用来防身。我历来信奉“做贼心虚”和“邪不压正“的箴言，遇到歹徒我是决不会束手就擒的。在你的正气和有威慑力的铁管面前我卖我车网，歹徒多半都会望风而逃的。遇到警察检查时水管也不会被认为是凶器，谁也不敢没收你的水管，同时一根铁质水管对歹徒的震慑作用是远大于有违法嫌疑容易被警察查获的刀子和匕首的。</p>
+<p>　　请记住：人不犯我，我不犯人。贼若犯我，我必不饶贼！</p>
+<p>20、出省外跑长途一定不要等到油箱快干了再找加油站加油，要始终保持油箱中的油能跑150－200公里以上。一定要到正规加油站加油，首选中石化，其次中石油。</p>
+<p>　　请记住：人生地不熟，粮食要备足。</p>
+<p>21、高速公路行车的安全注意事项（一个高速公路民警的忠告）：</p>
+<p>　　请记住：这都是事故处理者亲眼见的用事故者鲜血凝成的的告戒！</p>
+<p>22、夜间行车会车时千万注意关闭远光灯。有的无德司机觉得自己的车灯亮过对方就得意洋洋任凭对方怎样提示也不换成近光灯，他并不知道他的强光在把对方晃的看不清前面路况的情况下实际上已经埋下了对方因看不清而在会车时撞向自己的隐患！另外过窄路对面有摩托车或者是自行车驶来时的情况道理也是一样的。</p>
+<p>　　请记住：当人家看不清你的时候也就等于你也看不清人家！也就埋下了对方因看不清你而撞向你的祸根。害人的结果往往是以害人开始，以害己而告终。</p>
+<p>23、夹在一条车龙中上坡时，一定要把前车看作菜鸟，遇临时刹停车时要尽量离前车远一点儿（坡度越大越要远），以防起步时前车半坡技术太差倒溜回来撞上你的爱车。横过铁路时一定要等到前车完全过去并在铁路对面空出一个半以上的车身位置时你才能通过。在场地停车时一定要给比你先停的其它车让出足够的通道，不要做令人讨厌的挡道DOG。</p>
+<p>　　请记住：只有随时都把除己之外的其他人都当作菜鸟对待，你才不是菜鸟。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[学车记录]]></title>
+      <url>http://szcx.coding.me/2014/08/10/%E5%AD%A6%E8%BD%A6%E8%AE%B0%E5%BD%95/</url>
+      <content type="html"><![CDATA[<p>10月22日更新：</p>
+<hr>
+<p>学车记录<br>7.14开始真武学习倒车。<br>7.15休息。<br>7.16真武学习倒车。<br>7.17真武学习，与梨子一起。<br>7.18开车入库，枯燥。无聊，每天学员多。等候时间太多，一天时间只上两次车。这就是益安驾校，人太多了。20人左右吧。。<br>7.19真武学习，科二开始打卡，以前打了有2个多小时了。<br>7.20今天科二打卡到了10小时了，明天再继续<br>7.21继续学习，今天人少，12个左右，打卡还是打了4个小时<br>7.22日继续学习。打卡4小时。<br>7.23日到安居总校学习综合科目<br>7.24日，安居学习，科目二时间打满。<br>7.25上午去真武练习。下午休息。<br>7.26继续真武学习。<br>7.27安居跑综合。上午2圈，下午与梨子一人6圈，然后赶车回家。<br>7.28安居学习跑综合，下午到遂宁驿祥驾校考点熟悉考场。每小时300元，我去跑了两圈。<br>7.29去真武学习<br>7.30到安居练习综合，4点30出发，坐三师兄车。梨子明天考试，祝他过关。<br>7.31到安居练习综合。5人，下午1点才开始练，教练车只有一架，上午去审气去了。今天只跑了三圈。早上坐三师兄的车去的。梨子今天过科二了，祝贺他。<br>8.1安居跑综合。人多。。。早上坐三师兄车，下午坐杨教的车，开了一段路。<br>8.2跑真武练习倒车，离合的运用。感觉自己离活有点差，与考场上不太一样，自己现熟悉一下。。。<br>8.3安居跑综合两圈，与邓志师兄坐车回家。<br>8.4到安居综合跑了一圈，与彭春、王元富坐车到遂宁考场。6元。下午到考场练习150元，中午吃饭17元。晚上吃饭35元，练考场时间到晚上8点结束。现陈XX、周秀碧两口子与喻教一起吃晚饭走大英高速回家。今天练考场感觉可以，离活顺利。<br>8.5今天去真武练习。明天准备再去练习考场，后天考试了。</p>
+<p>晕，刚接到电话，我7号没有约考成功。。。。。。明天继续练习吧。<br>8.6今天去真武练习。。。<br>8.7安居学车，综合。陈安兵，段刚，段炼，陈秀碧，甘元勇，黎明明。<br>8.8真武学车<br>8.9下大雨，去安居，只有三人，周杨、罗建华。中午12点40左右赶车回家。<br>8.10真武练车<br>8.11安居练车，段刚两弟兄，罗丹，郭富城<br>8.12今天一大早起床，后天应该可考试了。今天去的真武，10点左右。哈喻教听说我的卡时间没满。还少两天，赶紧打吧，每天4小时，下午13点过去退卡。明天再早一点把卡打起，后天考试来得及吧？？？<br>8.13早上5.30起床打卡去安居，练习综合三圈后（卡打满）起车去遂宁考场，准备明天的考试，今天练考场10人，考试的有8人。李根、甘元勇、<del><em>邓志、段刚</em></del>、郭富城、聂明明、罗丹、胡春杨、周秀碧。19点才轮到我与段刚练10号车，以前两次分别练了4号5号车。晚上大家与蒋教一起吃了饭。后逛火车站，再后来与邓志一起住兴元宾馆，其他人住宏元宾馆。晚上邓志打鼾，我没法入睡，开小说听了一晚上，迷迷糊糊睡了一会儿。<br>8.14早上6.10分起床，虽然没睡多久，但还是精神十足。吃了稀饭与咸蛋去考场等待考试。7.30分左右停电。7.45左右发电开始考试。我是第一轮考试，排到了2区10号车，恰好昨天练了10号车，2区里10号车在第一个车位，于是我第一个考试。发挥很好，第一圈就过了。恭喜自己。辛苦一个月时间没有白费。恩。PS：今天8人考试，邓志与段刚没过。</p>
+<p>9.6日，与黎永强，王豪三人去安居练习科三，路止打卡，共有15小时左右了吧。开了一圈。与我们一起学习的邓志还在练习科二。给他加油吧。同时也给自己加油，认真对待科三，10.35分左右等我今天卡的时间打满后退卡，坐三师兄车回家。<br>9.8日，练习科三，到考场熟悉路线。<br>9.12日，下午坐熊总车去朝晖家等明天站岗。<br>9.13日，与黎子到新市场路口站岗。<br>9.14日，遂宁练习考场。7人4小时，每人170元。坐三师兄的车车费40元，中午生活+给姓朱的引导员烟（7人平分每人25元）<br>PS：总结一下今天大家失败的地方：1、在过路口时停车，对考试车离活掌握不好，以至于熄火。2、第一次直线行驶时方向不正，主要是掉头过来速度偏慢，从1档到3档加档时间短，以至于车身没正，造成直线行驶时偏离道路，驶进右车道。。3、有时忘记打转弯灯。4、未进考试科目的掉头压了实线。5、通过路口时对安全情况的掌握。6、路口左转进道时连续进两次道。<br>10.4与梨子一起去安居练习一下路口调头后直线行驶。</p>
+<p>10.7日与梨子等16人去遂宁考场练习一个小时（300元），中午安居吃饭（20元），8号车引车员赵一包烟5人分每人9元。引车员服务态度还可以。能缓解我们明天考试的紧张、还教我们掉头不用半离合的方法。晚上去城南的一个普通旅馆住宿（20元/人）。晚上吃饭30元/人。</p>
+<p>10.8日5点30分左右起床，4人搭野租儿去等候考试。6点30分点名，照相、派车，我被派到16号考试车。考试的线路是从点名的发车起点的第一条线路。第一圈中途直线行驶出错。紧张~~~。第二圈才考试过关。很激动。</p>
+<p>10.20日早上7点20出发，坐出租车50元到长征驾校考科四，顺利过关。</p>
+<p>10.22日早上邮局通知去拿快递，驾驶证到手了。</p>
+<p>附科三训练场地的视频见：<a href="http://szcx.pw/256.html" title="驾校科三训练视频" target="_blank" rel="external">http://szcx.pw/256.html</a><br><!--nextpage--></p>
+<p>附学车的几张图片：</p>
+<p><a href="http://szcxgg.qiniudn.com/wp-content%2Fuploads%2F2014%2F08%2F2014-08-14_182242.jpg" target="_blank" rel="external"><img src="http://szcxgg.tk/wp-content/uploads/2014/08/2014-08-14_182242.jpg" alt="2014-08-14_182242"></a></p>
+<p><a href="http://szcxgg.qiniudn.com/wp-content%2Fuploads%2F2014%2F08%2F2014-08-14_182331.jpg" target="_blank" rel="external"><img src="http://szcxgg.tk/wp-content/uploads/2014/08/2014-08-14_182331.jpg" alt="2014-08-14_182331"></a><br><a href="http://szcxgg.qiniudn.com/wp-content%2Fuploads%2F2014%2F08%2F2014-08-14_182442.jpg" target="_blank" rel="external"><img src="http://szcxgg.tk/wp-content/uploads/2014/08/2014-08-14_182442.jpg" alt="2014-08-14_182442"></a></p>
+<p><a href="http://szcxgg.qiniudn.com/wp-content%2Fuploads%2F2014%2F08%2F2014-08-14_182523.jpg" target="_blank" rel="external"><img src="http://szcxgg.tk/wp-content/uploads/2014/08/2014-08-14_182523.jpg" alt="2014-08-14_182523"></a></p>
+<p><a href="http://szcxgg.qiniudn.com/wp-content%2Fuploads%2F2014%2F08%2F2014-08-14_182707.jpg" target="_blank" rel="external"><img src="http://szcxgg.tk/wp-content/uploads/2014/08/2014-08-14_182707.jpg" alt="2014-08-14_182707"></a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[孩子的学习成绩与习惯有关]]></title>
+      <url>http://szcx.coding.me/2014/08/10/%E5%AD%A9%E5%AD%90%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%88%90%E7%BB%A9%E4%B8%8E%E4%B9%A0%E6%83%AF%E6%9C%89%E5%85%B3/</url>
+      <content type="html"><![CDATA[<p>这道题讲过多少遍了，怎么还错？”、“为什么不看题？题目上不是写的很清楚吗？”、你怎么那么马虎。”。每次考完试，都能听到一些人这样批评孩子。但下次考试孩子照样错，问题到底出现在哪里？是孩子马虎？还是孩子笨？都不是。原因是孩子的习惯不好。先看看不同习惯的孩子是怎样做事的。</p>
+<p>生活习惯<br>习惯好的孩子：</p>
+<p>每晚按时睡觉，衣物脱下后叠放有序。</p>
+<p>2、早上起来，不用开灯，随手就能拿到自己的衣物穿好，伸脚就可以穿上鞋子。</p>
+<p>3、洗漱后背起书包就可以去上学。不耽误时间，要求带的东西一样不差。</p>
+<p>习惯不好的孩子：</p>
+<p>1、每晚都盯着动画片，大人不催绝不睡觉。</p>
+<p>2、衣物脱下后随手堆放。早晨起来，不知道自己的衣物放在哪里了。</p>
+<p>3、洗漱后还要整理书包，有时匆忙赶到学校，才发现该带的作业等物品没带。</p>
+<p> 吃饭习惯<br>习惯好的孩子：</p>
+<p>1、先去洗手，再用消毒纸巾擦双手。</p>
+<p>2、吃饭时左手扶着饭盒，右手拿勺，动作轻盈，细嚼慢咽，口中无声。</p>
+<p>3、用餐后还用纸巾擦拭得干干净净。</p>
+<p>习惯不好的孩子：</p>
+<p>1、从操场跑回来，在老师督促下跑到水龙头前草草冲洗几下，将双手朝身上一摸就去吃饭，左手垂在身体下方，吃饭狼吞虎咽，口中还“吧唧”作响。学习习惯做作业时，习惯好的孩子发现做错题，找出橡皮轻轻擦掉，再将橡皮末吹干净，不留痕迹。</p>
+<p>2、做完作业后，从头至尾逐一细致的检查一遍，然后一切用品归回原位，整齐有序。习惯不好的孩子，发现了错题，食指蘸口水用力涂抹，或用笔在错处涂成黑，弄的手本黑黑的。</p>
+<p>3、做完作业后，用品乱扔，一切要等玩之后再说。</p>
+<p>背书习惯<br>习惯好的孩子：</p>
+<p>老师要求默写课文中的某段，先把课文背诵熟练，让家长帮助或自己对着录音机检查无误后，再练习默写。</p>
+<p>不会的、容易错的地方还加强记忆反复默写，达到了熟练的程度。</p>
+<p>3、老师检查时自然顺利通过。</p>
+<p>习惯不好的孩子：</p>
+<p>1、老师要求默写课文中的某段，先顾玩耍，第二天起床后才想起老师布置的作业，顾不上洗漱和吃早饭，囫囵吞枣诵读几遍，结果只能是应付。</p>
+<p>2、从这些事例不难看出，孩子养成的各种习惯，决定着孩子的各种行为。</p>
+<p>人的各种习惯之间是互相影响、促进的。</p>
+<p>孩子一旦在各方面都养成良好的习惯，并且当这种习惯趋向稳定而形成性格时，孩子在生活、学习等各方面的难题都会迎刃而解。</p>
+<p>因此，不能把在考试中出错简单地归结为不认真、马虎、不努力。考试，不仅是考察知识，更是考察习惯。无论是老师还是家长，都应该从细微处着手，从小培养孩子各方面的好习惯。好习惯的养成将使孩子终生受益。</p>
+<p>&nbsp;</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[《孩子，你为什么必须刻苦学习》-------一个父亲对孩子的表白]]></title>
+      <url>http://szcx.coding.me/2014/08/10/haizi/</url>
+      <content type="html"><![CDATA[<p>孩子，今天爸爸给你谈的是：要做一根有骨气的钢筋，不要让爸爸训斥你为“朽木不可雕也”；这个年龄的拼搏，决定你一生命运的荣辱。</p>
+<p>   孩子，刻苦学习吧，不刻苦学习，将来会后悔的。这句话，哪个家长都会说，但是，多半的家长都会恨铁不成钢。无论家长怎么嘱咐，孩子总是那么漫不经心。家长急得跺脚，孩子总是不以为然。但是，孩子到了爸爸妈妈这个年龄，面对沉甸甸的社会现实，就会后悔自己在青春时代懈怠过，唉，后悔了，但是晚了。</p>
+<p>   孩子，我说过多少次，人生道路虽然漫长，但是在紧要处只有几步。其实，关键处哪里有几步呀？称之为关键的，就是一步。关键的一步你走不好，你不严格要求自己，将来你的人生命运，就会因为此时的懈怠而黯淡。</p>
+<p>   爸爸说多了，也就显得唠叨了。每个成长中的孩子，都会觉得家长唠叨。唉，十五六的年龄，正是反叛期，你觉得自己无所不能，你总是觉得将来能闯遍世界。你的理想非常好，但是刻苦学习的程度非常欠缺。</p>
+<p>   林林总总的教育理论，总在鼓励什么素质教育，鼓励孩子德智体美劳全面发展。但是，千万的前辈的命运，只证明了一句话，高考是人生命运最关键的一道坎，过了这村没这店。——这种最朴素也最珍贵的嘱咐，说了千万遍，你总是不以为然。你知道电影中的那个诺亚方舟吧？高考就是通向那个救生大船的独木桥。你闯过去了，就得救了。你闯不过去，等待你的就是悲惨的命运。</p>
+<p>   孩子，不要给我较劲，不要对我说“高考落榜，脚下有路”的道理。高考落榜了，除了拿“脚下有路”来自我安慰外，还能说什么呢？说白了，高考落败，在我们这个社会，就是面临着就业的困境。你的工作，基本上就没什么科技含量，你只能出卖自己的体力。</p>
+<p>   上述的道理给你讲了许多次，你在乎了吗？每次考试完，成绩下滑，你会咬牙切齿地立志：我坚决要刻苦学习，我坚决要考个好名次，我坚决要实现某个目标。但是，过了没几天，你固有的臭毛病就显现无余。你依然不疼不痒地学习。你会悠闲地看会儿小说，你要睡够。你关紧房门，貌似学习，可是，爸爸何曾看到你紧张学习的气氛呢？</p>
+<p>   于是，爸爸斥责你，朽木不可雕也。你真的成了朽木了。说了一百遍道理，你也认同，但就是没有刻苦的劲头。爸爸只好默默地想，这就是你的命了。有些孩子真的很可悲——什么志向都会立下，但是在行动上，永远是扶不起的阿斗。</p>
+<p>   想想你自己吧——你几乎在最好的高中读书，你距离最好的学府那么近，你享受着最好的教育资源，爸爸给你最大的物质支持，除了刻苦学习以外的全部的条件，你都拥有了；你也有高远的理想，你也知道勤能补拙的道理，你什么道理都懂。但是，你就是不能持久地始终如一地学习——你的刻苦学习精神永远都被你的懈怠稀释着。你的所谓的刻苦，永远只有三分钟的热度。爸爸给你的压力那么大，外界人会为你抱不平——斥责爸爸要累死你。可是你累了吗？你内心永远不给自己足够的压力。换言之，你根本就没有那种在战场上厮杀的那种拼搏的骨气。我早已告诉你一万次了，未来两年决定你终身的命运，但是你依然不温不火。爸爸还能说什么呢？孩子，这就是你的命。你明知道自己拼一把，就有可能赢得辉煌的未来，但是你拼不起来。你内心不知不觉地把自己列为那些尖子生后面的弱者，你内心已经输了，再给你加油，你都是没有骨气的家伙。N年之后，你就会后悔，怎么那两年没有竭尽全力呢？我也告诉你了，你将来会后悔。但是你就是振作不起来。</p>
+<p>   唉，这就是你的命了。爸爸已经竭尽全力地鼓励你，支持你。你就是这种料儿了，朽木，朽木，朽木，老师和爸爸怎么也不会把你雕琢成镂空的艺术品。</p>
+<p>孩子，古语就说，学不可以已。那种一边给自己鼓劲，一边自己又无形中泄气的学习劲头，其实就像烧到七八十度就撤火的温水。有些孩子，貌似刻苦的样子，但是无形中还在松懈，你们狠不下心，钻不下去，一直在给自己的水加温，但加不到温度就松懈，自己的水温一会儿，凉一会儿，永远到不了沸腾的地步。而那些尖子生，就是加温到水沸腾的地步，然后小火慢烧，不曾松懈，水就一直沸腾下去。</p>
+<p>   孩子，很多家长声称怕孩子累，让孩子玩一会儿，当然是对的。记住，学习是为自己学的，不是为家长学的。无论你刻苦，你旅游，你睡觉，你阅读，你要把学习装在心上。如果你不把课业的学习装在心上，你的刻苦都是装样子的，都是在做无用功。</p>
+<p>像天下千万的爸爸妈妈一样，爸爸还会唠叨，还会督促，因为这是爸爸的权利和义务呀。爸爸也烦，但是没别的办法。天下有几个儿女是能让父母放心的呢？</p>
+<p>   一句话，把学习放在心上，刻苦起来，全神贯注，不许抛弃。就像爸爸一直把你的成长放在心上一样，就像爸爸对你的成长全神贯注一样。对学习的追求，没什么捷径，只有刻苦刻苦再刻苦。</p>
+<p>   如果你刻苦了，还没有实现自己的目标。或者，你就是不刻苦，爸爸也无可奈何。唉，这都是我们的命。没别的办法了。不过，爸爸做到了问心无愧。你呢，会做到问心无愧吗？</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[孩子写作业慢的原因及对策]]></title>
+      <url>http://szcx.coding.me/2014/08/10/%E5%AD%A9%E5%AD%90%E5%86%99%E4%BD%9C%E4%B8%9A%E6%85%A2%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E5%AF%B9%E7%AD%96/</url>
+      <content type="html"><![CDATA[<p><strong>很多家长感**</strong>觉孩子写作业慢，每天花一到二小时来监督孩子写作业，确实很烦恼，为何孩子写作业慢呢？**</p>
+<p><strong>（一）学习注意力不集中。孩子注意力不集中，学习不能投入，东张西望，写一下作业，又要喝水，还要上厕所，最终作业做很长时间。大人讲的话，就一下子听到了，可作业就不做了。</strong></p>
+<p><strong>这个方面如何解决？</strong></p>
+<p><strong>（1）在生活中，要求孩子，做事就快速做完。比如：写作业 穿衣服 吃饭等等，做这些事情速度要快，根据调查，平时生活中，做事速度慢，爱拖拉的话，学习起来也比较慢，像有些孩子吃饭要吃半小时，甚至边看电视，边看电视，这样一来吃个饭就吃一个小时。</strong></p>
+<p><strong>（2）训练孩子的注意力，注意力是一种能力，是通过训练才能提高的，光给孩子讲道理是没用。</strong></p>
+<p><strong>（二）慢性子。有些孩子是个慢性子，做什么事都是不慌不忙，慢慢来，虽然孩子这样出错误少，但就是速度慢。这可以给孩子规定时间完成，参加打篮球 快跑等运动来刺激孩子的快速运动能力。</strong></p>
+<p><strong>（三）手眼协调能力不强。孩子的眼睛 大脑 手的协调能力，从小孩子爬行比较快，则孩子的手眼协调能力强，所以家长让孩子参加运动，如跆拳道 书法 下棋 达篮球等，以培养协调能力。</strong></p>
+<hr>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[postName]]></title>
+      <url>http://szcx.coding.me/2013/12/02/postName/</url>
+      <content type="html"><![CDATA[<p>这里开始使用markdown格式输入你的正文。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[markdown]]></title>
+      <url>http://szcx.coding.me/2013/05/29/markdown/</url>
+      <content type="html"><![CDATA[<p> 这里是正文，用markdown写，使用方法参照博客<a href="http://zipperary.com/2013/05/22/introduction-to-markdown/" target="_blank" rel="external">Introduction to markdown</a></p>
+<a id="more"></a>
+<p> 以下是Markdown代码：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#这里是一级标题</span></div><div class="line"><span class="comment">###这里是三级标题</span></div><div class="line"><span class="comment">######这里是六级标题，就到这里了，木有七级！</span></div><div class="line">段落前面没有缩进，看到了吧。</div><div class="line"></div><div class="line">　　要想使用缩进，在中文输入法中改成「全角」输入，再按两个空格</div><div class="line"></div><div class="line">行尾一个回车换行，显示效果依然是是一行。</div><div class="line">我说的对吧~</div><div class="line"></div><div class="line">想要分成两行，需要在行尾输入两个空格。  </div><div class="line">我说的对吧~</div><div class="line"></div><div class="line">想要开始一个新的段落，乖乖的按两下回车吧</div><div class="line"></div><div class="line">我说的对吧~</div><div class="line"></div><div class="line">**两个星号包围的是粗体**</div><div class="line"></div><div class="line">*一个星号包围的是斜体*</div><div class="line"></div><div class="line">&gt; 引用内容，多行的话，用两个空格结尾吧  </div><div class="line">是吧~</div><div class="line"></div><div class="line">`反引号包围的是行内代码`，这个按键在「Tab」上边</div><div class="line"></div><div class="line">    ``嵌套的话，可以使用`两个双引号`嵌套在外面``</div><div class="line"> </div><div class="line">      ``` python</div><div class="line">      <span class="comment">#三个反引号包围的是代码块。</span></div><div class="line">      <span class="comment">#会显示行号。</span></div><div class="line">      <span class="comment">#也有高亮显示</span></div><div class="line">      <span class="comment">#我上面加了python，你也可以不加。如果不能高亮，那么还是加上吧。。另外，如果你的代码块包围的是html，那你应该写html而不是python</span></div><div class="line">      import os</div><div class="line">      <span class="built_in">print</span> os.sep</div></pre></td></tr></table></figure>
+<p>嵌套的话，可以使用六个反引号嵌套在外面。</p>
+<ol>
+<li>有序列表1，注意点之后的空格。</li>
+<li>有序列表2.</li>
+<li><p>我这里写成1，在显示时还是3，厉害不。</p>
+</li>
+<li><p>有序列表1<br>详细内容，注意前面有一个空格</p>
+</li>
+<li>有序列表2<br>详细内容</li>
+</ol>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2</li>
+<li>无序列表3<ul>
+<li>小1，注意前面有一个空格</li>
+<li>小2</li>
+</ul>
+</li>
+</ul>
+<p>超级链接：<a href="http://zipperary.com" target="_blank" rel="external">我的博客</a></p>
+<p>插入图片：<img src="http://ww2.sinaimg.cn/large/5e8cb366jw1e62o63tkv3j20dh078q5a.jpg" alt="好看不"></p>
+<p>另外，markdown完全兼容html，你可以用html插入这些东西，例如：</p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XMjI2MjU3MDMy" frameborder="0" allowfullscreen></iframe>
+
+<p><del>删除线</del></p>
+<p>分割线用<code>---</code>，注意单独一样，上面必须是一个空行</p>
+<hr>
+<p>更多高级的格式，请果断插入html标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">以下到结尾处是效果：</div><div class="line"></div><div class="line">#这里是一级标题</div><div class="line">###这里是三级标题</div><div class="line">######这里是六级标题，就到这里了，木有七级！</div><div class="line"></div><div class="line">段落前面没有缩进，看到了吧。</div><div class="line"></div><div class="line">　　要想使用缩进，在中文输入法中改成「全角」输入，再按两个空格</div><div class="line"></div><div class="line">行尾一个回车换行，显示效果依然是是一行。</div><div class="line">我说的对吧~</div><div class="line"></div><div class="line">想要分成两行，需要在行尾输入两个空格。  </div><div class="line">我说的对吧~</div><div class="line"></div><div class="line">想要开始一个新的段落，乖乖的按两下回车吧</div><div class="line"></div><div class="line">我说的对吧~</div><div class="line"></div><div class="line"></div><div class="line">**两个星号包围的是粗体**</div><div class="line"></div><div class="line">*一个星号包围的是斜体*</div><div class="line"></div><div class="line">&gt; 引用内容，多行的话，用两个空格结尾吧  </div><div class="line">是吧~</div><div class="line"></div><div class="line"></div><div class="line">`反引号包围的是行内代码`，这个按键在「Tab」上边</div><div class="line"></div><div class="line">``嵌套的话，可以使用`两个双引号`嵌套在外面``</div><div class="line"></div><div class="line">```python</div><div class="line">#三个反引号包围的是代码块。</div><div class="line">#会显示行号。</div><div class="line">#也有高亮显示</div><div class="line">#我上面加了python，你也可以不加。如果不能高亮，那么还是加上吧。。另外，如果你的代码块包围的是html，那你应该写html而不是python</div><div class="line">import os</div><div class="line">print os.sep</div></pre></td></tr></table></figure></p>
+<p>嵌套的话，可以使用六个反引号嵌套在外面。</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>

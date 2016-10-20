@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo 主题Light修改教程 | 遂州创信</title>
+  <meta name="author" content="遂州创信">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Hexo 主题Light修改教程"/>
+  <meta property="og:site_name" content="遂州创信"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="遂州创信" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ffe3814b5f53cc394a493cbeb2368f2af' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">遂州创信</a></h1>
+  <h2><a href="/">蓝江老涌的博客</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-28T01:44:19.000Z"><a href="/2014/10/28/Hexo-主题修改教程/">2014-10-28</a></time>
+      
+      
+  
+    <h1 class="title">Hexo 主题Light修改教程</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>首先感谢<a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">zipperary的教程</a>，我这儿把我修改了的部分发上来做一个备份用。<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">官方主题下载地点</a></p>
+<h3 id="添加“多说”评论与“页面导航”"><a href="#添加“多说”评论与“页面导航”" class="headerlink" title="添加“多说”评论与“页面导航”"></a>添加“多说”评论与“页面导航”</h3><ol>
+<li><p>在<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a> 进行注册，我用的是我的QQ号，获取通用代码。</p>
+</li>
+<li><p>将通用代码粘贴到 <code>themes\light\layout\_partial\comment.ejs</code> 里边，<br>其中<code>var duoshuoQuery = {short_name:&quot;szcx&quot;}</code>里的<code>szcx</code>是我的账号。</p>
+</li>
+</ol>
+<a id="more"></a>
+<p>如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (page.comments)&#123; %&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;nav id=<span class="string">"pagination"</span> &gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (page.prev) &#123; %&gt;</div><div class="line">    &lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- page.prev.path %&gt;"</span> class=<span class="string">"alignleft prev"</span> &gt;&lt;%= __(<span class="string">'prev'</span>) %&gt;&lt;/a&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (page.next) &#123; %&gt;</div><div class="line">    &lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- page.next.path %&gt;"</span> class=<span class="string">"alignright next"</span> &gt;&lt;%= __(<span class="string">'next'</span>) %&gt;&lt;/a&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">    &lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</div><div class="line">&lt;/nav&gt;</div><div class="line"></div><div class="line">&lt;!-- 多说评论框 start --&gt;</div><div class="line"> &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%- config.root %&gt;&lt;%- item.path%&gt;"</span> data-title=<span class="string">"&lt;%- item.title %&gt;"</span> data-url=<span class="string">"&lt;%- item.permalink %&gt;"</span>&gt;&lt;/div&gt;</div><div class="line">&lt;!-- 多说评论框 end --&gt;</div><div class="line">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">var duoshuoQuery = &#123;short_name:<span class="string">"szcx"</span>&#125;;</div><div class="line">  (<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">    var ds = document.createElement(<span class="string">'script'</span>);</div><div class="line">    ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">    ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">    ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">    (document.getElementsByTagName(<span class="string">'head'</span>)[0] </div><div class="line">     || document.getElementsByTagName(<span class="string">'body'</span>)[0]).appendChild(ds);</div><div class="line">  &#125;)();</div><div class="line">  &lt;/script&gt;</div><div class="line">&lt;!-- 多说公共JS代码 end --&gt;</div><div class="line">&lt;section id=<span class="string">"comment"</span>&gt;</div><div class="line">&lt;/section&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<h3 id="添加小图标"><a href="#添加小图标" class="headerlink" title="添加小图标"></a>添加小图标</h3><p>在<code>themes/light/layout/_partial/head.ejs</code>里将<code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.png&quot; rel=&quot;icon&quot;&gt;</code><br>替换为<code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-ico&quot;&gt;</code>将favicon.ico图标文件放在source目录下。</p>
+<h3 id="添加分类、标签云widget"><a href="#添加分类、标签云widget" class="headerlink" title="添加分类、标签云widget"></a>添加分类、标签云widget</h3><p>很简单，在<code>themes/light/_config.yml</code>中，添加如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">widgets:</div><div class="line">- category</div><div class="line">- tagcloud</div></pre></td></tr></table></figure>
+<h3 id="添加友情链接widget"><a href="#添加友情链接widget" class="headerlink" title="添加友情链接widget"></a>添加友情链接widget</h3><p>在<code>themes/light/layout/_widget中新建名为blogroll.ejs</code>的文件，编辑内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"widget tag"</span>&gt;</div><div class="line">&lt;h3 class=<span class="string">"title"</span>&gt;友情链接&lt;/h3&gt;</div><div class="line">&lt;ul class=<span class="string">"entry"</span>&gt;</div><div class="line">&lt;li&gt;&lt;a href=<span class="string">"http://szcx.pw/"</span> title=<span class="string">"蓝江老涌的博客"</span>&gt;遂州创信&lt;/a&gt;&lt;/li&gt;</div><div class="line">&lt;li&gt;&lt;a href=<span class="string">"http://lxy361.tk/"</span> title=<span class="string">"Hexo博客"</span>&gt;Hexo博客&lt;/a&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="添加新浪微博widget-微博秀"><a href="#添加新浪微博widget-微博秀" class="headerlink" title="添加新浪微博widget(微博秀)"></a>添加新浪微博widget(微博秀)</h3><ol>
+<li>去<a href="http://app.weibo.com/tool/weiboshow" target="_blank" rel="external">新浪微博开放平台</a>设置和生成微博秀代码。我用的139邮箱注册新浪。</li>
+<li>在<code>themes/light/layout/_widget</code>中新建名为<code>weibo.ejs</code>的文件，将刚才的代码直接保存到这里。</li>
+<li>在<code>themes/light/_config.yml</code>中，添加如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">widgets:  <span class="comment">#站点右边栏，暂时默认，后面介绍修改和添加</span></div><div class="line">- search</div><div class="line">- category</div><div class="line">- tagcloud  <span class="comment">#标签云</span></div><div class="line">- intro</div><div class="line">- weibo    <span class="comment">#新浪微博秀</span></div><div class="line">- blogroll    <span class="comment">#友情链接</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="主页文章显示摘要"><a href="#主页文章显示摘要" class="headerlink" title="主页文章显示摘要"></a>主页文章显示摘要</h3><p>编辑md文件的时候，在要作为摘要的文字后面添加<code>&lt;!--more--&gt;</code>即可。</p>
+<h3 id="修改背景图片、文字颜色等"><a href="#修改背景图片、文字颜色等" class="headerlink" title="修改背景图片、文字颜色等"></a>修改背景图片、文字颜色等</h3><ul>
+<li>找到<code>hexo\themes\light\source\css\_base\layout.styl</code>，在<code>body</code>下面增加一条<code>background-image url(&#39;/imgs/noise.png&#39;)</code></li>
+<li>至于背景图片<code>\themes\light\source\imgs\bozhu.png</code>，用自己喜欢的即可。</li>
+<li>然后在<code>hexo\themes\light\source\css\_base\variable.styl</code>中修改<code>color</code>区块中的属性，就可以改变网站不同元素的颜色了。</li>
+</ul>
+<h3 id="重头戏来了，我修改的themes-light-config-yml文件"><a href="#重头戏来了，我修改的themes-light-config-yml文件" class="headerlink" title="重头戏来了，我修改的themes\light\_config.yml文件"></a>重头戏来了，我修改的<code>themes\light\_config.yml</code>文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"> menu: #站点右上角导航栏，暂时默认。</div><div class="line">  首页: /</div><div class="line">  归档: /archives</div><div class="line">  关于: /about</div><div class="line"></div><div class="line">widgets:  #站点右边栏</div><div class="line">- search</div><div class="line">- category</div><div class="line">- tagcloud  #标签云</div><div class="line">- intro</div><div class="line">- weibo    #新浪微博秀</div><div class="line">- blogroll    #友情链接</div><div class="line"></div><div class="line">excerpt_link: 阅读全文 #替换为中文</div><div class="line"></div><div class="line">plugins: </div><div class="line">  - hexo-generator-feed</div><div class="line"></div><div class="line">twitter: #右边栏要显示twitter展示的话，需要在此设置</div><div class="line">username: </div><div class="line">show_replies: false</div><div class="line">tweet_count: 5</div><div class="line"></div><div class="line">addthis: #SNS分享，身在天朝，当然用“百度分享”，暂时默认</div><div class="line">  enable: true</div><div class="line">  pubid:</div><div class="line">  facebook: true</div><div class="line">  twitter: true</div><div class="line"> google: true</div><div class="line">  pinterest: true</div><div class="line"></div><div class="line"> fancybox: true #图片效果，默认</div><div class="line">  google_analytics: #要使用google_analytics进行统计的话，这里需要配置ID</div><div class="line">  rss: /atom.xml #生成RSS，需要配置路径</div></pre></td></tr></table></figure>
+<h3 id="根目录下的-config-yml文件设置"><a href="#根目录下的-config-yml文件设置" class="headerlink" title="根目录下的_config.yml文件设置"></a>根目录下的<code>_config.yml</code>文件设置</h3><pre><code># Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 遂州创信
+subtitle: 蓝江老涌的博客
+description: 学习总结 思考感悟 知识管理 # 网站描述
+author: 蓝江老涌
+email: szcxgg@gmail.com
+language: zh-CN
+
+# URL
+## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
+##url: http://szcx.github.io  #这个绑定域名:http://lxy361.tk
+url: http://szcx.gitcafe.com  #这个绑定域名:http://snljzz.tk
+root: /
+permalink: :year/:month/:day/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+
+# Writing 文章布局、写作格式的定义，不修改
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
+
+# Category &amp; Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
+# Server
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+server_ip: localhost
+logger: false
+logger_format: dev
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-D
+time_format: H:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 6 #每页6篇文章
+pagination_dir: page
+
+# Disqus #社会化评论disqus，我使用多说，在主题中配置
+disqus_shortname:
+
+# Extensions
+## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
+## Themes: https://github.com/hexojs/hexo/wiki/Themes
+theme: light
+exclude_generator:
+
+#  Deployment 站点部署到github要配置，上一节中已经讲过
+## Docs: http://zespia.tw/hexo/docs/deploy.html
+   deploy:
+ type: github
+ repository: git@gitcafe.com:szcx/szcx.git
+ branch: gitcafe-pages
+
+#deploy:
+# type: github
+# repository: git@github.com:szcx/szcx.github.io.git
+#branch: master
+</code></pre><h3 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h3><h4 id="hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下："><a href="#hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下：" class="headerlink" title="hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下："></a>hexo提供了RSS的生成插件，需要手动安装和设置。步骤如下：</h4><ul>
+<li>安装RSS插件到本地：npm install hexo-generator-feed</li>
+<li><p>开启RSS功能：编辑hexo/_config.yml，添加如下代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">plugins:</div><div class="line">- hexo-generator-feed</div></pre></td></tr></table></figure>
+</li>
+<li><p>在站点添加链接：<br>在<code>themes/light/_config.yml</code>中，编辑 <code>rss: /atom.xml</code><br>在<code>themes/light/layout/_partial/header.ejs</code>中，<code>&lt;ul&gt;&lt;/ul&gt;</code>之间，添加一样代码<br><code>&lt;li&gt; &lt;a href=&quot;/atom.xml&quot;&gt;RSS&lt;/a&gt; &lt;/li&gt;</code></p>
+</li>
+</ul>
+<h3 id="文章中插入图片"><a href="#文章中插入图片" class="headerlink" title="文章中插入图片"></a>文章中插入图片</h3><ul>
+<li>使用markdown写文章，插入图片的格式为<code>![图片名称](链接地址)</code>，这里要说的是链接地址怎么写。对于hexo，有两种方式：</li>
+<li>使用本地路径：在<code>hexo/source</code>目录下新建一个<code>img</code>文件夹，将图片放入该文件夹下，插入图片时链接即为<code>/img/图片名称</code>。</li>
+<li>使用<a href="https://portal.qiniu.com/" target="_blank" rel="external">七牛</a>，有图片的链接地址。格式为<code>![图片名称](链接地址)</code>我用的是139邮箱注册的七牛。</li>
+</ul>
+<h3 id="加入左上角「fork-me-on-github」"><a href="#加入左上角「fork-me-on-github」" class="headerlink" title="加入左上角「fork me on github」"></a>加入左上角「fork me on github」</h3><p><a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">这里</a>有 github 给出的教程，把代码插入到任意一个全局的模板文件中就行，比如<code>layout.ejs</code>的末尾。<br>我的<code>themes\light\layout\layout.ejs</code>文件如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;%</div><div class="line"><span class="keyword">if</span>(page.layout !== <span class="string">'false'</span>)&#123;</div><div class="line">%&gt;</div><div class="line"></div><div class="line">&lt;%- partial(<span class="string">'_partial/head'</span>) %&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">  &lt;header id=<span class="string">"header"</span> class=<span class="string">"inner"</span>&gt;&lt;%- partial(<span class="string">'_partial/header'</span>) %&gt;&lt;/header&gt;</div><div class="line">  &lt;div id=<span class="string">"content"</span> class=<span class="string">"inner"</span>&gt;</div><div class="line">    &lt;div id=<span class="string">"main-col"</span> class=<span class="string">"alignleft"</span>&gt;&lt;div id=<span class="string">"wrapper"</span>&gt;&lt;%- body %&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">    &lt;aside id=<span class="string">"sidebar"</span> class=<span class="string">"alignright"</span>&gt;&lt;%- partial(<span class="string">'_partial/sidebar'</span>) %&gt;&lt;/aside&gt;</div><div class="line">    &lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;footer id=<span class="string">"footer"</span> class=<span class="string">"inner"</span>&gt;&lt;%- partial(<span class="string">'_partial/footer'</span>) %&gt;&lt;/footer&gt;</div><div class="line">  &lt;%- partial(<span class="string">'_partial/after_footer'</span>) %&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div><div class="line"></div><div class="line">&lt;%&#125;<span class="keyword">else</span>&#123; %&gt;</div><div class="line"></div><div class="line">&lt;%- page.content %&gt;</div><div class="line">&lt;%&#125;;%&gt;</div><div class="line">&lt;a href=<span class="string">"https://github.com/szcx"</span> target=<span class="string">"_blank"</span>&gt;&lt;img style=<span class="string">"position: absolute; top: 0; left: 0; border: 0;"</span> src=<span class="string">"https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"</span> alt=<span class="string">"Fork me on GitHub"</span>&gt;&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/网络工具/">网络工具</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/学习/">学习</a>, <a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+<nav id="pagination" >
+    
+    <a href="/2014/10/28/node/" class="alignleft prev" >Vorherige Seite</a>
+    
+    
+    <a href="/2014/10/27/多说/" class="alignright next" >Nächste Seite</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+<!-- 多说评论框 start -->
+ <div class="ds-thread" data-thread-key="/2014/10/28/Hexo-主题修改教程/" data-title="Hexo 主题Light修改教程" data-url="http://szcx.coding.me/2014/10/28/Hexo-主题修改教程/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"szcx"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+<section id="comment">
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//baidu.com/baidu" method="get" accept-charset="utf-8">
+    <input type="search" name="word" results="0" placeholder="Suche">
+    <input type="hidden" name="si" value="szcx.coding.me">
+    <input name=tn type=hidden value="bds">
+	<input name=cl type=hidden value="3">
+	<input name=ct type=hidden value="2097152">
+	<input name=s type=hidden value="on">
+  </form>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">博主简介</h3>
+<ul class="entry">
+<li><img width="150" img src="http://szcxgg.qiniudn.com/2014-10-30_135510.png" alt="" /></li>
+<li>本体：蓝涌</li>
+<li>二次元：遂州创信 | 蓝江老涌</li>
+<li>现状：帝都蜀地斗城一园丁</li>
+<li>想要交友的朋友请<a href="http://szcx.pe.hu/about/">联系我</a>！</li>
+<li>QQ号： 87389166</li>
+</ul>
+</div>
+
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Kategorien</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/办公工具/">办公工具</a><small>7</small></li>
+  
+    <li><a href="/categories/图像工具/">图像工具</a><small>7</small></li>
+  
+    <li><a href="/categories/媒体工具/">媒体工具</a><small>4</small></li>
+  
+    <li><a href="/categories/生活琐事/">生活琐事</a><small>28</small></li>
+  
+    <li><a href="/categories/系统工具/">系统工具</a><small>12</small></li>
+  
+    <li><a href="/categories/网络工具/">网络工具</a><small>27</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag-Cloud</h3>
+  <div class="entry">
+    <a href="/tags/2012/" style="font-size: 10px;">2012</a> <a href="/tags/ESD/" style="font-size: 11.43px;">ESD</a> <a href="/tags/Hexo/" style="font-size: 15.71px;">Hexo</a> <a href="/tags/ISO/" style="font-size: 10px;">ISO</a> <a href="/tags/OCR/" style="font-size: 10px;">OCR</a> <a href="/tags/PE/" style="font-size: 11.43px;">PE</a> <a href="/tags/QQ/" style="font-size: 10.71px;">QQ</a> <a href="/tags/TC/" style="font-size: 10px;">TC</a> <a href="/tags/pdf/" style="font-size: 10px;">pdf</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/win7/" style="font-size: 11.43px;">win7</a> <a href="/tags/win8/" style="font-size: 10.71px;">win8</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/下载工具/" style="font-size: 11.43px;">下载工具</a> <a href="/tags/代理/" style="font-size: 10px;">代理</a> <a href="/tags/作业/" style="font-size: 10.71px;">作业</a> <a href="/tags/便携绿色/" style="font-size: 18.57px;">便携绿色</a> <a href="/tags/办公工具/" style="font-size: 12.86px;">办公工具</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/卸载/" style="font-size: 10px;">卸载</a> <a href="/tags/压缩/" style="font-size: 10px;">压缩</a> <a href="/tags/图像/" style="font-size: 15px;">图像</a> <a href="/tags/图像工具/" style="font-size: 14.29px;">图像工具</a> <a href="/tags/图片/" style="font-size: 17.86px;">图片</a> <a href="/tags/媒体工具/" style="font-size: 12.86px;">媒体工具</a> <a href="/tags/学习/" style="font-size: 20px;">学习</a> <a href="/tags/学车/" style="font-size: 12.14px;">学车</a> <a href="/tags/孩子/" style="font-size: 12.86px;">孩子</a> <a href="/tags/安装/" style="font-size: 12.14px;">安装</a> <a href="/tags/幽默/" style="font-size: 12.14px;">幽默</a> <a href="/tags/截图/" style="font-size: 14.29px;">截图</a> <a href="/tags/手机/" style="font-size: 12.14px;">手机</a> <a href="/tags/拍照/" style="font-size: 16.43px;">拍照</a> <a href="/tags/拦江/" style="font-size: 10.71px;">拦江</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/播放器/" style="font-size: 11.43px;">播放器</a> <a href="/tags/操作系统/" style="font-size: 13.57px;">操作系统</a> <a href="/tags/教师/" style="font-size: 10px;">教师</a> <a href="/tags/浏览器/" style="font-size: 11.43px;">浏览器</a> <a href="/tags/激活/" style="font-size: 10px;">激活</a> <a href="/tags/生活琐事/" style="font-size: 19.29px;">生活琐事</a> <a href="/tags/电影/" style="font-size: 10px;">电影</a> <a href="/tags/笑话/" style="font-size: 12.14px;">笑话</a> <a href="/tags/笑话联翩/" style="font-size: 12.86px;">笑话联翩</a> <a href="/tags/系统/" style="font-size: 12.86px;">系统</a> <a href="/tags/系统工具/" style="font-size: 17.14px;">系统工具</a> <a href="/tags/网文资讯/" style="font-size: 12.86px;">网文资讯</a> <a href="/tags/网络工具/" style="font-size: 19.29px;">网络工具</a> <a href="/tags/聊天/" style="font-size: 11.43px;">聊天</a> <a href="/tags/资讯/" style="font-size: 12.86px;">资讯</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/驾校/" style="font-size: 12.14px;">驾校</a>
+  </div>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2143921577&verifier=d71599c0&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://szcx.pe.hu/" title="蓝江老涌的博客">遂州创信</a></li>
+<li><a href="http://lxy361.tk/" title="Hexo博客">Hexo博客</a></li>
+<li><a href="http://lxy361.qiniudn.com/"title="七牛空间">七牛空间博客</a></li>
+<li><a href="http://kirito.cn/" title="kiritoの窝">kiritoの窝</a></li>
+</ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 遂州创信
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
+
+
+<a href="https://github.com/szcx" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
