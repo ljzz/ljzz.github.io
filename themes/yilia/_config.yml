@@ -1,0 +1,69 @@
+# Header
+
+menu:
+  主页: /
+  关于: /about
+  #随笔: /tags/随笔
+
+# SubNav
+subnav:
+  github: "https://github.com/ljzz/ljzz.github.io"
+  weibo: "http://weibo.com/p/1005052143921577/home?from=page_100505&mod=TAB&is_all=1#place"
+  rss: "#"
+  #zhihu: "#"
+  #douban: "#"
+  #mail: "#"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+rss: /atom.xml
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root: 
+
+# Content
+excerpt_link: more
+fancybox: true
+mathjax: false
+
+# 是否开启动画效果
+animate: true
+
+# 是否在新窗口打开链接
+open_in_new: false
+
+# Miscellaneous
+google_analytics: ''
+favicon: /favicon.ico
+
+#你的头像url
+avatar: http://szcxgg.qiniudn.com/%E5%88%9B%E4%BF%A1logo.png
+
+#是否开启分享
+share_jia: true
+share_addthis: false
+
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+duoshuo: szcx
+
+# 如不需要，将该项置为false
+# 比如
+#smart_menu:
+#  friends: false
+
+smart_menu:
+  innerArchive: '所有文章'
+  tagcloud: '标签'
+  friends: '友链'
+  aboutme: '感悟'
+
+friends:
+  遂州创信: http://szcx.pe.hu/
+  kiritoの窝: http://kirito.cn
+
+aboutme: 实现梦想的过程<br>需要你抬头看远方<br>也需要你注意脚下的坑

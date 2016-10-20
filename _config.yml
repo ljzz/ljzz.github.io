@@ -83,9 +83,9 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: yelee
+theme: light
 #主题预览执行：hexo clean && hexo s
-#theme: yilia
+#theme: yilia yelee light
 
 # 自动生成sitemap
 #sitemap:
@@ -109,8 +109,8 @@ deploy:
 #   coding: git@git.coding.net:szcx/szcx.git,coding-pages
 #   oschina: git@git.oschina.net:szcx/szcx.git,master
 #   github: https://github.com/ljzz/ljzz.github.io.git,master
-   coding: https://git.coding.net/szcx/szcx.git,coding-pages
-   oschina: https://git.oschina.net/szcx/szcx.git,master
+#   coding: https://git.coding.net/szcx/szcx.git,coding-pages
+#   oschina: https://git.oschina.net/szcx/szcx.git,master
 #备份全部点文件  
 #backup:
 #    type: git
