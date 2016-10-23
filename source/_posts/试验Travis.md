@@ -27,7 +27,10 @@ categories: 网络工具
 
 （以后再整理，先把重要的备注一下）
 
-1.在HEXO分支根目录下建立文件.travis.yml
+
+1.已经配置了要构建的仓库和要访问的Token，但是问题来了，他知道怎么构建，怎么生成静态文件吗，怎么push的gitpages，又push到那个仓库吗，所以这里我们还需要在源代码的仓库里创建一个.travis.yml配置文件，放到源代码的根目录。
+
+2.在HEXO分支根目录下建立文件.travis.yml
 
 内容如下：
 
@@ -39,6 +42,10 @@ node_js: stable  #设置相应的版本
 
 install:
   - npm install  #安装hexo及插件
+  - npm install hexo-generator-baidu-sitemap --save
+  - npm install hexo-generator-sitemap --save
+  - npm install hexo-generator-feed --save
+  - npm install hexo-generator-search --save
 
 script:
   - hexo cl  #清除
@@ -61,14 +68,14 @@ env:
    - GH_REF: github.com/ljzz/ljzz.github.io.git  #设置GH_REF，注意更改yourname
 ```
 
-2.进入本地的Hexo文件夹，执行以下命令创建仓库
+3.进入本地的Hexo文件夹，执行以下命令创建仓库
 
 
 ``` bash
 git init
 ```
 
-3.设置远程仓库地址，并更新
+4.设置远程仓库地址，并更新
 
 
 ``` bash
@@ -77,7 +84,13 @@ git pull ljzz hexo
 ```
 
 
-4.修改.gitignore文件（如果没有请手动创建一个），在里面加入*.log 和 public/ 以及.deploy*/。因为每次执行hexo generate命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。
+5.Push文章到Github
+
+
+到这一步，我们可以写一篇文章，添加到你的博客的_posts目录下，然后commit并push到你的Github上
+
+
+修改.gitignore文件（如果没有请手动创建一个），在里面加入*.log 和 public/ 以及.deploy*/。因为每次执行hexo generate命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。
 
 
 执行命令以下命令，完成Hexo源码在本地的提交:
@@ -90,12 +103,14 @@ git commit -m "添加hexo源码文件作为备份"
 ```
 
 
-5.执行以下命令，将本地的仓库文件推送到Github:
+执行以下命令，将本地的仓库文件推送到Github:
 
 
 ``` bash
 git push ljzz blog
 ```
+&
 
-
-
+``` bash
+git push ljzz blog:blog
+```
