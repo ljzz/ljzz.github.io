@@ -68,8 +68,15 @@ env:
    - GH_REF: github.com/ljzz/ljzz.github.io.git  #设置GH_REF，注意更改yourname
 ```
 
-3.进入本地的Hexo文件夹，执行以下命令创建仓库
+3.进入本地的Hexo文件夹，执行以下命令
 
+
+``` bash
+git clone git@github.com:ljzz/ljzz.github.io.git -b hexo d:/hexo #clone其中的hexo分支到本地D盘hexo文件夹
+
+```
+
+本地的Hexo文件夹创建仓库
 
 ``` bash
 git init
@@ -107,10 +114,6 @@ git commit -m "添加hexo源码文件作为备份"
 
 
 ``` bash
-git push ljzz blog
+git push origin hexo
 ```
-&
 
-``` bash
-git push ljzz blog:blog
-```
