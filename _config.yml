@@ -106,7 +106,7 @@ deploy:
   type: git
   repo: 
    github: git@github.com:ljzz/ljzz.github.io.git,master
-#   coding: git@git.coding.net:szcx/szcx.git,coding-pages
+   coding: git@git.coding.net:szcx/szcx.git,coding-pages
 #   oschina: git@git.oschina.net:szcx/szcx.git,master
 #   github: https://github.com/ljzz/ljzz.github.io.git,master
 #   coding: https://git.coding.net/szcx/szcx.git,coding-pages

@@ -1,9 +1,9 @@
 title: fancybox #文章名字
 date: 2014-09-30 18:58:12 #发表时间
-categories: 网络工具 #文章分类
+categories: 网络工具
 tags: 
-    - 学习
-    - Hexo
+     - 学习
+     - Hexo
 photos: 
 - http://szcxgg.qiniudn.com/2014-09-26_193856.jpg
 - http://szcxgg.qiniudn.com/2014-09-26_193959.jpg
