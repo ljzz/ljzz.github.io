@@ -12,7 +12,7 @@ language: zh-Hans
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://szcx.coding.me  
+url: http://ljedu.win
 ##url: http://szcx.gitcafe.com  #这个绑定域名:http://snljzz.tk
 root: /
 permalink: :year/:month/:day/:title/
