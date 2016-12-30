@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>遂州创信</title>
+  <subtitle>蓝江老涌的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://ljedu.win/"/>
+  <updated>2016-12-30T06:12:17.646Z</updated>
+  <id>http://ljedu.win/</id>
+  
+  <author>
+    <name>遂州创信</name>
+    <email>87389166@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://ljedu.win/2016/12/30/%E6%96%B0%E5%B9%B4/"/>
+    <id>http://ljedu.win/2016/12/30/新年/</id>
+    <published>2016-12-30T06:12:17.646Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>title: 新的一年要来了<br>categories: 生活琐事<br>tags:</p>
+<pre><code>&quot;生活琐事&quot;
+
+好久都没有更新博客了。今天在GITHUB上更新一下。转眼间新年又来了。改天再写文章上传吧。
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;title: 新的一年要来了&lt;br&gt;categories: 生活琐事&lt;br&gt;tags:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;生活琐事&amp;quot;
+
+好久都没有更新博客了。今天在GITHUB上更新一下。转眼间新年又来了。改天再写文章上传吧。
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>域名购买与github与coding同时共用一个域名</title>
+    <link href="http://ljedu.win/2016/10/26/%E5%9F%9F%E5%90%8D/"/>
+    <id>http://ljedu.win/2016/10/26/域名/</id>
+    <published>2016-10-26T08:27:34.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>经过无数天的对hexo的折腾，终于下定决心买个域名。实现github与coding同时共用一个域名。</p>
+<blockquote>
+<p> 之前我把hexo托管在github，但是毕竟github是国外的，访问速度上还是有点慢，所以想也部署一套在国内的托管平台，所以就部署到coding。查询了多方资料，终于鼓捣出了本地一次部署，同时更新到github以及coding。</p>
+</blockquote>
+<a id="more"></a>
+<p>1.在阿里云注册：</p>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/1.png" alt="阿里云注册"></p>
+<p>2.选定域名：</p>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/2.png" alt="选定域名"></p>
+<p>3.提交订单，支付：</p>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/3.png" alt="提交订单"></p>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/4.png" alt="支付确认"></p>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/5.png" alt="网银支付"></p>
+<p>4.阿里云控制台：</p>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/6.png" alt="阿里云控制台"><br><img src="http://7xo3it.com1.z0.glb.clouddn.com/7.png" alt="域名基本信息"></p>
+<p>5.域名解析：<br>  在source文件夹里创建CNAME文件，不带任何后缀，里面添加你的域名信息，如：ljedu.win（注意前面不添加http://） </p>
+<blockquote>
+<p> 要实现国内的走coding，海外的走github，只要配置2个CNAME就行。</p>
+</blockquote>
+<p><img src="http://7xo3it.com1.z0.glb.clouddn.com/8.png" alt="域名解析"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经过无数天的对hexo的折腾，终于下定决心买个域名。实现github与coding同时共用一个域名。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; 之前我把hexo托管在github，但是毕竟github是国外的，访问速度上还是有点慢，所以想也部署一套在国内的托管平台，所以就部署到coding。查询了多方资料，终于鼓捣出了本地一次部署，同时更新到github以及coding。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>试验使用Travis CI自动部署Hexo博客到Github上</title>
+    <link href="http://ljedu.win/2016/10/23/%E8%AF%95%E9%AA%8CTravis/"/>
+    <id>http://ljedu.win/2016/10/23/试验Travis/</id>
+    <published>2016-10-23T21:36:06.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是Travis-CI"><a href="#什么是Travis-CI" class="headerlink" title="什么是Travis CI"></a>什么是Travis CI</h2><blockquote>
+<p>Travis CI 是目前新兴的开源持续集成构建项目，它与jenkins，Go的很明显的特别在于采用yaml格式，同时他是在在线的服务，不像jenkins需要你本地打架服务器，简洁清新独树一帜。目前大多数的github项目都已经移入到Travis CI的构建队列中，据说Travis CI每天运行超过4000次完整构建。对于做开源项目或者github的使用者，如果你的项目还没有加入Travis CI构建队列，那么我真的想对你说out了。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="我的博客架构"><a href="#我的博客架构" class="headerlink" title="我的博客架构"></a>我的博客架构</h2><p>首先我的博客是使用Hexo来搭建的，托管到Github提供的Gitpage服务上的，每次写完博客git push到github，然后Travis自动构建，构建完成后自动推送到Gitpage服务器上，生成后的HTML文件和博客的源文件我是放到一个仓库的，只是使用了不同的分支，master：博客的静态文件，也就是hexo生成后的HTML文件，因为要使用Gitpage服务，所以他规定的网页文件必须是在master分支。另一个分支是hexo，用来放源文件。</p>
+<h2 id="操作方法记录"><a href="#操作方法记录" class="headerlink" title="操作方法记录"></a>操作方法记录</h2><p>（以后再整理，先把重要的备注一下）</p>
+<p>1.已经配置了要构建的仓库和要访问的Token，但是问题来了，他知道怎么构建，怎么生成静态文件吗，怎么push的gitpages，又push到那个仓库吗，所以这里我们还需要在源代码的仓库里创建一个.travis.yml配置文件，放到源代码的根目录。</p>
+<p>2.在HEXO分支根目录下建立文件.travis.yml</p>
+<p>内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">language: node_js  <span class="comment">#设置语言</span></div><div class="line"></div><div class="line">node_js: stable  <span class="comment">#设置相应的版本</span></div><div class="line"></div><div class="line">install:</div><div class="line">  - npm install  <span class="comment">#安装hexo及插件</span></div><div class="line">  - npm install hexo-generator-baidu-sitemap --save</div><div class="line">  - npm install hexo-generator-sitemap --save</div><div class="line">  - npm install hexo-generator-feed --save</div><div class="line">  - npm install hexo-generator-search --save</div><div class="line"></div><div class="line">script:</div><div class="line">  - hexo cl  <span class="comment">#清除</span></div><div class="line">  - hexo g  <span class="comment">#生成</span></div><div class="line"></div><div class="line">after_script:</div><div class="line">  - <span class="built_in">cd</span> ./public</div><div class="line">  - git init</div><div class="line">  - git config user.name <span class="string">"ljzz"</span>  <span class="comment">#修改name</span></div><div class="line">  - git config user.email <span class="string">"87389166@qq.com"</span>  <span class="comment">#修改email</span></div><div class="line">  - git add .</div><div class="line">  - git commit -m <span class="string">"update"</span></div><div class="line">  - git push --force --quiet <span class="string">"https://<span class="variable">$&#123;githubkey&#125;</span>@<span class="variable">$&#123;GH_REF&#125;</span>"</span> master:master  <span class="comment">#GH_TOKEN是在Travis中配置token的名称</span></div><div class="line"></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">    - hexo <span class="comment">#只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置</span></div><div class="line">env:</div><div class="line"> global:</div><div class="line">   - GH_REF: github.com/ljzz/ljzz.github.io.git  <span class="comment">#设置GH_REF，注意更改yourname</span></div></pre></td></tr></table></figure>
+<p>3.进入本地的Hexo文件夹，执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> git@github.com:ljzz/ljzz.github.io.git -b hexo d:/hexo <span class="comment">#clone其中的hexo分支到本地D盘hexo文件夹</span></div></pre></td></tr></table></figure>
+<p>本地的Hexo文件夹创建仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+<p>4.设置远程仓库地址，并更新</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote add ljzz git@github.com:ljzz/ljzz.github.io.git</div><div class="line">git pull ljzz hexo</div></pre></td></tr></table></figure>
+<p>5.Push文章到Github</p>
+<p>到这一步，我们可以写一篇文章，添加到你的博客的_posts目录下，然后commit并push到你的Github上</p>
+<p>修改.gitignore文件（如果没有请手动创建一个），在里面加入<em>.log 和 public/ 以及.deploy</em>/。因为每次执行hexo generate命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。</p>
+<p>执行命令以下命令，完成Hexo源码在本地的提交:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m <span class="string">"添加hexo源码文件作为备份"</span></div></pre></td></tr></table></figure>
+<p>执行以下命令，将本地的仓库文件推送到Github:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是Travis-CI&quot;&gt;&lt;a href=&quot;#什么是Travis-CI&quot; class=&quot;headerlink&quot; title=&quot;什么是Travis CI&quot;&gt;&lt;/a&gt;什么是Travis CI&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Travis CI 是目前新兴的开源持续集成构建项目，它与jenkins，Go的很明显的特别在于采用yaml格式，同时他是在在线的服务，不像jenkins需要你本地打架服务器，简洁清新独树一帜。目前大多数的github项目都已经移入到Travis CI的构建队列中，据说Travis CI每天运行超过4000次完整构建。对于做开源项目或者github的使用者，如果你的项目还没有加入Travis CI构建队列，那么我真的想对你说out了。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>另类方法三部署</title>
+    <link href="http://ljedu.win/2016/10/21/%E5%8F%A6%E9%83%A8%E7%BD%B2/"/>
+    <id>http://ljedu.win/2016/10/21/另部署/</id>
+    <published>2016-10-21T10:36:06.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.zipperary.com/2013/05/26/ssh-errors-with-github/" target="_blank" rel="external">教程地址</a>，感谢<a href="http://www.zipperary.com" target="_blank" rel="external">zipperary博主</a></p>
+<p>方法如下：<br><a id="more"></a>    </p>
+<h3 id="首先添加环境变量HOME，变量值设置为-USERPROFILE"><a href="#首先添加环境变量HOME，变量值设置为-USERPROFILE" class="headerlink" title="首先添加环境变量HOME，变量值设置为%USERPROFILE%"></a>首先添加环境变量<code>HOME</code>，变量值设置为<code>%USERPROFILE%</code></h3><h3 id="在用户文件夹如C-Users-Administrator下新建一个名为-netrc的文件。"><a href="#在用户文件夹如C-Users-Administrator下新建一个名为-netrc的文件。" class="headerlink" title="在用户文件夹如C:\Users\Administrator下新建一个名为_netrc的文件。"></a>在用户文件夹如<code>C:\Users\Administrator</code>下新建一个名为<code>_netrc</code>的文件。</h3><h3 id="编辑该文件-netrc如下设置："><a href="#编辑该文件-netrc如下设置：" class="headerlink" title="编辑该文件_netrc如下设置："></a>编辑该文件<code>_netrc</code>如下设置：</h3><pre><code>machine github.com #布署网站名
+login ljzz #用户名
+password XXXXXXXXXX #密码
+
+machine git.coding.net
+login szcx
+password XXXXXXXXXX
+
+machine git.oschina.net
+login szcx
+password XXXXXXXXXX
+</code></pre><h3 id="保存。"><a href="#保存。" class="headerlink" title="保存。"></a>保存。</h3><p>从此可以开心的一键部署到三个站点里边了。呵呵！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.zipperary.com/2013/05/26/ssh-errors-with-github/&quot;&gt;教程地址&lt;/a&gt;，感谢&lt;a href=&quot;http://www.zipperary.com&quot;&gt;zipperary博主&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;方法如下：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown简单用法介绍</title>
+    <link href="http://ljedu.win/2016/10/14/Markdown-0/"/>
+    <id>http://ljedu.win/2016/10/14/Markdown-0/</id>
+    <published>2016-10-14T16:00:52.000Z</published>
+    <updated>2016-12-30T06:12:17.642Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://szcxgg.qiniudn.com/logo.png" alt=""></p>
+<p>本网网站LOGO设计<br><a id="more"></a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><ul>
+<li>插入图片代码：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![](http://szcxgg.qiniudn.com/2014-09-26_193856.jpg)</div></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="http://szcxgg.qiniudn.com/2014-09-26_193856.jpg" alt=""></p>
+<!--more-->
+<ul>
+<li>图片与链接</li>
+</ul>
+<p>插入链接与插入图片的语法很像，区别在一个 !号</p>
+<p>图片为：<code>![]()</code></p>
+<p>链接为：<code>[]()</code></p>
+<h3 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h3><p>以『虾米音乐』为例，歌曲页面有个『转帖』选项，将html代码或javascript代码复制到文中即可。</p>
+<p>代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;embed src=<span class="string">"http://www.xiami.com/widget/0_3515679/singlePlayer.swf"</span> <span class="built_in">type</span>=<span class="string">"application/x-shockwave-flash"</span> width=<span class="string">"257"</span> height=<span class="string">"33"</span> wmode=<span class="string">"transparent"</span>&gt;&lt;/embed&gt;</div></pre></td></tr></table></figure>
+<p>效果：</p>
+<embed src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
+
+<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><p>嵌入视频的方法和音乐类似，视频网站每个视频页面都会有一个『分享』或『转帖』按钮，点击可以查看代码。</p>
+<p>我校校歌的代码:</p>
+<pre><code>&lt;iframe height=300 width=510 src=&quot;http://player.youku.com/embed/XNDk4MTEyMjY4&quot; frameborder=0 allowfullscreen&gt;&lt;/iframe&gt;
+</code></pre><p>我校校歌的效果：</p>
+<iframe height="300" width="510" src="http://player.youku.com/embed/XNDk4MTEyMjY4" frameborder="0" allowfullscreen></iframe>
+
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>引用的方法如下：</p>
+<p>引用的方法。只需要在文本前加入<code>&gt;</code>这种尖括号（大于号）即可。</p>
+<blockquote>
+<p>这儿是正文了，这是引用效果</p>
+</blockquote>
+<h3 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><p>Markdown 的粗体和斜体也非常简单，用两个 <code>**</code>包含一段文本就是粗体的语法，用一个<code>*</code>包含一段文本就是斜体的语法。</p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线的语法只需要三个 * 号，例如：</p>
+<hr>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>列表的显示只需要在文字前加上 - 或 * 即可变为无序列表，有序列表则直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。</p>
+<p>效果：</p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<ol>
+<li>第一</li>
+<li>第二</li>
+<li>第三</li>
+</ol>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 <code>#</code>号即可。</p>
+<p><code># 一级标题</code></p>
+<p><code>## 二级标题</code></p>
+<p><code>### 三级标题</code></p>
+<p>以此类推，总共六级标题，建议在井号后加一个空格，这是最标准的 Markdown 语法。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://szcxgg.qiniudn.com/logo.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本网网站LOGO设计&lt;br&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多台电脑共用SSH Public/Private Key</title>
+    <link href="http://ljedu.win/2016/10/12/SSHKEY%20/"/>
+    <id>http://ljedu.win/2016/10/12/SSHKEY /</id>
+    <published>2016-10-12T17:25:48.000Z</published>
+    <updated>2016-12-30T06:12:17.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>换成了家里的一台机器，需要配置环境。要去多个服务器上挨个换新的SSH Public Key是傻瓜做法，不要这么干。最方便的方法是让两个电脑共用一个SSH Public Key。</p>
+<a id="more"></a>
+<ol>
+<li>首先我们给旧的MBP起名叫OLD, 新的叫NEW，方面后面区分</li>
+</ol>
+<ol>
+<li><p>拷贝OLD上的 id_rsa 和 id_rsa.pub 到云端/U盘/邮箱/…中备份。这两个文件位于用户目录下的隐藏文件夹 ~/.ssh/ 中。</p>
+</li>
+<li><p>在NEW的终端(Terminal)上执行</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen –t rsa –C <span class="string">"youremail@gmail.com"</span></div></pre></td></tr></table></figure>
+<p>这样会在NEW的 ~/.ssh/ 中生成新的 id_rsa 和 id_rsa.pub</p>
+<ol>
+<li><p>用备份好的OLD中的 id_rsa 和 id_rsa.pub 文件，覆盖NEW上对应的文件</p>
+</li>
+<li><p>确保NEW上的两个文件的权限是正确的，id_rsa是600，id_rsa.pub是644，比如：</p>
+</li>
+</ol>
+<pre><code>-rw------- 1 fancy fancy 1675 2013-03-19 12:55 id_rsa
+-rw-r--r-- 1 fancy fancy 406 2013-03-19 12:55 id_rsa.pub
+</code></pre><p>OK, 完事。</p>
+<hr>
+<p><a href="http://blog.csdn.net/wwmusic/article/details/51027458" target="_blank" rel="external">一台电脑如何管理多个SSH KEY</a></p>
+<h3 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"youremail@yourcompany.com"</span></div></pre></td></tr></table></figure>
+<p>若一路回车（密码可以不写），这样只会在~/.ssh/ 目录下生成 id_rsa 和 id_rsa.pub 两个文件。为了区分，我们在第一个回车（还没有回车）后边设置路径：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/root/.ssh/id_rsa):~/.ssh/文件名</div></pre></td></tr></table></figure>
+<h3 id="设置ssh-key的代理"><a href="#设置ssh-key的代理" class="headerlink" title="设置ssh key的代理"></a>设置ssh key的代理</h3><p>1、 首先查看代理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add <span class="_">-l</span></div></pre></td></tr></table></figure>
+<p>若提示 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Could not open a connection to your authentication agent.</div></pre></td></tr></table></figure>
+<p>则系统代理里没有任何key，执行如下操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">exec</span> ssh-agent bash</div></pre></td></tr></table></figure>
+<p>若系统已经有ssh-key 代理 ,可以删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-add -D</div></pre></td></tr></table></figure>
+<p>2、 添加私钥</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ssh-add ~/.ssh/id_rsa_gerrit  </div><div class="line">ssh-add ~/.ssh/id_rsa_github</div></pre></td></tr></table></figure>
+<p>3、添加公钥</p>
+<p>在对应的gerrit和github的ssh管理页面，添加对应的公钥（.pub 文件内容），保存到代码管理服务器。</p>
+<p>4、添加和编辑配置文件config</p>
+<p>在 ~/.ssh 目录下新建一个config文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 该文件用于配置私钥对应的服务器</span></div><div class="line"><span class="comment"># 配置github.com</span></div><div class="line">Host github.com</div><div class="line">HostName github.com</div><div class="line">IdentityFile ~/.ssh/id_rsa_github</div><div class="line">PreferredAuthentications publickey</div><div class="line">User ljzz</div><div class="line"></div><div class="line"><span class="comment"># 配置git.coding.net </span></div><div class="line">Host git.coding.net</div><div class="line">HostName git.coding.net</div><div class="line">IdentityFile ~/.ssh/id_rsa_id_rsa</div><div class="line">PreferredAuthentications publickey</div><div class="line">User szcx</div><div class="line"></div><div class="line"><span class="comment"># 配置git.oschina.net</span></div><div class="line">Host git.oschina.net</div><div class="line">HostName git.oschina.net</div><div class="line">IdentityFile ~/.ssh/id_rsa_oschina</div><div class="line">PreferredAuthentications publickey</div><div class="line">User szcx</div></pre></td></tr></table></figure>
+<p> 当然也可以利用nano命令来创建和编辑</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano ~/.ssh/config</div></pre></td></tr></table></figure>
+<p>如此，ssh就会根据登陆的不同域，来读取对应的私钥文件</p>
+<p>5、测试</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
+<p>若出现</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi XXX! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></div></pre></td></tr></table></figure>
+<p>则表示成功。</p>
+<p>若出现</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">permission denied (publickey)</div></pre></td></tr></table></figure>
+<p>请检查github的ssh管理里添加的公钥是否正确。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;换成了家里的一台机器，需要配置环境。要去多个服务器上挨个换新的SSH Public Key是傻瓜做法，不要这么干。最方便的方法是让两个电脑共用一个SSH Public Key。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo选用部署的三个空间介绍</title>
+    <link href="http://ljedu.win/2016/10/11/%E9%83%A8%E7%BD%B2%E7%A9%BA%E9%97%B4/"/>
+    <id>http://ljedu.win/2016/10/11/部署空间/</id>
+    <published>2016-10-11T09:52:19.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="三个地址布署网站的地址-coding-pages分支是coding-master分支是github与码云。"><a href="#三个地址布署网站的地址-coding-pages分支是coding-master分支是github与码云。" class="headerlink" title="三个地址布署网站的地址 coding-pages分支是coding,master分支是github与码云。"></a>三个地址布署网站的地址 coding-pages分支是coding,master分支是github与码云。</h4><hr>
+<h3 id="这是我的个人博客-分别布署在github与coding上边-还有一个是码云。"><a href="#这是我的个人博客-分别布署在github与coding上边-还有一个是码云。" class="headerlink" title="这是我的个人博客;分别布署在github与coding上边,还有一个是码云。"></a>这是我的个人博客;分别布署在<a href="https://github.com/ljzz/ljzz.github.io.git" target="_blank" rel="external">github</a>与<a href="https://coding.net/" target="_blank" rel="external">coding</a>上边,还有一个是<a href="https://git.oschina.net/" target="_blank" rel="external">码云</a>。</h3><a id="more"></a>
+<h4 id="地址分别是："><a href="#地址分别是：" class="headerlink" title="地址分别是："></a>地址分别是：</h4><p>在github上 HTTP 方式访问仓库: <a href="https://github.com/ljzz/ljzz.github.io.git" target="_blank" rel="external">https://github.com/ljzz/ljzz.github.io.git</a></p>
+<p>在github上 SSH 方式访问仓库:<code>git@github.com:ljzz/ljzz.github.io.git</code></p>
+<p>在coding上HTTP方式访问仓库: <a href="https://git.coding.net/szcx/szcx.git" target="_blank" rel="external">https://git.coding.net/szcx/szcx.git</a></p>
+<p>在coding上SSH 方式访问仓库 :<code>git@git.coding.net:szcx/szcx.git</code></p>
+<p>在码云上：<a href="https://git.oschina.net/szcx/szcx.git" target="_blank" rel="external">https://git.oschina.net/szcx/szcx.git</a></p>
+<p>在码云上：git@git.oschina.net:szcx/szcx.git</p>
+<h4 id="pages服务生成的网址在github上：-https-ljzz-github-io"><a href="#pages服务生成的网址在github上：-https-ljzz-github-io" class="headerlink" title="pages服务生成的网址在github上：　https://ljzz.github.io"></a>pages服务生成的网址在github上：　<a href="https://ljzz.github.io" target="_blank" rel="external">https://ljzz.github.io</a></h4><h4 id="pages服务生成的网址在coding上：-http-szcx-coding-me-szcx"><a href="#pages服务生成的网址在coding上：-http-szcx-coding-me-szcx" class="headerlink" title="pages服务生成的网址在coding上：　http://szcx.coding.me/szcx"></a>pages服务生成的网址在coding上：　<a href="http://szcx.coding.me/szcx" target="_blank" rel="external">http://szcx.coding.me/szcx</a></h4><h4 id="在码云上：-http-szcx-oschina-io"><a href="#在码云上：-http-szcx-oschina-io" class="headerlink" title="在码云上： http://szcx.oschina.io"></a>在码云上： <a href="http://szcx.oschina.io" target="_blank" rel="external">http://szcx.oschina.io</a></h4><h3 id="同时部署到三个空间。"><a href="#同时部署到三个空间。" class="headerlink" title="同时部署到三个空间。"></a>同时部署到三个空间。</h3><p>1、修改根目录下的<code>_config.yml</code>文件，在最后边这样写。<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">repo: </div><div class="line">  github: https://github.com/ljzz/ljzz.github.io.git,master</div><div class="line">  coding: https://git.coding.net/szcx/szcx.git,coding-pages</div><div class="line">  oschina: https://git.oschina.net/szcx/szcx.git,master</div></pre></td></tr></table></figure></p>
+<p>2、在本地source文件夹中添加一个文件，在git中执行如下代码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> <span class="built_in">source</span>/</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch Staticfile  <span class="comment">#名字必须是Staticfile</span></div></pre></td></tr></table></figure>
+<p>3、布署<br>执行<code>hexo g</code>和<code>hexo d</code>这两条命令。此时博客就已经部署至两个平台了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;三个地址布署网站的地址-coding-pages分支是coding-master分支是github与码云。&quot;&gt;&lt;a href=&quot;#三个地址布署网站的地址-coding-pages分支是coding-master分支是github与码云。&quot; class=&quot;headerlink&quot; title=&quot;三个地址布署网站的地址 coding-pages分支是coding,master分支是github与码云。&quot;&gt;&lt;/a&gt;三个地址布署网站的地址 coding-pages分支是coding,master分支是github与码云。&lt;/h4&gt;&lt;hr&gt;
+&lt;h3 id=&quot;这是我的个人博客-分别布署在github与coding上边-还有一个是码云。&quot;&gt;&lt;a href=&quot;#这是我的个人博客-分别布署在github与coding上边-还有一个是码云。&quot; class=&quot;headerlink&quot; title=&quot;这是我的个人博客;分别布署在github与coding上边,还有一个是码云。&quot;&gt;&lt;/a&gt;这是我的个人博客;分别布署在&lt;a href=&quot;https://github.com/ljzz/ljzz.github.io.git&quot;&gt;github&lt;/a&gt;与&lt;a href=&quot;https://coding.net/&quot;&gt;coding&lt;/a&gt;上边,还有一个是&lt;a href=&quot;https://git.oschina.net/&quot;&gt;码云&lt;/a&gt;。&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>华为V8拍相片效果真的好</title>
+    <link href="http://ljedu.win/2016/10/08/%E5%8D%8E%E4%B8%BAV8/"/>
+    <id>http://ljedu.win/2016/10/08/华为V8/</id>
+    <published>2016-10-08T09:53:54.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>前月买了手机华为荣耀V8,试了一下它的拍相片效果，还真的可以。</p>
+<a id="more"></a>
+<p>截图几张。</p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161006_163048.jpg" alt="红果子"></p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161006_170847.jpg" alt="文艺养的花"></p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161004_105505.jpg" alt="野菊花"></p>
+<p><img src="http://szcxgg.qiniudn.com/IMG_20161004_181428.jpg" alt="滨河路风光"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前月买了手机华为荣耀V8,试了一下它的拍相片效果，还真的可以。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/categories/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+    
+      <category term="图片" scheme="http://ljedu.win/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="图像" scheme="http://ljedu.win/tags/%E5%9B%BE%E5%83%8F/"/>
+    
+      <category term="拍照" scheme="http://ljedu.win/tags/%E6%8B%8D%E7%85%A7/"/>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/tags/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10系统下开启固态硬盘TRIM功能来提升SSD运行效率和延长SSD寿命</title>
+    <link href="http://ljedu.win/2016/10/01/%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98/"/>
+    <id>http://ljedu.win/2016/10/01/固态硬盘/</id>
+    <published>2016-10-01T15:02:29.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>在开始之前，先给大家介绍下什么是固态硬盘的TRIM功能，在传统的机械硬盘中，已删除文件的逻辑位置会被标记，使得以后存储数据时能够直接在这些无用数据的逻辑位置上覆盖，但是固态硬盘没有这种机制，主控并不知道这些数据已经无用，直到有新的数据要求写入该块，这样一来，无用数据在垃圾回收（GC）过程中被当作有用数据对待，就大大降低了硬盘效率和使用寿命，而TRIM功能的出现就是弥补这一缺陷的，固态硬盘使用了TRIM功能后，能避免SSD在垃圾回收（GC）时将无用数据当成有用数据来搬运，从而起到延长SSD寿命的作用，下面小编就带领大家进入今天的教程吧！</p>
+<a id="more"></a>
+<h3 id="首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能"><a href="#首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能" class="headerlink" title="首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能"></a>首先我们要判断我们的系统是否给固态硬盘开启了TRIM功能</h3><p>以win10系统为例，我们右键点击”开始菜单”，选择”命令提示符（管理员）”，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fsutil behavior query disabledeletenotify</div></pre></td></tr></table></figure>
+<h4 id="如果DisableDeleteNotify-0，则说明系统已开启TRIM功能，如果DisableDeleteNotify-1，则说明没开启。"><a href="#如果DisableDeleteNotify-0，则说明系统已开启TRIM功能，如果DisableDeleteNotify-1，则说明没开启。" class="headerlink" title="如果DisableDeleteNotify = 0，则说明系统已开启TRIM功能，如果DisableDeleteNotify = 1，则说明没开启。"></a>如果<code>DisableDeleteNotify = 0</code>，则说明系统已开启TRIM功能，如果<code>DisableDeleteNotify = 1</code>，则说明没开启。</h4><p>如果没有开启，我们则继续在命令提示符里输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fsutil behavior <span class="built_in">set</span> disabledeletenotify 0</div></pre></td></tr></table></figure></p>
+<h4 id="如果DisableDeleteNotify-0，则说明我们已经成功开启了TRIM功能。"><a href="#如果DisableDeleteNotify-0，则说明我们已经成功开启了TRIM功能。" class="headerlink" title="如果DisableDeleteNotify = 0，则说明我们已经成功开启了TRIM功能。"></a>如果<code>DisableDeleteNotify = 0</code>，则说明我们已经成功开启了TRIM功能。</h4><p><a href="http://www.52pojie.cn/forum.php?mod=viewthread&amp;tid=541560&amp;page=1&amp;authorid=505617" target="_blank" rel="external">转自52破解论坛</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在开始之前，先给大家介绍下什么是固态硬盘的TRIM功能，在传统的机械硬盘中，已删除文件的逻辑位置会被标记，使得以后存储数据时能够直接在这些无用数据的逻辑位置上覆盖，但是固态硬盘没有这种机制，主控并不知道这些数据已经无用，直到有新的数据要求写入该块，这样一来，无用数据在垃圾回收（GC）过程中被当作有用数据对待，就大大降低了硬盘效率和使用寿命，而TRIM功能的出现就是弥补这一缺陷的，固态硬盘使用了TRIM功能后，能避免SSD在垃圾回收（GC）时将无用数据当成有用数据来搬运，从而起到延长SSD寿命的作用，下面小编就带领大家进入今天的教程吧！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="系统工具" scheme="http://ljedu.win/categories/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="系统工具" scheme="http://ljedu.win/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重回Hexo</title>
+    <link href="http://ljedu.win/2016/09/29/%E9%87%8D%E5%9B%9EHexo/"/>
+    <id>http://ljedu.win/2016/09/29/重回Hexo/</id>
+    <published>2016-09-29T09:52:19.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>  首先感谢<a href="http://kirito.cn" target="_blank" rel="external">kirito</a>，在他的鼓励下，我重新回到了HEXO，荒废了几年的博客重新启动。</p>
+<h2 id="主题使用"><a href="#主题使用" class="headerlink" title="主题使用"></a>主题使用</h2><p>  几年不用了，上次的主题light加载很慢，于是换成了yilia，简洁大气！并且能在手机上很流畅的打开网站。<br>同时感谢<a href="http://www.voidking.com/2015/05/31/deve-hexo-theme-optimize/" target="_blank" rel="external">VoidKing</a>的主题修改教程。</p>
+<a id="more"></a>
+<p>这次是新建立了一个<a href="https://github.com/" target="_blank" rel="external">github</a>的账号,仓库的名字是<a href="https://github.com/ljzz/ljzz.github.io" target="_blank" rel="external">ljzz</a>，</p>
+<h2 id="Markdown编辑器"><a href="#Markdown编辑器" class="headerlink" title="Markdown编辑器"></a>Markdown编辑器</h2><p>下载了一个 <a href="http://markdownpad.com/" target="_blank" rel="external">MarkdownPad2</a> 做为编辑器，它具备所有Markdown的基本语法外支持一些特别的扩展，比如表格等。可以帮助你快速的将文本转换为美观的HTML/XHTML的网页格式代码！软件操作简单容易，上手很快。可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
+<p>MarkdownPad 2软件功能特点：</p>
+<p>1.为你提供了语法高亮和方便的快捷键功能，给您最好的Markdown编写体验。</p>
+<p>2.无需猜测您的 语法 是否正确；每当您敲击键盘，实时预览功能都会立刻准确呈现出文档的显示效果。</p>
+<p>3.100%可自定义的字体、配色、布局和样式，让您可以将MarkdownPad配置的得心应手。</p>
+<p>4.MarkdownPad支持多种解析引擎。</p>
+<p>5.有了标签式多文档界面、PDF 导出、内置的图片上传工具、会话管理、拼写检查、自动保存、语法高亮以及内置的 CSS 管理器，您可以随心所欲地使用 MarkdownPad。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;感谢&quot;&gt;&lt;a href=&quot;#感谢&quot; class=&quot;headerlink&quot; title=&quot;感谢&quot;&gt;&lt;/a&gt;感谢&lt;/h2&gt;&lt;p&gt;  首先感谢&lt;a href=&quot;http://kirito.cn&quot;&gt;kirito&lt;/a&gt;，在他的鼓励下，我重新回到了HEXO，荒废了几年的博客重新启动。&lt;/p&gt;
+&lt;h2 id=&quot;主题使用&quot;&gt;&lt;a href=&quot;#主题使用&quot; class=&quot;headerlink&quot; title=&quot;主题使用&quot;&gt;&lt;/a&gt;主题使用&lt;/h2&gt;&lt;p&gt;  几年不用了，上次的主题light加载很慢，于是换成了yilia，简洁大气！并且能在手机上很流畅的打开网站。&lt;br&gt;同时感谢&lt;a href=&quot;http://www.voidking.com/2015/05/31/deve-hexo-theme-optimize/&quot;&gt;VoidKing&lt;/a&gt;的主题修改教程。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>坚持锻炼身体</title>
+    <link href="http://ljedu.win/2016/09/28/%E5%9D%9A%E6%8C%81%E9%94%BB%E7%82%BC%E8%BA%AB%E4%BD%93/"/>
+    <id>http://ljedu.win/2016/09/28/坚持锻炼身体/</id>
+    <published>2016-09-28T09:35:54.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p> 现在的大多数人都不愿意锻炼身体，有些就是能坐着绝不站着，能躺着决不坐着，特别是年轻人，所以现在的人身体越来越不好了，特别容易得这种那种的疾病，其实很多疾病都是因为不锻炼的原因。现在告诉大家锻炼的好处。<br>步骤/方法：<br>1、首先告诉大家每天坚持锻炼可以提高免疫力。提高免疫力之后就不会容易得感冒、发烧这类的疾病，有些人感冒发烧都要挂好几天的水，耽误学习、耽误工作。免疫力提高之后也不会很容易就呗别人的感冒传染。<br>2、其次告诉大家坚持锻炼会提升个人魅力的。好多女生比较喜欢有肌肉，很健康的男人，这样也比较有安全感，所以想要提升你的魅力就开始每天坚持锻炼吧。<br>3、最后告诉大家坚持锻炼也是会仍任长寿的。现在的老年人好多都会早晨晚上都出去锻炼，做一些简单的操，活动活动筋骨，这样的人身体都会比较好。而且就算身体没那么健康的人多锻炼也会让自己变得更加健康的。<br>注意事项：<br>   刚开始锻炼的时候不要太过于激烈的运动，要慢慢的加强，要不一开始就剧烈运动的话容易浑身肌肉疼，而且会疼好多天，但是只要坚持下来一个多星期之后就会感觉浑身都很舒服，并且充满力量。</p>
+<a id="more"></a>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 现在的大多数人都不愿意锻炼身体，有些就是能坐着绝不站着，能躺着决不坐着，特别是年轻人，所以现在的人身体越来越不好了，特别容易得这种那种的疾病，其实很多疾病都是因为不锻炼的原因。现在告诉大家锻炼的好处。&lt;br&gt;步骤/方法：&lt;br&gt;1、首先告诉大家每天坚持锻炼可以提高免疫力。提高免疫力之后就不会容易得感冒、发烧这类的疾病，有些人感冒发烧都要挂好几天的水，耽误学习、耽误工作。免疫力提高之后也不会很容易就呗别人的感冒传染。&lt;br&gt;2、其次告诉大家坚持锻炼会提升个人魅力的。好多女生比较喜欢有肌肉，很健康的男人，这样也比较有安全感，所以想要提升你的魅力就开始每天坚持锻炼吧。&lt;br&gt;3、最后告诉大家坚持锻炼也是会仍任长寿的。现在的老年人好多都会早晨晚上都出去锻炼，做一些简单的操，活动活动筋骨，这样的人身体都会比较好。而且就算身体没那么健康的人多锻炼也会让自己变得更加健康的。&lt;br&gt;注意事项：&lt;br&gt;   刚开始锻炼的时候不要太过于激烈的运动，要慢慢的加强，要不一开始就剧烈运动的话容易浑身肌肉疼，而且会疼好多天，但是只要坚持下来一个多星期之后就会感觉浑身都很舒服，并且充满力量。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/categories/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+    
+      <category term="图片" scheme="http://ljedu.win/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="图像" scheme="http://ljedu.win/tags/%E5%9B%BE%E5%83%8F/"/>
+    
+      <category term="拍照" scheme="http://ljedu.win/tags/%E6%8B%8D%E7%85%A7/"/>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/tags/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>乐队演出</title>
+    <link href="http://ljedu.win/2014/11/23/%E4%B9%90%E9%98%9F%E6%BC%94%E5%87%BA/"/>
+    <id>http://ljedu.win/2014/11/23/乐队演出/</id>
+    <published>2014-11-23T12:53:54.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>11月22日出外去演出.</p>
+<p>本文化传媒致力于在文化传播领域向客户提供高品质的演艺庆典，演艺资讯服务，加强演艺庆典服务与公关礼仪咨询互动，为广大客户提供最前沿，最专业的时尚传媒。成立以来为政府部门、国内外大型企事业集团成功策划实施了各类演艺庆典、宴会以及演出等活动，得到客户的一致好评。专业的策划人员为您提供专业创意设计及策划，最后再提供完美详细的方案。</p>
+<a id="more"></a>
+<p>截图几张。</p>
+<p><img src="http://szcxgg.qiniudn.com/乐队1.jpg" alt="活动现场"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队2.jpg" alt="活动现场2"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队3.jpg" alt="活动现场3"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队4.jpg" alt="车上游行1"></p>
+<p><img src="http://szcxgg.qiniudn.com/乐队5.jpg" alt="车上游行2"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;11月22日出外去演出.&lt;/p&gt;
+&lt;p&gt;本文化传媒致力于在文化传播领域向客户提供高品质的演艺庆典，演艺资讯服务，加强演艺庆典服务与公关礼仪咨询互动，为广大客户提供最前沿，最专业的时尚传媒。成立以来为政府部门、国内外大型企事业集团成功策划实施了各类演艺庆典、宴会以及演出等活动，得到客户的一致好评。专业的策划人员为您提供专业创意设计及策划，最后再提供完美详细的方案。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/categories/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+    
+      <category term="图片" scheme="http://ljedu.win/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="图像" scheme="http://ljedu.win/tags/%E5%9B%BE%E5%83%8F/"/>
+    
+      <category term="拍照" scheme="http://ljedu.win/tags/%E6%8B%8D%E7%85%A7/"/>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/tags/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>酷狗音乐7.6.53 VIP破解版</title>
+    <link href="http://ljedu.win/2014/11/20/%E9%85%B7%E7%8B%97%E9%9F%B3%E4%B9%907.6.53/"/>
+    <id>http://ljedu.win/2014/11/20/酷狗音乐7.6.53/</id>
+    <published>2014-11-20T15:05:45.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="官方更新"><a href="#官方更新" class="headerlink" title="官方更新"></a>官方更新</h2><hr>
+<ul>
+<li><p>遥控器与桌面写真播放控件合并</p>
+</li>
+<li><p>播放列表菜单中增加清空列表</p>
+</li>
+<li><p>电台歌曲支持发送到手机</p>
+</li>
+<li><p>桌面写真歌词可移动区域扩大</p>
+</li>
+</ul>
+<a id="more"></a>
+<h3 id="本版特点"><a href="#本版特点" class="headerlink" title="本版特点"></a>本版特点</h3><hr>
+<p>破解VIP无损高品质音乐试听和下载特权(非VIP用户免登陆或登陆都可试听和下载)<br>专属VIP身份标识(登陆都为VIP黄金会员)<br>下载自动VIP加速<br>去下载界面提示(未登录)温馨提示：酷狗VIP尊享加速下载特权！立即开通<br>去下载界面提示(已登录)您是酷狗免费用户会员，尊享VIP加速下载特权。详情<br>去右键多余项（智能推荐、分享到、发送移送设备、工具、歌词举报）<br>去菜单多余项（显示今日推荐、在线升级、反馈意见)<br>去播放MV缓冲、暂停广告<br>去搜索歌曲页底部广告、温馨提示<br>去今日推荐弹窗、右下角广告弹窗<br>去关闭DLNA投放时弹出创建桌面快捷方式提示框<br>禁后台下载生成广告程序、应用推广包<br>去游戏、福袋，直播标签<br>应用只保留传歌到手机、本地管理、定时设置、格式转换、铃声制作、网速测试、DLNA投放</p>
+<p><a href="http://pan.baidu.com/s/1sj2nKr7" target="_blank" rel="external">下载地址</a></p>
+<p><a href="http://www.tmoke.com/1301.html" target="_blank" rel="external">转自尘埃软件网</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;官方更新&quot;&gt;&lt;a href=&quot;#官方更新&quot; class=&quot;headerlink&quot; title=&quot;官方更新&quot;&gt;&lt;/a&gt;官方更新&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;遥控器与桌面写真播放控件合并&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;播放列表菜单中增加清空列表&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;电台歌曲支持发送到手机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;桌面写真歌词可移动区域扩大&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="媒体工具" scheme="http://ljedu.win/categories/%E5%AA%92%E4%BD%93%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="媒体工具" scheme="http://ljedu.win/tags/%E5%AA%92%E4%BD%93%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="播放器" scheme="http://ljedu.win/tags/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QQ6.6正式版(13163) 纯净版</title>
+    <link href="http://ljedu.win/2014/11/20/qq6.6/"/>
+    <id>http://ljedu.win/2014/11/20/qq6.6/</id>
+    <published>2014-11-20T15:02:29.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>QQ是中国电脑用户必备聊天工具，一个做工精良的软件，功能那么细致具体，腾讯QQ6.6正式版已经发布。新版本“我的收藏”支持分类查看，新增音视频通话等状态标识，收藏网页助手支持收藏的内容可编辑等众多新功能。</p>
+<a id="more"></a>
+<h3 id="腾讯QQ-6-6特性如下："><a href="#腾讯QQ-6-6特性如下：" class="headerlink" title="腾讯QQ 6.6特性如下："></a>腾讯QQ 6.6特性如下：</h3><p>去QSLogic.dll、EXE/Dll、插件完整效验<br>保留二维码(可选去除)<br>强制每次登陆后始终显示右下角登陆提示<br>屏蔽登陆界面Bnaner<br>精简自动更新功能..永久不会自动升级<br>去多余推广和链接<br>去安卓设备连接提示<br>去会话标签好友助手、应用消息、群推荐、功能推荐、+号<br>破解好友离隐抖与群多图<br>破解部分会员特权<br>去资料卡特别关心、备注按钮<br>禁止生成无用文件、Logs文件夹屏蔽扫描硬盘<br>禁止后台下载安全数据<br>去主面板应用宝<br>去基本设置:软件更新<br>去基本设置-&gt;主面板:安卓设备连接提醒、界面管理器按钮以及文字<br>去基本设置-&gt;主面板:不显示广告(会员设置项）、总是显示好友聊天窗口侧边栏(有QQ秀保留)<br>去安全设置-&gt;QQ锁:更换热键、自动锁定设置按钮<br>去主菜单所有服务、QQ会员、工具(消息管理器、文件管理器)、安全中心(安全沟通、举报恶意行为、QQ安全帮助)、帮助(QQ官方微博)、软件更新<br>去好友右键菜单会员快捷功能、好友功能选项的向他推荐好友<br>解除解锁后宽高最小限制、自动缩放名称不显省略号<br>其他自体会。。。</p>
+<p><a href="http://pan.baidu.com/s/1i39VEoH" target="_blank" rel="external">下载地址</a></p>
+<p><a href="http://www.tmoke.com/645.html" target="_blank" rel="external">转自尘埃软件网</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;QQ是中国电脑用户必备聊天工具，一个做工精良的软件，功能那么细致具体，腾讯QQ6.6正式版已经发布。新版本“我的收藏”支持分类查看，新增音视频通话等状态标识，收藏网页助手支持收藏的内容可编辑等众多新功能。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="便携绿色" scheme="http://ljedu.win/tags/%E4%BE%BF%E6%90%BA%E7%BB%BF%E8%89%B2/"/>
+    
+      <category term="网络工具" scheme="http://ljedu.win/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="QQ" scheme="http://ljedu.win/tags/QQ/"/>
+    
+      <category term="聊天" scheme="http://ljedu.win/tags/%E8%81%8A%E5%A4%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>马克飞象</title>
+    <link href="http://ljedu.win/2014/11/19/%E9%A9%AC%E5%85%8B%E9%A3%9E%E8%B1%A1/"/>
+    <id>http://ljedu.win/2014/11/19/马克飞象/</id>
+    <published>2014-11-19T14:48:42.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="欢迎使用马克飞象"><a href="#欢迎使用马克飞象" class="headerlink" title="欢迎使用马克飞象"></a>欢迎使用马克飞象</h1><p>@(示例笔记本)[马克飞象|帮助|Markdown]</p>
+<p><strong>马克飞象</strong>是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：</p>
+<ul>
+<li><strong>功能丰富</strong> ：支持高亮代码块、插入 <em>LaTex</em> 公式，工作学习好帮手</li>
+<li><strong>得心应手</strong> ：支持插入图片，无论是本地上传/图片URL/拖放图片/直接截图粘贴，随心所欲</li>
+<li><strong>深度整合</strong> ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理</li>
+</ul>
+<a id="more"></a>
+<blockquote>
+<p>号外号外，离线客户端来啦！<a href="https://chrome.google.com/webstore/detail/%E9%A9%AC%E5%85%8B%E9%A3%9E%E8%B1%A1/kidnkfckhbdkfgbicccmdggmpgogehop/" target="_blank" rel="external">点击下载</a></p>
+</blockquote>
+<hr>
+<h3 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h3><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">维基百科</a></p>
+</blockquote>
+<p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，下面列举了几个高级功能，更多语法请按<code>Ctrl + /</code>查看帮助。 </p>
+<h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></div><div class="line">    <span class="string">'''A docstring'''</span></div><div class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></div><div class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></div><div class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></div><div class="line"><span class="meta">... </span>prompt'''</div></pre></td></tr></table></figure>
+<h4 id="LaTex-公式"><a href="#LaTex-公式" class="headerlink" title="LaTex 公式"></a>LaTex 公式</h4><p>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">1600 USD</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">12 USD</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">1 USD</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<h3 id="印象笔记相关"><a href="#印象笔记相关" class="headerlink" title="印象笔记相关"></a>印象笔记相关</h3><h4 id="笔记本和标签"><a href="#笔记本和标签" class="headerlink" title="笔记本和标签"></a>笔记本和标签</h4><p><strong>马克飞象</strong>增加了<code>@(笔记本)[标签A|标签B]</code>语法, 以选择笔记本和添加标签。 <strong>绑定账号后</strong>， 输入<code>(</code>自动会出现笔记本列表，请从中选择。自己纯手工输入无效。</p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p><strong>马克飞象</strong>会自动使用文档内出现的第一个标题作为笔记标题。例如本文，就是第一行的 <code>欢迎使用马克飞象</code>。</p>
+<h4 id="快捷编辑"><a href="#快捷编辑" class="headerlink" title="快捷编辑"></a>快捷编辑</h4><p>保存在印象笔记中的笔记，右上角会有一个红色的编辑按钮，点击后会回到<strong>马克飞象</strong>中打开并编辑该笔记。</p>
+<blockquote>
+<p><strong>注意：</strong>目前用户在印象笔记中单方面做的任何修改，马克飞象是无法自动感知和更新的。所以请务必回到马克飞象编辑。</p>
+</blockquote>
+<h4 id="数据同步"><a href="#数据同步" class="headerlink" title="数据同步"></a>数据同步</h4><p><strong>马克飞象</strong>通过<strong>将Markdown原文以隐藏内容保存在笔记中</strong>的精妙设计，实现了对Markdown的存储和再次编辑。既解决了其他产品只是单向导出HTML的单薄，又规避了服务端存储Markdown带来的隐私安全问题。这样，服务端仅作为对印象笔记 API调用和数据转换之用。</p>
+<blockquote>
+<p><strong>隐私声明：用户所有的笔记数据，均保存在印象笔记中。马克飞象不存储用户的任何笔记数据。</strong></p>
+</blockquote>
+<h4 id="离线存储"><a href="#离线存储" class="headerlink" title="离线存储"></a>离线存储</h4><p><strong>马克飞象</strong>使用浏览器离线存储将内容实时保存在本地，不必担心网络断掉或浏览器崩溃。为了节省空间和避免冲突，已同步至印象笔记并且不再修改的笔记将删除部分本地缓存，不过依然可以随时通过<code>文档管理</code>打开。</p>
+<blockquote>
+<p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但印象笔记作为专业云存储，更值得信赖。以防万一，<strong>请务必经常及时同步到印象笔记</strong>。</p>
+</blockquote>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>帮助    <code>Ctrl + /</code></p>
+<p>同步文档    <code>Ctrl + S</code></p>
+<p>创建文档    <code>Ctrl + Alt + N</code></p>
+<p>最大化编辑器    <code>Ctrl + Enter</code></p>
+<p>文档管理    <code>Ctrl + O</code></p>
+<p>系统菜单    <code>Ctrl + M</code></p>
+<p>整行移动    <code>Alt + 上/下箭头</code></p>
+<p>删除整行    <code>Ctrl + D</code></p>
+<p>加粗    <code>Ctrl + B</code></p>
+<p>插入图片    <code>Ctrl + G</code></p>
+<p>插入链接    <code>Ctrl + L</code></p>
+<p>提升标题    <code>Ctrl + H</code></p>
+<h3 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h3><p><strong>马克飞象</strong>目前已正式发布，为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
+<h3 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h3><ul>
+<li>微博：<a href="http://weibo.com/u/2788354117" target="_blank" rel="external">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank" rel="external">@GGock</a></li>
+<li>邮箱：<a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x68;&#117;&#115;&#116;&#x67;&#x6f;&#x63;&#x6b;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x68;&#117;&#115;&#116;&#x67;&#x6f;&#x63;&#x6b;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></li>
+</ul>
+<hr>
+<p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;欢迎使用马克飞象&quot;&gt;&lt;a href=&quot;#欢迎使用马克飞象&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用马克飞象&quot;&gt;&lt;/a&gt;欢迎使用马克飞象&lt;/h1&gt;&lt;p&gt;@(示例笔记本)[马克飞象|帮助|Markdown]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能丰富&lt;/strong&gt; ：支持高亮代码块、插入 &lt;em&gt;LaTex&lt;/em&gt; 公式，工作学习好帮手&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;得心应手&lt;/strong&gt; ：支持插入图片，无论是本地上传/图片URL/拖放图片/直接截图粘贴，随心所欲&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;深度整合&lt;/strong&gt; ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="办公工具" scheme="http://ljedu.win/categories/%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="办公工具" scheme="http://ljedu.win/tags/%E5%8A%9E%E5%85%AC%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="网络工具" scheme="http://ljedu.win/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可悲的教师行业</title>
+    <link href="http://ljedu.win/2014/11/19/%E5%8F%AF%E6%82%B2%E7%9A%84%E6%95%99%E5%B8%88/"/>
+    <id>http://ljedu.win/2014/11/19/可悲的教师/</id>
+    <published>2014-11-19T14:02:07.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>现在当<strong>老师</strong>上面要受校长的气，要受家长的气，现在难道还要受学生的气？还要不要人活了？有人唧唧歪歪的说不应该打人。<code>“去你妈的”</code>，如果别人这样骂你你会干嘛？还给他讲道理，SHIT，这样的人渣学生听的道理还少吗？中国传统的教育方法是绝对有效的，应该树立老师的权威。现在学生都不把老师当人看了，还给他讲道理。我们<strong>尊师重教的传统美德</strong>都到哪里去了？现在的教育，唉，素质教育，养成教育，赏识教育，快乐教育，。。。狗屁，都是从国外引进的半生不熟的理论，那能符合我们的国情吗？实事求是的作风到哪里去了！这些狗屁理论把现在中国的教育搞得乌烟瘴气，无所适从。教出来的学生一个比一个垃圾，连起码的尊重他人都不懂，他就是考上博士也是个垃圾！</p>
+<a id="more"></a>
+<p><strong>说到这里，肯定会有人要来骂老师怎么怎么样。无论这个老师是优秀还是平庸，我觉得他都不会把你往坏了教。</strong>现在的老师仿佛还要去讨好学生似的。我就是看不惯。</p>
+<p>教师不可以体罚学生，这样的道理，似乎无需有识之士喋喋不休的提醒。因为他既不符合现代的教育思想，也不符合法律的条文。现代的教育讲究的是师生平等，相互学习。古代的那种天、地、君、亲、师的师道尊严教育，早已经烟消云散于历史了。但是不知道是矫枉过正，抑或是物极必反，当师道尊严被扫地出门后，学生打教师的现象却有些甚嚣尘上。</p>
+<p>纵观近今年的舆论，凡是和教师有关的一般为两种：一是领导部门在教师节对教师表示慰问，表示重视教育，教师节过去了，承诺也不了了之；一是狠抓学校乱收费的风气，惩处部分对学生体罚的老师。对此大做文章，使得对教师不满的人进攻学校。大凡学校稍有举动，小则一个电话教育局挂号，大则司法部门直接处理。而每每无论怎样，都是学校败诉，本来就不创收的单位赔款、道歉，颜面无存。而此风气，大有愈演愈烈的趋势。因此，无中生有无理取闹的现象越来越严重。凡是学生在校期间出现的问题都有学校的责任，勉强说的过去。学生假期之间出的事情也与学校有关么？学生和家里人闹矛盾离家出走学校何来的责任？学生在外交通事故难道是学校引起的？怎么每每都有人找上门来不依不饶呢？什么时候学校成了孩子的监护人了？</p>
+<p>《未成年人保护法》明文规定了学生的权力，学生有受教育的权力，有不受人身伤害的权力，这无可非议。学生自然可以到学校上课，本来也不该受到别人的伤害。可是，谁来保护教师的权力？教师正常的课堂秩序不被打扰的权力哪里去找？</p>
+<p>姑且不论个别家长来学校无理取闹、恣意寻事，就算个别学生无理取闹、不做作业、不学习、不服从管理、说话、打架、甚至顶撞老师，故意违反课堂秩序，老师也没有权力请他出去，因为他有受教育的权力。呵呵。更有甚者，公开辱骂老师，甚至动手的也有啊。谁说师道尊严不该提倡了？一个老师如果没有一定的尊严，怎么教育管理学生？就算没有师道尊严了，教师的人格就可以受到侮辱么？试问不是教师的人受到这样的侮辱会有什么反应呢？而就因为是教师，就应该忍受这些么？就因为他是未成年人，就不该对其加以教育么？谁来保障教师的权力？</p>
+<table><br>    <tr><br>        <td> 姑且不论个别家长来学校无理取闹、恣意寻事，就算个别学生无理取闹、不做作业、不学习、不服从管理、说话、打架、甚至顶撞老师，故意违反课堂秩序，老师也没有权力请他出去，因为他有受教育的权力。呵呵。更有甚者，公开辱骂老师，甚至动手的也有啊。谁说师道尊严不该提倡了？一个老师如果没有一定的尊严，怎么教育管理学生？就算没有师道尊严了，教师的人格就可以受到侮辱么？试问不是教师的人受到这样的侮辱会有什么反应呢？而就因为是教师，就应该忍受这些么？就因为他是未成年人，就不该对其加以教育么？谁来保障教师的权力？</td><br>    </tr><br></table>
+
+<p>说得好呀：</p>
+
+<pre><code>恩,社会现状是这样的!。
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;现在当&lt;strong&gt;老师&lt;/strong&gt;上面要受校长的气，要受家长的气，现在难道还要受学生的气？还要不要人活了？有人唧唧歪歪的说不应该打人。&lt;code&gt;“去你妈的”&lt;/code&gt;，如果别人这样骂你你会干嘛？还给他讲道理，SHIT，这样的人渣学生听的道理还少吗？中国传统的教育方法是绝对有效的，应该树立老师的权威。现在学生都不把老师当人看了，还给他讲道理。我们&lt;strong&gt;尊师重教的传统美德&lt;/strong&gt;都到哪里去了？现在的教育，唉，素质教育，养成教育，赏识教育，快乐教育，。。。狗屁，都是从国外引进的半生不熟的理论，那能符合我们的国情吗？实事求是的作风到哪里去了！这些狗屁理论把现在中国的教育搞得乌烟瘴气，无所适从。教出来的学生一个比一个垃圾，连起码的尊重他人都不懂，他就是考上博士也是个垃圾！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活琐事" scheme="http://ljedu.win/categories/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+    
+      <category term="生活琐事" scheme="http://ljedu.win/tags/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+      <category term="教师" scheme="http://ljedu.win/tags/%E6%95%99%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>观书画展</title>
+    <link href="http://ljedu.win/2014/10/30/%E8%A7%82%E4%B9%A6%E7%94%BB%E5%B1%95/"/>
+    <id>http://ljedu.win/2014/10/30/观书画展/</id>
+    <published>2014-10-30T14:10:54.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>10.24日到遂宁师范学校参加<code>《中国百幅书画进校园巡展活动》</code>拍照几张留念！</p>
+<a id="more"></a>
+<p><img src="http://szcxgg.qiniudn.com/2014-10-31_135815.jpg" alt="进展览馆之前的相片"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135750.jpg" alt="展厅之内"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_120216.jpg" alt="拦江片区参会人员"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_112420.jpg" alt="老涌正在用手机拍摄书画作品"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_112459.jpg" alt="老涌正在用手机拍摄书画作品"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135650.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135710.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135731.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135830.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135904.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_135936.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;10.24日到遂宁师范学校参加&lt;code&gt;《中国百幅书画进校园巡展活动》&lt;/code&gt;拍照几张留念！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="图像工具" scheme="http://ljedu.win/categories/%E5%9B%BE%E5%83%8F%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="图像工具" scheme="http://ljedu.win/tags/%E5%9B%BE%E5%83%8F%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="图片" scheme="http://ljedu.win/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="截图" scheme="http://ljedu.win/tags/%E6%88%AA%E5%9B%BE/"/>
+    
+      <category term="手机" scheme="http://ljedu.win/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+      <category term="拍照" scheme="http://ljedu.win/tags/%E6%8B%8D%E7%85%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NOKIA525</title>
+    <link href="http://ljedu.win/2014/10/30/NOKIA525/"/>
+    <id>http://ljedu.win/2014/10/30/NOKIA525/</id>
+    <published>2014-10-30T13:10:54.000Z</published>
+    <updated>2016-12-30T06:12:17.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>下边的是<code>NOKIA525</code>手机随拍小品几张:</p>
+<a id="more"></a>
+<p><img src="http://szcxgg.qiniudn.com/2014-10-31_115501.jpg" alt="花草"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_115436.jpg" alt="野草莓"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_115336.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_115055.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114958.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114944.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114722.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114653.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114628.jpg" alt="感觉这幅不错"><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114615.jpg" alt=""><br><img src="http://szcxgg.qiniudn.com/2014-10-31_114519.jpg" alt="蒲公英"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下边的是&lt;code&gt;NOKIA525&lt;/code&gt;手机随拍小品几张:&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="图像工具" scheme="http://ljedu.win/categories/%E5%9B%BE%E5%83%8F%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="图像工具" scheme="http://ljedu.win/tags/%E5%9B%BE%E5%83%8F%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="图片" scheme="http://ljedu.win/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="截图" scheme="http://ljedu.win/tags/%E6%88%AA%E5%9B%BE/"/>
+    
+      <category term="手机" scheme="http://ljedu.win/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+      <category term="拍照" scheme="http://ljedu.win/tags/%E6%8B%8D%E7%85%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的Hexo站点终于成型了！</title>
+    <link href="http://ljedu.win/2014/10/28/%E6%88%91%E7%9A%84Hexo%E7%AB%99%E7%82%B9%E7%BB%88%E4%BA%8E%E6%88%90%E5%9E%8B%E4%BA%86/"/>
+    <id>http://ljedu.win/2014/10/28/我的Hexo站点终于成型了/</id>
+    <published>2014-10-28T21:05:56.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>我的</p>
+<p>终于成型了！</p>
+<p>是架设在github上的，确实不错，慢慢学习 ，好多学习Hexo的文章发布在上边</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我的&lt;/p&gt;
+&lt;p&gt;终于成型了！&lt;/p&gt;
+&lt;p&gt;是架设在github上的，确实不错，慢慢学习 ，好多学习Hexo的文章发布在上边&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="系统工具" scheme="http://ljedu.win/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="网文资讯" scheme="http://ljedu.win/tags/%E7%BD%91%E6%96%87%E8%B5%84%E8%AE%AF/"/>
+    
+      <category term="网络工具" scheme="http://ljedu.win/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自制node.js + npm绿色版</title>
+    <link href="http://ljedu.win/2014/10/28/node/"/>
+    <id>http://ljedu.win/2014/10/28/node/</id>
+    <published>2014-10-28T20:56:29.000Z</published>
+    <updated>2016-12-30T06:12:17.646Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="感谢不如"><a href="#感谢不如" class="headerlink" title="感谢不如"></a>感谢<a href="http://ibruce.info/2013/12/05/green-node-and-npm/" target="_blank" rel="external">不如</a></h3><h4 id="获取node-exe"><a href="#获取node-exe" class="headerlink" title="获取node.exe"></a>获取node.exe</h4><ul>
+<li>下载<a href="http://nodejs.org/download/" target="_blank" rel="external">Windows Binary</a>版本，不要下载Windows Installer版本，直接放到<code>H:\nodejs\</code></li>
+<li>获取npm（Node Package Manage，下载<a href="http://nodejs.org/dist/npm/" target="_blank" rel="external">最新zip版本</a>，不要下载tgz版本，下载后解压到<code>H:\nodejs\</code></li>
+<li><strong>添加环境变量</strong><br><code>NODE_HOME=H:\nodejs</code><br><code>NODE_PATH=%NODE_HOME%\node_modules</code><br><code>path增加%NODE_HOME%\</code></li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><strong>最终得到文件目录结构<code>H:\nodejs\</code></strong>：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">├── node.exe</div><div class="line">├── npm.cmd</div><div class="line">└── node_modules</div><div class="line">    └── npm</div></pre></td></tr></table></figure>
+<p>测试一下，出现版本号，说明配置成功：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node --version</div><div class="line">npm --version</div></pre></td></tr></table></figure></p>
+<p><em>至此，绿色版制作完毕</em>，您已经可以正常使用<code>node/npm</code>，也可以迁移到其他机器使用。</p>
+<p>下面使用npm命令安装第三方模块，使用方法可以查看：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm -h</div><div class="line">npm install -h</div><div class="line">npm <span class="built_in">help</span> install</div></pre></td></tr></table></figure></p>
+<p>默认安装仓库是  <code>https://registry.npmjs.org</code>   查找包可以到这里<code>http://search.npmjs.org</code>   一切都很像<code>maven</code>。有两种安装模式可选，<br>参考<a href="http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation" target="_blank" rel="external">npm 1.0 Global vs Local installation</a>：</p>
+<h3 id="locally"><a href="#locally" class="headerlink" title="locally"></a>locally</h3><p>默认是locally模式，安装到当前命令的执行目录。在其他位置执行xxx会报“xxx不是内部或外部命令，也不是可运行的程序”。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install xxx</div></pre></td></tr></table></figure></p>
+<h3 id="globally"><a href="#globally" class="headerlink" title="globally"></a>globally</h3><p>-g参数代表全局方式，使用全局模式会安装到<code>H:\nodejs\node_modules\</code>中的<code>xxx</code>下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install xxx -g</div></pre></td></tr></table></figure></p>
+<p>你可以重新设置prefix位置，方法有二：</p>
+<p>重新设置prefix的位置：npm config set prefix “H:\hexo”<br>或直接修改 『当前用户』.npmrc 文件，添加prefix = H:\hexo</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;感谢不如&quot;&gt;&lt;a href=&quot;#感谢不如&quot; class=&quot;headerlink&quot; title=&quot;感谢不如&quot;&gt;&lt;/a&gt;感谢&lt;a href=&quot;http://ibruce.info/2013/12/05/green-node-and-npm/&quot;&gt;不如&lt;/a&gt;&lt;/h3&gt;&lt;h4 id=&quot;获取node-exe&quot;&gt;&lt;a href=&quot;#获取node-exe&quot; class=&quot;headerlink&quot; title=&quot;获取node.exe&quot;&gt;&lt;/a&gt;获取node.exe&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;下载&lt;a href=&quot;http://nodejs.org/download/&quot;&gt;Windows Binary&lt;/a&gt;版本，不要下载Windows Installer版本，直接放到&lt;code&gt;H:\nodejs\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;获取npm（Node Package Manage，下载&lt;a href=&quot;http://nodejs.org/dist/npm/&quot;&gt;最新zip版本&lt;/a&gt;，不要下载tgz版本，下载后解压到&lt;code&gt;H:\nodejs\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;添加环境变量&lt;/strong&gt;&lt;br&gt;&lt;code&gt;NODE_HOME=H:\nodejs&lt;/code&gt;&lt;br&gt;&lt;code&gt;NODE_PATH=%NODE_HOME%\node_modules&lt;/code&gt;&lt;br&gt;&lt;code&gt;path增加%NODE_HOME%\&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="网络工具" scheme="http://ljedu.win/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://ljedu.win/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="http://ljedu.win/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
